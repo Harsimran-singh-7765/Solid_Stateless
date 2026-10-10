@@ -273,7 +273,17 @@ function App() {
         </div></div>
       </section>}
     </main>
-    <footer><div className="footer-logo"><span className="brand-shapes"><i/><b/><em/></span> SOLID STATELESS</div><p>MADE FOR RECALL, NOT CRAMMING.</p><span>LOCAL-FIRST · YOUR DATA STAYS IN THIS BROWSER</span></footer>
+    <footer>
+      <div className="footer-brand">
+        <div className="footer-logo"><span className="brand-shapes"><i/><b/><em/></span> SOLID STATELESS</div>
+        <div className="footer-links">
+          <a href="https://harsimran-singh.github.io" target="_blank" rel="noreferrer">Website</a>
+          <a href="https://github.com/harsimran-singh" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p>MADE FOR RECALL, NOT CRAMMING.</p>
+      <span>LOCAL-FIRST · YOUR DATA STAYS IN THIS BROWSER</span>
+    </footer>
   </div>;
 }
 createRoot(document.getElementById("root")).render(<App />);
