@@ -302,12 +302,19 @@ function App() {
       <div className="footer-brand">
         <div className="footer-logo"><span className="brand-shapes"><i/><b/><em/></span> SOLID STATELESS</div>
         <div className="footer-links">
-          <a href="https://harsimran-singh" target="_blank" rel="noreferrer">Website</a>
-          <a href="https://github.com/harsimran-singh" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://harsimran-singh.xyz" target="_blank" rel="noreferrer" aria-label="Visit website">🌐 Website</a>
+          <a href="https://github.com/harsimran-singh-7765" target="_blank" rel="noreferrer" aria-label="Visit GitHub" className="github-link">
+            <span className="github-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M12 1.8c-5.6 0-10.2 4.5-10.2 10.2 0 4.5 2.9 8.3 7 9.7.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.1-4.7-5.1 0-1.1.4-2 1-2.8-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1 .8-.2 1.7-.3 2.5-.3s1.7.1 2.5.3c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.8 1 1.7 1 2.8 0 4-2.5 4.8-4.8 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.7.7.5 4.1-1.4 7-5.2 7-9.7C22.2 6.3 17.6 1.8 12 1.8z" fill="currentColor"/>
+              </svg>
+            </span>
+            GitHub
+          </a>
         </div>
       </div>
       <p>MADE FOR RECALL, NOT CRAMMING.</p>
-      <span>LOCAL-FIRST · YOUR DATA STAYS IN THIS BROWSER</span>
+      <span>BUILT BY HARSIMRAN SINGH</span>
     </footer>
   </div>;
 }
