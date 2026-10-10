@@ -22,36 +22,35 @@ function cleanSource(text = "") {
 }
 
 function normalizeFieldText(value = "") {
-  let text = String(value || "")
+  return String(value || "")
+    .replace(/\$\$/g, "")
+    .replace(/\\\[|\\\]/g, "")
+    .replace(/\\\(|\\\)/g, "")
     .replace(/^\s*\*\*(?:Question|Original question)\s*:\*\*\s*/gi, "")
     .replace(/\n\s*\*\*(?:Question|Original question|Options?)\s*:\*\*\s*/gi, "\n")
     .replace(/\*\*Solution\s*:\*\*\s*/gi, "")
     .replace(/\*\*(?:Question|Original question|Options?)\s*:\*\*\s*/gi, "")
     .replace(/\n{3,}/g, "\n\n")
+    .replace(/√/g, "\\sqrt ")
+    .replace(/×/g, "\\times ")
+    .replace(/⁻¹/g, "^{-1}")
+    .replace(/²/g, "^{2}")
+    .replace(/³/g, "^{3}")
     .trim();
-
-  text = text
-    .replace(/√\s*(?:\(([^)]+)\)|([A-Za-z0-9^_+\-]+))/g, (_, paren, plain) => `\\sqrt{${(paren || plain).trim()}}`)
-    .replace(/(^|\n)([A-Za-z][A-Za-z0-9_]*\s*(?:=|≈|≠|≤|≥)\s*.+?)(?=\n|$)/g, (_, prefix, expr) => `${prefix}$${expr.trim()}$`);
-
-  return text.trim();
 }
 
 function prepareMarkdown(raw = "", asOption = false) {
-  let text = cleanSource(raw);
+  let text = normalizeFieldText(raw);
+  text = cleanSource(text);
 
   text = text
-    .replace(/×/g, "\\times ")
-    .replace(/√\s*(?:\(([^)]+)\)|([A-Za-z0-9^_+\-]+))/g, (_, paren, plain) => `\\sqrt{${(paren || plain).trim()}}`)
-    .replace(/⁻¹/g, "^{-1}")
-    .replace(/²/g, "^{2}")
-    .replace(/³/g, "^{3}");
+    .replace(/\\sqrt\s+\(([^)]+)\)/g, "\\sqrt{$1}")
+    .replace(/\\sqrt\s+([A-Za-z0-9^_+\-]+)/g, "\\sqrt{$1}")
+    .replace(/\b([A-Za-z])\s*\^\s*\{?(-?\d+)\}?/g, (_, base, exp) => `${base}^{${exp}}`);
 
-  text = text.replace(/\\\[([\s\S]*?)\\\]/g, (_, formula) => `\n$$\n${formula.trim()}\n$$\n`);
-  text = text.replace(/\\\(([\s\S]*?)\\\)/g, (_, formula) => `$${formula.trim()}$`);
+  text = text.replace(/\[\[|\]\]/g, "");
 
-  text = text.replace(
-    /\(([^()\n]*\\(?:frac|sqrt|times|sigma|mu|Omega|pi|theta|lambda|rho|hbar|cdot|approx|alpha|beta|gamma|mathrm|text|cos|sin)[^()\n]*)\)/g,
+  text = text.replace(/\(([^()\n]*\\(?:frac|sqrt|times|sigma|mu|Omega|pi|theta|lambda|rho|hbar|cdot|approx|alpha|beta|gamma|mathrm|text|cos|sin)[^()\n]*)\)/g,
     (_, formula) => `$${formula.trim()}$`
   );
 
@@ -70,6 +69,13 @@ function prepareMarkdown(raw = "", asOption = false) {
   }
 
   return text;
+}
+
+function MathDisplay({ children }) {
+  const raw = normalizeFieldText(children || "");
+  if (!raw) return null;
+
+  return <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{`$$\n${raw.replace(/\n+/g, "\n")}\n$$`}</ReactMarkdown>;
 }
 
 function MathMarkdown({ children, option = false }) {
@@ -253,7 +259,7 @@ function App() {
               <div className={`explanation ${current.answer==null?"unknown":picked[current.id]===current.answer?"good":"bad"}`}>
                 <strong>{current.answer==null?"ANSWER NOT CONFIRMED IN SOURCE":picked[current.id]===current.answer?"CORRECT — NICE RECALL.":"NOT QUITE — REVIEW THIS ONE."}</strong>
                 {current.answerText && <p className="source-answer"><MathMarkdown>{current.answerText}</MathMarkdown></p>}
-                {current.formula?.trim() && <div className="feedback-field"><b>KEY FORMULA</b><MathMarkdown>{current.formula}</MathMarkdown></div>}
+                {current.formula?.trim() && <div className="feedback-field"><b>KEY FORMULA</b><MathDisplay>{current.formula}</MathDisplay></div>}
                 {(current.explanation || current.notes)?.trim() && <div className="feedback-field"><b>EXPLANATION</b><MathMarkdown>{current.explanation || current.notes}</MathMarkdown></div>}
                 {current.answer != null && picked[current.id] !== current.answer && (
                   <button
