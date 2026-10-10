@@ -225,6 +225,12 @@ function App() {
     else persist([...questions, { ...q, id: `w${q.week}-${Date.now()}` }]);
     setEditId(null); setDraft({ week: selectedWeek, question: "", options: ["", "", "", ""], answer: 0, formula: "", explanation: "" }); setNotice(editId ? "Question updated." : "Question added.");
   }
+  function revealAnswer(questionId) {
+    setRevealed((r) => ({ ...r, [questionId]: true }));
+    requestAnimationFrame(() => {
+      document.getElementById(`answer-panel-${questionId}`)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }
   function editQuestion(q) { setEditId(q.id); setDraft({ ...q, options: [...q.options, "", "", "", ""].slice(0,4), formula: q.formula || "", explanation: q.explanation || q.notes || "" }); setPage("manage"); }
   function deleteQuestion(id) { if (confirm("Delete this question?")) { persist(questions.filter(q => q.id !== id)); setNotice("Question deleted."); } }
   function exportMarkdown() {
@@ -255,8 +261,8 @@ function App() {
         {session.length > 0 && <section className="quiz-panel" id="quiz"><div className="quiz-head"><div><p className="eyebrow">ACTIVE SESSION</p><h2>{mode==="mix"?"MIXED PRACTICE":`WEEK ${String(selectedWeek).padStart(2,"0")}`}</h2></div><button className="text-button" onClick={()=>{setSession([]);setIndex(0)}}><X size={16}/> Exit session</button></div>
           <div className="progress-row"><span>QUESTION {index+1} / {session.length}</span><span>{answered} ANSWERED · {correct} CORRECT</span></div><div className="progress-track"><span style={{width:`${((index+1)/session.length)*100}%`}}/></div>
           {current && <div className="question-area"><div className="question-meta"><span className="week-stamp">WEEK {String(current.week).padStart(2,"0")}</span><span>QUESTION {String(current.number || index+1).padStart(2,"0")}</span></div><div className="question-prompt"><MathMarkdown>{current.question}</MathMarkdown></div>{current.title&&<p className="question-title">{current.title}</p>}<div className="option-list">{current.options.map((option,i)=>{const chosen=picked[current.id]===i;const show=!!revealed[current.id];const correctAnswer=current.answer!=null&&i===current.answer;return <button key={i} className={`option ${chosen?"chosen":""} ${show&&correctAnswer?"right":""} ${show&&chosen&&!correctAnswer?"wrong":""}`} onClick={()=>{if(!show)setPicked(p=>({...p,[current.id]:i}))}} disabled={show}><span className="option-letter">{String.fromCharCode(65+i)}</span><div className="option-text"><MathMarkdown option>{option}</MathMarkdown></div>{show&&correctAnswer&&<Check size={18}/ >}{show&&chosen&&!correctAnswer&&<X size={18}/>}</button>})}</div>
-            {!revealed[current.id] ? <button className="btn btn-red submit-answer" disabled={picked[current.id]===undefined} onClick={()=>setRevealed(r=>({...r,[current.id]:true}))}>Check answer <Check size={17}/></button> : (
-              <div className={`explanation ${current.answer==null?"unknown":picked[current.id]===current.answer?"good":"bad"}`}>
+            {!revealed[current.id] ? <button className="btn btn-red submit-answer" disabled={picked[current.id]===undefined} onClick={()=>revealAnswer(current.id)}>Check answer <Check size={17}/></button> : (
+              <div id={`answer-panel-${current.id}`} className={`explanation ${current.answer==null?"unknown":picked[current.id]===current.answer?"good":"bad"}`}>
                 <strong>{current.answer==null?"ANSWER NOT CONFIRMED IN SOURCE":picked[current.id]===current.answer?"CORRECT — NICE RECALL.":"NOT QUITE — REVIEW THIS ONE."}</strong>
                 {current.answerText && <p className="source-answer"><MathMarkdown>{current.answerText}</MathMarkdown></p>}
                 {current.formula?.trim() && <div className="feedback-field"><b>KEY FORMULA</b><MathDisplay>{current.formula}</MathDisplay></div>}

@@ -64,3 +64,64 @@
   .hero { min-height: auto; }
   .hero-actions .btn { width: 100%; }
 }
+
+.explanation {
+  overflow: hidden;
+  border: 2px solid rgba(18,18,18,.9);
+  background: #dfeee3;
+  padding: 18px 18px 12px;
+  margin-top: 18px;
+  position: relative;
+  transform-origin: top center;
+  animation: answerReveal .55s cubic-bezier(.22,1,.36,1);
+}
+
+.explanation.good {
+  background: #dfeee3;
+}
+
+.explanation.bad {
+  background: #fbe7e7;
+}
+
+.explanation.unknown {
+  background: #f2eaff;
+}
+
+@keyframes answerReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-12px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-width: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 1600px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    border-width: 2px;
+  }
+}
+
+.explanation strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.submit-answer {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.submit-answer:active {
+  transform: translateY(1px);
+}
