@@ -221,7 +221,18 @@ function App() {
         </div></div>
       </section>}
     </main>
-    <footer><div className="footer-logo"><span className="brand-shapes"><i/><b/><em/></span> SOLID STATELESS</div><p>MADE FOR RECALL, NOT CRAMMING.</p><span>LOCAL-FIRST · YOUR DATA STAYS IN THIS BROWSER</span></footer>
+    <footer>
+      <div className="footer-logo"><span className="brand-shapes"><i/><b/><em/></span> SOLID STATELESS</div>
+      <p>MADE FOR RECALL, NOT CRAMMING.</p>
+      <span>LOCAL-FIRST · YOUR DATA STAYS IN THIS BROWSER</span>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 16px", alignItems: "center", marginTop: "8px", fontSize: "12px", letterSpacing: ".08em", opacity: .96 }}>
+        <span>Built by <a href="https://github.com/harsimran-singh-7765" target="_blank" rel="noreferrer" style={{ color: "#f0c020", textDecoration: "none", fontWeight: 800 }}>Harsimran Singh</a></span>
+        <a href="https://github.com/harsimran-singh-7765" target="_blank" rel="noreferrer" aria-label="Harsimran Singh GitHub" style={{ color: "#fff", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 22, height: 22, border: "1px solid rgba(255,255,255,.6)", borderRadius: 6, background: "rgba(255,255,255,.06)", textDecoration: "none" }}>
+          <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58l-.02-2.13c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.85 2.82 1.32 3.51 1 .11-.78.42-1.32.76-1.62-2.66-.3-5.46-1.33-5.46-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.45 11.45 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.61-5.48 5.91.43.37.81 1.09.81 2.2v3.26c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a href="https://harsimran-singh.xyz" target="_blank" rel="noreferrer" style={{ color: "#fff", textDecoration: "underline" }}>harsimran-singh.xyz</a>
+      </div>
+    </footer>
   </div>;
 }
 createRoot(document.getElementById("root")).render(<App />);
