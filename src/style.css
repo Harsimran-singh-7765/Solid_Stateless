@@ -38,3 +38,29 @@
 .question-prompt .md-content p{margin:0}
 .bank-question-title{font-size:16px;line-height:1.35;font-weight:800;margin:14px 0 10px}
 .bank-question-title .md-content p{margin:0}
+
+/* Revision-first refinements */
+#study-modes, #quiz { scroll-margin-top: 22px; }
+.hero-sub { max-width: 440px; line-height: 1.55; }
+.stats-strip { display: none !important; }
+.question-bank { max-height: 1100px; overflow-y: auto; overscroll-behavior: contain; padding: 3px 8px 10px 3px; scrollbar-width: thin; scrollbar-color: var(--blue) #e7e7e7; }
+.bank-heading { position: sticky; top: 0; z-index: 3; background: var(--paper); padding-top: 10px; }
+.bank-item { overflow-wrap: anywhere; }
+.bank-item .md-content, .question-prompt .md-content, .option-text .md-content, .feedback-field .md-content { overflow-wrap: anywhere; }
+.md-content .katex { font-size: 1.08em; }
+.question-prompt .katex { font-size: 1em; }
+.option-text .katex { font-size: 1.05em; }
+.option-math { min-width: 0; }
+.option-math .katex-display { margin: .2em 0; overflow-x: auto; overflow-y: hidden; }
+.question-prompt .katex-display { margin: .35em 0; overflow-x: auto; overflow-y: hidden; }
+.feedback-field { margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(0,0,0,.18); }
+.feedback-field > b, .bank-notes > b { display: block; font-size: 10px; letter-spacing: 1px; margin: 8px 0 5px; }
+.feedback-field .md-content p { margin: 5px 0; }
+.retry-answer { margin-top: 14px; }
+.bank-notes .md-content { margin: 5px 0 10px; }
+.import-note { background: #f4f1e8; }
+@media (max-width: 600px) {
+  .question-bank { max-height: 75vh; }
+  .hero { min-height: auto; }
+  .hero-actions .btn { width: 100%; }
+}

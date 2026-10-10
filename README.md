@@ -48,5 +48,33 @@ The importer also strips common Pandoc `{=tex}` and backtick artefacts found in 
 ## Important notes
 - Data is saved in the current browser on the current device. Use **Export bank** to back it up.
 - Some source questions explicitly note that an answer is unconfirmed or that no listed option matches. These are flagged rather than silently corrected.
-# Solid_Stateless
-# Solid_Stateless
+
+## Recommended question format (for future Weeks 1, 2, 11, 12)
+
+Each question can include a confirmed answer, formula field, and explanation field. Use LaTeX delimiters for math so fractions, Greek letters, superscripts, and subscripts render correctly:
+
+```md
+# Week 11
+
+## Q1. Example question title
+
+**Original question:** Find the carrier concentration when \(\sigma = nq\mu\).
+
+**Options**
+- (a) \(\frac{nq}{\mu}\)
+- (b) \(\frac{\sigma}{q\mu}\)
+- (c) \(nq\mu^2\)
+- (d) \(\frac{q\mu}{\sigma}\)
+
+**Correct option: (b)**
+
+**Formula:**
+
+\[\sigma = nq\mu\]
+
+**Explanation:**
+
+Rearrange \(\sigma=nq\mu\) to get \(n=\frac{\sigma}{q\mu}\). Substitute the given values and check units.
+```
+
+Formula and explanation are optional. If a source does not confirm the correct option, write `**Correct answer: unconfirmed**` rather than guessing.
