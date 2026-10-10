@@ -21,12 +21,28 @@ function cleanSource(text = "") {
     .trim();
 }
 
+function normalizeFieldText(value = "") {
+  let text = String(value || "")
+    .replace(/^\s*\*\*(?:Question|Original question)\s*:\*\*\s*/gi, "")
+    .replace(/\n\s*\*\*(?:Question|Original question|Options?)\s*:\*\*\s*/gi, "\n")
+    .replace(/\*\*Solution\s*:\*\*\s*/gi, "")
+    .replace(/\*\*(?:Question|Original question|Options?)\s*:\*\*\s*/gi, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
+  text = text
+    .replace(/√\s*(?:\(([^)]+)\)|([A-Za-z0-9^_+\-]+))/g, (_, paren, plain) => `\\sqrt{${(paren || plain).trim()}}`)
+    .replace(/(^|\n)([A-Za-z][A-Za-z0-9_]*\s*(?:=|≈|≠|≤|≥)\s*.+?)(?=\n|$)/g, (_, prefix, expr) => `${prefix}$${expr.trim()}$`);
+
+  return text.trim();
+}
+
 function prepareMarkdown(raw = "", asOption = false) {
   let text = cleanSource(raw);
 
   text = text
     .replace(/×/g, "\\times ")
-    .replace(/√([0-9]+)/g, "\\sqrt{$1}")
+    .replace(/√\s*(?:\(([^)]+)\)|([A-Za-z0-9^_+\-]+))/g, (_, paren, plain) => `\\sqrt{${(paren || plain).trim()}}`)
     .replace(/⁻¹/g, "^{-1}")
     .replace(/²/g, "^{2}")
     .replace(/³/g, "^{3}");
@@ -69,9 +85,9 @@ function loadQuestions() {
     if (Array.isArray(saved) && saved.length) {
       return saved.map((q) => ({
         ...q,
-        formula: q.formula || "",
-        explanation: q.explanation || "",
-        notes: q.notes || "",
+        formula: normalizeFieldText(q.formula || ""),
+        explanation: normalizeFieldText(q.explanation || ""),
+        notes: normalizeFieldText(q.notes || ""),
         answerText: q.answerText || "",
         options: Array.isArray(q.options) ? q.options : [],
       }));
@@ -82,9 +98,9 @@ function loadQuestions() {
 
   return initialQuestions.map((q) => ({
     ...q,
-    formula: q.formula || "",
-    explanation: q.explanation || "",
-    notes: q.notes || "",
+    formula: normalizeFieldText(q.formula || ""),
+    explanation: normalizeFieldText(q.explanation || ""),
+    notes: normalizeFieldText(q.notes || ""),
   }));
 }
 function parseMarkdownQuestions(source, fallbackWeek) {
@@ -102,10 +118,13 @@ function parseMarkdownQuestions(source, fallbackWeek) {
     const answerMatch = block.match(/\*\*(?:Correct option expected by the quiz|Correct option|Correct answer|Calculated answer|Final answer)\s*:\*\*\s*([\s\S]*?)(?=\n|$)/i)
       || block.match(/\*\*(?:Correct option expected by the quiz|Correct option|Correct answer|Calculated answer|Final answer)\s*:\s*([\s\S]*?)\*\*/i);
     const answerText = answerMatch?.[1]?.trim() || "";
-    const formulaMatch = block.match(/\*\*(?:Formula(?:s)?|Key formula(?:s)?)\s*:?\*\*\s*([\s\S]*?)(?=\n\*\*|$)/i);
-    const explanationMatch = block.match(/\*\*(?:Explanation|Solution|Reasoning)\s*:?\*\*\s*([\s\S]*?)(?=\n\*\*|$)/i);
-    const formula = formulaMatch?.[1]?.trim() || "";
-    const explanation = explanationMatch?.[1]?.trim() || "";
+
+    const formulaMatch = block.match(/\*\*(?:Formulas?|Formula(?:s)?|Key formula(?:s)?)\s*:?\*\*\s*([\s\S]*?)(?=\n\*\*(?:Explanation|Solution|Reasoning)|\n---|\n## |$)/i)
+      || block.match(/\*\*(?:Formulas?|Formula(?:s)?|Key formula(?:s)?)\s*:\s*([\s\S]*?)(?=\n\*\*(?:Explanation|Solution|Reasoning)|\n---|\n## |$)/i);
+    const solutionMatch = block.match(/\*\*Solution\s*:?\*\*\s*([\s\S]*?)(?=\n\*\*(?:Question|Options|Correct option|Formulas?|Formula|Explanation|Reasoning|Memory trick|Exam trap)|\n---|\n## |$)/i)
+      || block.match(/\*\*(?:Explanation|Reasoning)\s*:?\*\*\s*([\s\S]*?)(?=\n\*\*(?:Question|Options|Correct option|Formulas?|Formula|Memory trick|Exam trap)|\n---|\n## |$)/i);
+    const formula = normalizeFieldText(formulaMatch?.[1] || "");
+    const explanation = normalizeFieldText(solutionMatch?.[1] || "");
     let answer = null;
     const answerLetter = answerText.match(/\(([A-D])\)/i) || answerText.match(/\b([A-D])\b/i);
     if (answerLetter) answer = answerLetter[1].toUpperCase().charCodeAt(0) - 65;
@@ -277,7 +296,7 @@ function App() {
       <div className="footer-brand">
         <div className="footer-logo"><span className="brand-shapes"><i/><b/><em/></span> SOLID STATELESS</div>
         <div className="footer-links">
-          <a href="https://harsimran-singh.github.io" target="_blank" rel="noreferrer">Website</a>
+          <a href="https://harsimran-singh" target="_blank" rel="noreferrer">Website</a>
           <a href="https://github.com/harsimran-singh" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>

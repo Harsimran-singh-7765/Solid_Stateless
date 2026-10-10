@@ -1,21 +1,201 @@
 [
   {
+    "id": "w10q1",
+    "week": 10,
+    "number": 1,
+    "title": "Average energy band gap of Ge",
+    "question": "The conductivity of the semiconductor follows the given equation\n\n\\[\n\\sigma = A e^{-E_g/(2k_B T)},\n\\]\n\nwhere A is a constant and independent of temperature and k_B is the Boltzmann constant. The conductivity of Ge is 0.7\\ \\Omega^{-1}m^{-1} at 0^\\circ C and 2\\ \\Omega^{-1}m^{-1} at 20^\\circ C. What is the average band gap of Ge?\n\n(Boltzmann constant k_B = 1.38 \\times 10^{-23}\\ J/K)",
+    "options": [
+      "0.72\\ eV",
+      "0.65\\ eV",
+      "0.55\\ eV",
+      "0.43\\ eV"
+    ],
+    "answer": 0,
+    "answerText": "(a) 0.72\\ eV",
+    "formula": "\\ln\\frac{\\sigma_2}{\\sigma_1}=\\frac{E_g}{2k_B}\\left(\\frac1{T_1}-\\frac1{T_2}\\right),\\qquad E_g=\\frac{2k_B\\ln(\\sigma_2/\\sigma_1)}{(1/T_1-1/T_2)}",
+    "explanation": "Convert temperatures to kelvin: T₁=273 K and T₂=293 K. Divide the conductivity equations to eliminate A, then solve for Eg and convert joules to eV using 1 eV=1.602×10⁻¹⁹ J. The source marks option (a), 0.72 eV.",
+    "notes": "Convert temperatures to kelvin: T₁=273 K and T₂=293 K. Divide the conductivity equations to eliminate A, then solve for Eg and convert joules to eV using 1 eV=1.602×10⁻¹⁹ J. The source marks option (a), 0.72 eV."
+  },
+  {
+    "id": "w10q2",
+    "week": 10,
+    "number": 2,
+    "title": "Conductivity of pure silicon",
+    "question": "Find out the conductivity of pure silicon at room temperature (300 K). Given: mobility of electron \\mu_n = 0.13\\ \\frac{m^2}{Vs}, mobility of hole \\mu_h = 0.05\\ \\frac{m^2}{Vs} and intrinsic charge carrier concentration (n_i = 1.5 \\times 10^{16}/m^3).",
+    "options": [
+      "3.12 \\times 10^{-3}\\ \\Omega^{-1}m^{-1}",
+      "4.32 \\times 10^{-4}\\ \\Omega^{-1}m^{-1}",
+      "5.12 \\times 10^{-5}\\ \\Omega^{-1}m^{-1}",
+      "6.64 \\times 10^{-6}\\ \\Omega^{-1}m^{-1}"
+    ],
+    "answer": 1,
+    "answerText": "(b) 4.32 \\times 10^{-4}\\ \\Omega^{-1}m^{-1}",
+    "formula": "\\sigma=q n_i(\\mu_n+\\mu_p)",
+    "explanation": "For an intrinsic semiconductor, n=p=ni. Substitute q=1.602×10⁻¹⁹ C, ni=1.5×10¹⁶ m⁻³ and the sum of the electron and hole mobilities. The source records option (b), 4.32×10⁻⁴ Ω⁻¹m⁻¹.",
+    "notes": "For an intrinsic semiconductor, n=p=ni. Substitute q=1.602×10⁻¹⁹ C, ni=1.5×10¹⁶ m⁻³ and the sum of the electron and hole mobilities. The source records option (b), 4.32×10⁻⁴ Ω⁻¹m⁻¹."
+  },
+  {
+    "id": "w10q3",
+    "week": 10,
+    "number": 3,
+    "title": "Resistance of a silicon bar",
+    "question": "Calculate the resistance of a bar of pure silicon of length 1 cm and cross-sectional area 1\\ mm^2 at 300 K. Given: mobility of electron \\mu_n = 0.14\\ \\frac{m^2}{Vs}, mobility of hole \\mu_h = 0.07\\ \\frac{m^2}{Vs} and intrinsic charge carrier concentration (n_i = 2 \\times 10^{16}/m^3).",
+    "options": [
+      "12.34\\ M\\Omega",
+      "14.88\\ M\\Omega",
+      "23.15\\ M\\Omega",
+      "46.28\\ M\\Omega"
+    ],
+    "answer": 1,
+    "answerText": "(b) 14.88\\ M\\Omega",
+    "formula": "\\sigma=q n_i(\\mu_n+\\mu_p),\\qquad \\rho=\\frac1{\\sigma},\\qquad R=\\rho\\frac{L}{A}",
+    "explanation": "First calculate intrinsic conductivity using n=p=ni. Then take its reciprocal to obtain resistivity. Convert L=1 cm to 10⁻² m and area 1 mm² to 10⁻⁶ m², and use R=ρL/A. The recorded answer is option (b), 14.88 MΩ.",
+    "notes": "First calculate intrinsic conductivity using n=p=ni. Then take its reciprocal to obtain resistivity. Convert L=1 cm to 10⁻² m and area 1 mm² to 10⁻⁶ m², and use R=ρL/A. The recorded answer is option (b), 14.88 MΩ."
+  },
+  {
+    "id": "w10q4",
+    "week": 10,
+    "number": 4,
+    "title": "Conductivity of p-type germanium",
+    "question": "Find the conductivity of p-type germanium crystal which is doped with acceptor atoms of concentration 2 \\times 10^{23}\\ atoms/m^3 and all the acceptor atoms are active. Mobility of hole in the crystal is \\mu_h = 0.19\\ \\frac{m^2}{Vs}.",
+    "options": [
+      "6080\\ \\Omega^{-1}m^{-1}",
+      "4038\\ \\Omega^{-1}m^{-1}",
+      "3125\\ \\Omega^{-1}m^{-1}",
+      "2215\\ \\Omega^{-1}m^{-1}"
+    ],
+    "answer": 0,
+    "answerText": "(a) 6080\\ \\Omega^{-1}m^{-1}",
+    "formula": "\\sigma=q(p\\mu_p+n\\mu_n)\\approx qN_A\\mu_p",
+    "explanation": "All acceptors are active and the material is p-type, so holes are the majority carriers and p≈NA. Substitute q=1.602×10⁻¹⁹ C, NA=2×10²³ m⁻³ and μp=0.19 m²/(V·s). The recorded answer is option (a), 6080 Ω⁻¹m⁻¹.",
+    "notes": "All acceptors are active and the material is p-type, so holes are the majority carriers and p≈NA. Substitute q=1.602×10⁻¹⁹ C, NA=2×10²³ m⁻³ and μp=0.19 m²/(V·s). The recorded answer is option (a), 6080 Ω⁻¹m⁻¹."
+  },
+  {
+    "id": "w10q5",
+    "week": 10,
+    "number": 5,
+    "title": "Acceptor concentration for p-type semiconductor",
+    "question": "Calculate the concentration of acceptor atoms that have to be added to an intrinsic semiconductor to produce a p-type semiconductor of conductivity (\\sigma_h = 0.05\\ \\Omega^{-1}m^{-1}). The mobility of holes in p-type semiconductor is (\\mu_h = 0.4\\ \\frac{m^2}{Vs}). Consider all the acceptor atoms are active.",
+    "options": [
+      "2.5 \\times 10^{28}/m^3",
+      "1.7 \\times 10^{23}/m^3",
+      "7.8 \\times 10^{17}/m^3",
+      "4.6 \\times 10^{15}/m^3"
+    ],
+    "answer": 2,
+    "answerText": "(c) 7.8 \\times 10^{17}/m^3",
+    "formula": "\\sigma\\approx qN_A\\mu_p\\quad\\Rightarrow\\quad N_A=\\frac{\\sigma}{q\\mu_p}",
+    "explanation": "For fully active acceptors in a p-type material, p≈NA. Rearranging the conductivity relation gives NA=0.05/[1.602×10⁻¹⁹×0.4] ≈ 7.8×10¹⁷ m⁻³, option (c).",
+    "notes": "For fully active acceptors in a p-type material, p≈NA. Rearranging the conductivity relation gives NA=0.05/[1.602×10⁻¹⁹×0.4] ≈ 7.8×10¹⁷ m⁻³, option (c)."
+  },
+  {
+    "id": "w10q6",
+    "week": 10,
+    "number": 6,
+    "title": "Compare intrinsic conductivity of Ge at two temperatures",
+    "question": "The energy gap in Ge is 0.75\\ eV. Compare the intrinsic conductivity of Ge at 27^\\circ C and 57^\\circ C.\n\nAssuming the conductivity of intrinsic semiconductor follows the given equation\n\n\\[\n\\sigma = C T^{3/2} e^{-E_g/(2k_B T)},\n\\]\n\nwhere C is the constant and Boltzmann constant (k_B = 1.38 \\times 10^{-23}\\ J/K).",
+    "options": [
+      "0.23",
+      "0.48",
+      "0.62",
+      "0.78"
+    ],
+    "answer": 2,
+    "answerText": "(c) 0.62",
+    "formula": "\\frac{\\sigma_1}{\\sigma_2}=\\left(\\frac{T_1}{T_2}\\right)^{3/2}\\exp\\left[-\\frac{E_g}{2k_B}\\left(\\frac1{T_1}-\\frac1{T_2}\\right)\\right]",
+    "explanation": "Use absolute temperatures: 27°C=300 K and 57°C=330 K. Substitute the given intrinsic-conductivity law and compare the two temperatures; keep the order of the ratio consistent with the options. The source records option (c), 0.62.",
+    "notes": "Use absolute temperatures: 27°C=300 K and 57°C=330 K. Substitute the given intrinsic-conductivity law and compare the two temperatures; keep the order of the ratio consistent with the options. The source records option (c), 0.62."
+  },
+  {
+    "id": "w10q7",
+    "week": 10,
+    "number": 7,
+    "title": "Fermi level of boron-doped silicon",
+    "question": "Silicon is doped with boron to a concentration of (4 \\times 10^{26}/m^3). Assuming the intrinsic concentration of silicon is (n_i = 1.5 \\times 10^{16}/m^3), find the position of Fermi level of doped semiconductor with respect to the intrinsic Fermi level at room temperature 300 K. Boltzmann constant (K_B = 1.38 \\times 10^{-23}\\ J/K).",
+    "options": [
+      "0.62 eV below the intrinsic Fermi level",
+      "0.44 eV below the intrinsic Fermi level",
+      "0.32 eV below the intrinsic Fermi level",
+      "0.27 eV below the intrinsic Fermi level"
+    ],
+    "answer": 0,
+    "answerText": "(a) 0.62 eV below the intrinsic Fermi level",
+    "formula": "E_i-E_F=k_BT\\ln\\left(\\frac{N_A}{n_i}\\right)",
+    "explanation": "Boron is an acceptor, so the semiconductor is p-type and its Fermi level lies below the intrinsic level. Use kBT in eV at 300 K (kB=8.617×10⁻⁵ eV/K), NA=4×10²⁶ m⁻³ and ni=1.5×10¹⁶ m⁻³. The source records option (a), 0.62 eV below Ei.",
+    "notes": "Boron is an acceptor, so the semiconductor is p-type and its Fermi level lies below the intrinsic level. Use kBT in eV at 300 K (kB=8.617×10⁻⁵ eV/K), NA=4×10²⁶ m⁻³ and ni=1.5×10¹⁶ m⁻³. The source records option (a), 0.62 eV below Ei."
+  },
+  {
+    "id": "w10q8",
+    "week": 10,
+    "number": 8,
+    "title": "Total conduction current density in doped Ge",
+    "question": "A sample of Ge is doped to the extent of (10^{20}\\ donor\\ atoms/m^3) and (5 \\times 10^{19}\\ acceptor\\ atoms/m^3). At 300 K, the resistivity of intrinsic Ge is (0.6\\ \\Omega-m). If the applied electric field is 200\\ V/m, find the total conduction current density. Assume the ratio of hole mobility to electron mobility \\frac{\\mu_h}{\\mu_n} = \\frac12 and intrinsic carrier density (n_i = 2.5 \\times 10^{19}/m^3) at 300 K. Consider all the donor and acceptor atoms are active in Ge.",
+    "options": [
+      "0.058\\ A/cm^2",
+      "0.078\\ A/cm^2",
+      "0.098\\ A/cm^2",
+      "1.048\\ A/cm^2"
+    ],
+    "answer": 0,
+    "answerText": "(a) 0.058\\ A/cm^2",
+    "formula": "n-p=N_D-N_A,\\qquad np=n_i^2,\\qquad \\sigma=q(n\\mu_n+p\\mu_p),\\qquad J=\\sigma E",
+    "explanation": "Net doping gives n−p=5×10¹⁹ m⁻³. Combine this with np=ni² to determine n and p. Infer the mobilities from intrinsic conductivity σi=1/ρi=qni(μn+μp) and μp/μn=1/2; then calculate σ and J=σE. The original file records option (a), 0.058 A/cm²; this should be rechecked because the source's earlier discussion also contains a conflicting result.",
+    "notes": "Net doping gives n−p=5×10¹⁹ m⁻³. Combine this with np=ni² to determine n and p. Infer the mobilities from intrinsic conductivity σi=1/ρi=qni(μn+μp) and μp/μn=1/2; then calculate σ and J=σE. The original file records option (a), 0.058 A/cm²; this should be rechecked because the source's earlier discussion also contains a conflicting result."
+  },
+  {
+    "id": "w10q9",
+    "week": 10,
+    "number": 9,
+    "title": "Intrinsic carrier concentration",
+    "question": "In an intrinsic semiconductor, the effective mass of the electron is 0.09m_e and that of the hole is (0.4m_e), where (m_e) is the electron rest mass. Calculate the intrinsic carrier concentration at 300 K, when the energy gap (E_g = 0.7\\ eV). Consider Boltzmann constant (K_B = 1.38 \\times 10^{-23}\\ J/K) and Planck constant is (h = 6.62 \\times 10^{-34}\\ J-s).",
+    "options": [
+      "2.7 \\times 10^{18}/m^3",
+      "3.2 \\times 10^{20}/m^3",
+      "4.5 \\times 10^{28}/m^3",
+      "6.2 \\times 10^{32}/m^3"
+    ],
+    "answer": 0,
+    "answerText": "(a) 2.7 \\times 10^{18}/m^3",
+    "formula": "n_i=\\sqrt{N_CN_V}\\,e^{-E_g/(2k_BT)},\\quad N_C=2\\left(\\frac{2\\pi m_n^*k_BT}{h^2}\\right)^{3/2},\\quad N_V=2\\left(\\frac{2\\pi m_p^*k_BT}{h^2}\\right)^{3/2}",
+    "explanation": "Convert Eg=0.7 eV to joules and use m*n=0.09me, m*p=0.4me at 300 K. Calculate NC and NV from the effective-mass density-of-states expressions, then substitute into the intrinsic-concentration formula. The recorded answer is option (a), 2.7×10¹⁸ m⁻³.",
+    "notes": "Convert Eg=0.7 eV to joules and use m*n=0.09me, m*p=0.4me at 300 K. Calculate NC and NV from the effective-mass density-of-states expressions, then substitute into the intrinsic-concentration formula. The recorded answer is option (a), 2.7×10¹⁸ m⁻³."
+  },
+  {
+    "id": "w10q10",
+    "week": 10,
+    "number": 10,
+    "title": "Hole concentration in donor-doped semiconductor",
+    "question": "At a given temperature, a semiconductor with intrinsic carrier concentration (n_i = 10^{16}/m^3) is doped with a donor dopant of concentration (n_D = 10^{26}/m^3). If the temperature remains the same, calculate the concentration of hole in the doped semiconductor.",
+    "options": [
+      "10^4/m^3",
+      "10^6/m^3",
+      "10^8/m^3",
+      "10^{10}/m^3"
+    ],
+    "answer": 1,
+    "answerText": "(b) 10^6/m^3",
+    "formula": "np=n_i^2,\\qquad n\\approx N_D\\ \\text{for }N_D\\gg n_i,\\qquad p=\\frac{n_i^2}{n}",
+    "explanation": "Donors make electrons the majority carriers. Since ND=10²⁶ m⁻³ is much larger than ni=10¹⁶ m⁻³, n≈ND. Therefore p≈(10¹⁶)²/10²⁶=10⁶ m⁻³, option (b).",
+    "notes": "Donors make electrons the majority carriers. Since ND=10²⁶ m⁻³ is much larger than ni=10¹⁶ m⁻³, n≈ND. Therefore p≈(10¹⁶)²/10²⁶=10⁶ m⁻³, option (b)."
+  },
+  {
     "id": "w3q1",
     "week": 3,
     "number": 1,
     "title": "Linear Density of FCC Along [100]",
     "question": "Find out the linear density of FCC crystal in the direction [100] in terms of atomic radius R.",
     "options": [
-      "1 / (2R)",
-      "1 / (√2 R)",
-      "1 / (2√2 R)",
-      "1 / (3√2 R)"
+      "1 / (2R",
+      "1 / (√2 R",
+      "1 / (2√2 R",
+      "1 / (3√2 R"
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "N = 1/2 + 1/2 = 1\nThe segment length is a. For FCC, a = 2√2 R.\nLD = N/a = 1/(2√2 R)",
+    "explanation": "For the [100] edge direction, the two corner atoms contribute:\n\nN = 1/2 + 1/2 = 1\n\nThe segment length is a. For FCC, a = 2√2 R.\n\nLD = N/a = 1/(2√2 R)",
+    "notes": "For the [100] edge direction, the two corner atoms contribute:\n\nN = 1/2 + 1/2 = 1\n\nThe segment length is a. For FCC, a = 2√2 R.\n\nLD = N/a = 1/(2√2 R)"
   },
   {
     "id": "w3q2",
@@ -24,16 +204,16 @@
     "title": "Linear Density of FCC Along [111]",
     "question": "Find the linear density for FCC crystal in the [111] direction in terms of the atomic radius R.",
     "options": [
-      "1 / (2√6 R)",
-      "1 / (3√2 R)",
-      "1 / (√2 R)",
+      "1 / (2√6 R",
+      "1 / (3√2 R",
+      "1 / (√2 R",
       "1 / R"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "N = 1/2 + 1/2 = 1\nThe body diagonal length is a√3. Since a = 2√2 R:\nLD = 1/(a√3) = 1/(2√6 R)",
+    "explanation": "The [111] direction is the body diagonal. FCC has no atom at the body centre, so only the two endpoint corner atoms lie on this segment:\n\nN = 1/2 + 1/2 = 1\n\nThe body diagonal length is a√3. Since a = 2√2 R:\n\nLD = 1/(a√3) = 1/(2√6 R)",
+    "notes": "The [111] direction is the body diagonal. FCC has no atom at the body centre, so only the two endpoint corner atoms lie on this segment:\n\nN = 1/2 + 1/2 = 1\n\nThe body diagonal length is a√3. Since a = 2√2 R:\n\nLD = 1/(a√3) = 1/(2√6 R)"
   },
   {
     "id": "w3q3",
@@ -49,9 +229,9 @@
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "From Q2, LD = 1/(2√6 R).\nR = 0.128 nm = 0.128 × 10⁻⁹ m\nLD = 1 / [2√6 × (0.128 × 10⁻⁹)] ≈ 1.59 × 10⁹ m⁻¹",
+    "explanation": "From Q2, LD = 1/(2√6 R).\n\nR = 0.128 nm = 0.128 × 10⁻⁹ m\n\nLD = 1 / [2√6 × (0.128 × 10⁻⁹)] ≈ 1.59 × 10⁹ m⁻¹",
+    "notes": "From Q2, LD = 1/(2√6 R).\n\nR = 0.128 nm = 0.128 × 10⁻⁹ m\n\nLD = 1 / [2√6 × (0.128 × 10⁻⁹)] ≈ 1.59 × 10⁹ m⁻¹"
   },
   {
     "id": "w3q4",
@@ -60,16 +240,16 @@
     "title": "Linear Density of BCC Along [110]",
     "question": "Find out the linear density of BCC crystal in the [110] direction in terms of the atomic radius R. Consider the lattice parameter of the crystal is a.",
     "options": [
-      "√3 / (4√2 R)",
+      "√3 / (4√2 R",
       "√3 / R",
       "2√3 / R",
       "3√3 / R"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "N = 1/2 + 1/2 = 1\nFor BCC, a√3 = 4R, hence a = 4R/√3.\nLD = 1/(a√2) = √3/(4√2 R)",
+    "explanation": "The [110] direction is a face diagonal. Only the two corner atoms lie on this segment:\n\nN = 1/2 + 1/2 = 1\n\nLength of face diagonal: a√2.\n\nFor BCC, a√3 = 4R, hence a = 4R/√3.\n\nLD = 1/(a√2) = √3/(4√2 R)",
+    "notes": "The [110] direction is a face diagonal. Only the two corner atoms lie on this segment:\n\nN = 1/2 + 1/2 = 1\n\nLength of face diagonal: a√2.\n\nFor BCC, a√3 = 4R, hence a = 4R/√3.\n\nLD = 1/(a√2) = √3/(4√2 R)"
   },
   {
     "id": "w3q5",
@@ -78,16 +258,16 @@
     "title": "Linear Density of BCC Along [111]",
     "question": "Calculate the linear density for BCC crystal in the [111] direction in terms of the atomic radius R. Consider the lattice parameter of the BCC crystal is a.",
     "options": [
-      "1 / (2R)",
-      "1 / (3R)",
-      "1 / (4R)",
-      "1 / (5R)"
+      "1 / (2R",
+      "1 / (3R",
+      "1 / (4R",
+      "1 / (5R"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "N = 1/2 + 1 + 1/2 = 2\nThe body diagonal length is a√3. For BCC, a√3 = 4R.\nLD = 2/(a√3) = 2/(4R) = 1/(2R)",
+    "explanation": "The [111] direction is the body diagonal. It contains two corner endpoints and one body-centred atom:\n\nN = 1/2 + 1 + 1/2 = 2\n\nThe body diagonal length is a√3. For BCC, a√3 = 4R.\n\nLD = 2/(a√3) = 2/(4R) = 1/(2R)",
+    "notes": "The [111] direction is the body diagonal. It contains two corner endpoints and one body-centred atom:\n\nN = 1/2 + 1 + 1/2 = 2\n\nThe body diagonal length is a√3. For BCC, a√3 = 4R.\n\nLD = 2/(a√3) = 2/(4R) = 1/(2R)"
   },
   {
     "id": "w3q6",
@@ -103,9 +283,9 @@
     ],
     "answer": 1,
     "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "For BCC [111], LD = 1/(2R).\nR = 0.124 nm = 0.124 × 10⁻⁹ m\nLD = 1/[2 × (0.124 × 10⁻⁹)] ≈ 4.03 × 10⁹ m⁻¹",
+    "explanation": "For BCC [111], LD = 1/(2R).\n\nR = 0.124 nm = 0.124 × 10⁻⁹ m\n\nLD = 1/[2 × (0.124 × 10⁻⁹)] ≈ 4.03 × 10⁹ m⁻¹",
+    "notes": "For BCC [111], LD = 1/(2R).\n\nR = 0.124 nm = 0.124 × 10⁻⁹ m\n\nLD = 1/[2 × (0.124 × 10⁻⁹)] ≈ 4.03 × 10⁹ m⁻¹"
   },
   {
     "id": "w3q7",
@@ -114,16 +294,16 @@
     "title": "Planar Density of FCC (111)",
     "question": "Calculate the planar density of FCC crystal for (111) planes in terms of the atomic radius R. Consider the lattice parameter of the cubic crystal is a.",
     "options": [
-      "1 / (2√3 R²)",
-      "1 / (√2 R²)",
-      "1 / (3 R²)",
-      "1 / (4 R²)"
+      "1 / (2√3 R²",
+      "1 / (√2 R²",
+      "1 / (3 R²",
+      "1 / (4 R²"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "N = 3 × (1/6) + 3 × (1/2) = 2\nA = (√3/4)(a√2)² = (√3/2)a²\nPD = N/A = 2 / [(√3/2)a²] = 4/(√3 a²)\nFor FCC, a = 2√2 R, so a² = 8R²:\nPD = 4/(8√3 R²) = 1/(2√3 R²)",
+    "explanation": "Planar density is the number of atom centres lying in the plane divided by the area of the planar repeat unit.\n\nFor the FCC (111) triangular section, the atom contributions are:\n\nN = 3 × (1/6) + 3 × (1/2) = 2\n\nThe triangle side is a√2, so its area is:\n\nA = (√3/4)(a√2)² = (√3/2)a²\n\nTherefore:\n\nPD = N/A = 2 / [(√3/2)a²] = 4/(√3 a²)\n\nFor FCC, a = 2√2 R, so a² = 8R²:\n\nPD = 4/(8√3 R²) = 1/(2√3 R²)",
+    "notes": "Planar density is the number of atom centres lying in the plane divided by the area of the planar repeat unit.\n\nFor the FCC (111) triangular section, the atom contributions are:\n\nN = 3 × (1/6) + 3 × (1/2) = 2\n\nThe triangle side is a√2, so its area is:\n\nA = (√3/4)(a√2)² = (√3/2)a²\n\nTherefore:\n\nPD = N/A = 2 / [(√3/2)a²] = 4/(√3 a²)\n\nFor FCC, a = 2√2 R, so a² = 8R²:\n\nPD = 4/(8√3 R²) = 1/(2√3 R²)"
   },
   {
     "id": "w3q8",
@@ -139,9 +319,9 @@
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "N = 4 × (1/4) + 1 = 2\nArea of the square face is a². For FCC, a = 2√2 R, so a² = 8R².\nPD = 2/a² = 1/(4R²)\nR = 0.143 × 10⁻⁹ m\nPD = 1/[4 × (0.143 × 10⁻⁹)²] ≈ 1.22 × 10¹⁹ m⁻²",
+    "explanation": "The FCC (100) face contains four corner atoms and one face-centred atom:\n\nN = 4 × (1/4) + 1 = 2\n\nArea of the square face is a². For FCC, a = 2√2 R, so a² = 8R².\n\nPD = 2/a² = 1/(4R²)\n\nR = 0.143 × 10⁻⁹ m\n\nPD = 1/[4 × (0.143 × 10⁻⁹)²] ≈ 1.22 × 10¹⁹ m⁻²",
+    "notes": "The FCC (100) face contains four corner atoms and one face-centred atom:\n\nN = 4 × (1/4) + 1 = 2\n\nArea of the square face is a². For FCC, a = 2√2 R, so a² = 8R².\n\nPD = 2/a² = 1/(4R²)\n\nR = 0.143 × 10⁻⁹ m\n\nPD = 1/[4 × (0.143 × 10⁻⁹)²] ≈ 1.22 × 10¹⁹ m⁻²"
   },
   {
     "id": "w3q9",
@@ -150,16 +330,16 @@
     "title": "Miller Indices",
     "question": "A crystal plane intercepts crystal axes at 0.5a, b, and is parallel to the c axis. The Miller indices of the plane is",
     "options": [
-      "(120)",
-      "(210)",
-      "(021)",
-      "(102)"
+      "120",
+      "210",
+      "021",
+      "102"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b), (210)",
+    "formula": "_Relevant equation is shown in the worked explanation below._",
+    "explanation": "Intercepts in lattice units: (1/2, 1, ∞).\n\nTake reciprocals: (2, 1, 0).",
+    "notes": "Intercepts in lattice units: (1/2, 1, ∞).\n\nTake reciprocals: (2, 1, 0)."
   },
   {
     "id": "w3q10",
@@ -171,13 +351,13 @@
       "FCC crystal",
       "Simple cubic crystal",
       "BCC crystal",
-      "Diamond structure (DC)"
+      "Diamond structure (DC"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a), FCC crystal",
+    "formula": "- **FCC lattice parameter:** a = 2√2 R\n- **BCC lattice parameter:** a = 4R/√3\n- **Linear density:** LD = atoms whose centres lie on the direction / direction-segment length\n- **Planar density:** PD = atoms whose centres lie in the plane / planar area\n- **Atomic packing factor:** APF = volume occupied by atoms / unit-cell volume",
+    "explanation": "Which of the following structure have the highest packing factor?",
+    "notes": "Which of the following structure have the highest packing factor?"
   },
   {
     "id": "w4q1",
@@ -186,16 +366,16 @@
     "title": "Miller indices",
     "question": "A plane intercepts the crystal axes along ‘a’ at 0.25a and along ‘b’ at 0.50b and it is parallel to the third axis. Determine the Miller indices of the plane.",
     "options": [
-      "(210)",
-      "(310)",
-      "(410)",
-      "(110)"
+      "210",
+      "310",
+      "410",
+      "110"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) (210)",
+    "formula": "\\[\n\\]",
+    "explanation": "Intercepts are 0.25a,\\ 0.50b,\\ \\infty.\n\nIn lattice units:\n\\[\n(1/4,\\ 1/2,\\ \\infty)\n\\]\nTake reciprocals: (4,2,0). Reduce to the smallest integers: (210).\n\n**Answer: (a) (210)**",
+    "notes": "Intercepts are 0.25a,\\ 0.50b,\\ \\infty.\n\nIn lattice units:\n\\[\n(1/4,\\ 1/2,\\ \\infty)\n\\]\nTake reciprocals: (4,2,0). Reduce to the smallest integers: (210).\n\n**Answer: (a) (210)**"
   },
   {
     "id": "w4q2",
@@ -210,10 +390,10 @@
       "3.03 Å"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) 2.03 Å",
+    "formula": "Given a=3.52\\,\\text{Å}, planes (111).\n\\[\nd_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}}\n\\]\n\\[\nd_{111}=\\frac{3.52}{\\sqrt3}\\approx2.03\\,\\text{Å}\n\\]",
+    "explanation": "Given a=3.52\\,\\text{Å}, planes (111).\n\nFor a cubic crystal:\n\\[\nd_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}}\n\\]\n\\[\nd_{111}=\\frac{3.52}{\\sqrt3}\\approx2.03\\,\\text{Å}\n\\]\n\n**Answer: (c) 2.03\\,\\text{Å}**",
+    "notes": "Given a=3.52\\,\\text{Å}, planes (111).\n\nFor a cubic crystal:\n\\[\nd_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}}\n\\]\n\\[\nd_{111}=\\frac{3.52}{\\sqrt3}\\approx2.03\\,\\text{Å}\n\\]\n\n**Answer: (c) 2.03\\,\\text{Å}**"
   },
   {
     "id": "w4q3",
@@ -228,17 +408,17 @@
       "Volume is increases by 23.14%"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) Volume contracts by 8.14%",
+    "formula": "BCC: a_{\\rm BCC}=4r/\\sqrt3, with 2 atoms per cell:\n\\[\nV_{\\rm BCC/atom}=\\frac{a_{\\rm BCC}^3}{2}\n=\\frac{32r^3}{3\\sqrt3}\n\\]\nFCC: a_{\\rm FCC}=2\\sqrt2r, with 4 atoms per cell:\n\\[\nV_{\\rm FCC/atom}=\\frac{a_{\\rm FCC}^3}{4}=4\\sqrt2r^3\n\\]\n\\[\n\\%\\Delta V=\\frac{V_{\\rm FCC/atom}-V_{\\rm BCC/atom}}\n{V_{\\rm BCC/atom}}\\times100\\approx-8.14\\%\n\\]",
+    "explanation": "Assume the atomic radius r is unchanged.\n\nBCC: a_{\\rm BCC}=4r/\\sqrt3, with 2 atoms per cell:\n\\[\nV_{\\rm BCC/atom}=\\frac{a_{\\rm BCC}^3}{2}\n=\\frac{32r^3}{3\\sqrt3}\n\\]\n\nFCC: a_{\\rm FCC}=2\\sqrt2r, with 4 atoms per cell:\n\\[\nV_{\\rm FCC/atom}=\\frac{a_{\\rm FCC}^3}{4}=4\\sqrt2r^3\n\\]\n\n\\[\n\\%\\Delta V=\\frac{V_{\\rm FCC/atom}-V_{\\rm BCC/atom}}\n{V_{\\rm BCC/atom}}\\times100\\approx-8.14\\%\n\\]\nThe negative sign means the volume contracts.\n\n**Answer: (a) Volume contracts by 8.14%**",
+    "notes": "Assume the atomic radius r is unchanged.\n\nBCC: a_{\\rm BCC}=4r/\\sqrt3, with 2 atoms per cell:\n\\[\nV_{\\rm BCC/atom}=\\frac{a_{\\rm BCC}^3}{2}\n=\\frac{32r^3}{3\\sqrt3}\n\\]\n\nFCC: a_{\\rm FCC}=2\\sqrt2r, with 4 atoms per cell:\n\\[\nV_{\\rm FCC/atom}=\\frac{a_{\\rm FCC}^3}{4}=4\\sqrt2r^3\n\\]\n\n\\[\n\\%\\Delta V=\\frac{V_{\\rm FCC/atom}-V_{\\rm BCC/atom}}\n{V_{\\rm BCC/atom}}\\times100\\approx-8.14\\%\n\\]\nThe negative sign means the volume contracts.\n\n**Answer: (a) Volume contracts by 8.14%**"
   },
   {
     "id": "w4q4",
     "week": 4,
     "number": 4,
     "title": "Radius ratio for CsCl",
-    "question": "Calculate the value of cation to anion radius ratio \\((r/R)\\) for CsCl structure in the limiting case when the anions are as close as possible. Where \\(r\\) is the radius of the cation and \\(R\\) is the radius of the anion. CsCl structure can be viewed as a BCC lattice with atoms of one type (anion) at the corners and the atoms of the other type (cation) at the body centers.",
+    "question": "Calculate the value of cation to anion radius ratio (r/R) for CsCl structure in the limiting case when the anions are as close as possible. Where r is the radius of the cation and R is the radius of the anion. CsCl structure can be viewed as a BCC lattice with atoms of one type (anion) at the corners and the atoms of the other type (cation) at the body centers.",
     "options": [
       "0.023",
       "0.329",
@@ -246,10 +426,10 @@
       "0.732"
     ],
     "answer": 3,
-    "answerText": "(d)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(d) 0.732",
+    "formula": "Corner anions touch along the cube edge, so a=2R. The body-centred cation touches the corner anions along the body diagonal:\n\\[\nr+R=\\frac{\\sqrt3}{2}a=\\sqrt3R\n\\]\n\\[\n\\frac rR=\\sqrt3-1\\approx0.732\n\\]",
+    "explanation": "Corner anions touch along the cube edge, so a=2R. The body-centred cation touches the corner anions along the body diagonal:\n\\[\nr+R=\\frac{\\sqrt3}{2}a=\\sqrt3R\n\\]\n\\[\n\\frac rR=\\sqrt3-1\\approx0.732\n\\]\n\n**Answer: (d) 0.732**",
+    "notes": "Corner anions touch along the cube edge, so a=2R. The body-centred cation touches the corner anions along the body diagonal:\n\\[\nr+R=\\frac{\\sqrt3}{2}a=\\sqrt3R\n\\]\n\\[\n\\frac rR=\\sqrt3-1\\approx0.732\n\\]\n\n**Answer: (d) 0.732**"
   },
   {
     "id": "w4q5",
@@ -258,16 +438,16 @@
     "title": "Density of CsCl",
     "question": "Calculate the density of CsCl given that radii of the Cs⁺ ion = 1.65 Å and for Cl⁻ ion = 1.81 Å. Atomic weights of Cs and Cl are 132.9 gm/mol and 35.45 gm/mol respectively. Consider one formula unit contain within the unit cell.",
     "options": [
-      "\\(4.4 \\times 10^3\\ \\mathrm{kg/m^3}\\)",
-      "\\(5.5 \\times 10^3\\ \\mathrm{kg/m^3}\\)",
-      "\\(6.6 \\times 10^3\\ \\mathrm{kg/m^3}\\)",
-      "\\(7.7\\ \\mathrm{kg/m^3}\\)"
+      "4.4 \\times 10^3\\ \\mathrm{kg/m^3}",
+      "5.5 \\times 10^3\\ \\mathrm{kg/m^3}",
+      "6.6 \\times 10^3\\ \\mathrm{kg/m^3}",
+      "7.7\\ \\mathrm{kg/m^3}"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 4.4 \\times 10^3\\ \\mathrm{kg/m^3}",
+    "formula": "Given r_{\\rm Cs^+}=1.65\\,\\text{Å}, r_{\\rm Cl^-}=1.81\\,\\text{Å}, and molar mass M=132.9+35.45=168.35\\,\\text{g/mol}. CsCl has Z=1 formula unit per unit cell.\n\\[\n\\sqrt3a=2(r_{\\rm Cs^+}+r_{\\rm Cl^-})\n\\]\n\\[\na=\\frac{2(1.65+1.81)}{\\sqrt3}\\approx4.00\\,\\text{Å}\n\\]\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\approx\\frac{168.35}{(6.022\\times10^{23})(4.00\\times10^{-8})^3}\n\\]\nSince 1\\,\\text{g/cm}^3=10^3\\,\\text{kg/m}^3:\n\\[\n\\rho\\approx4.4\\times10^3\\,\\text{kg/m}^3\n\\]",
+    "explanation": "Given r_{\\rm Cs^+}=1.65\\,\\text{Å}, r_{\\rm Cl^-}=1.81\\,\\text{Å}, and molar mass M=132.9+35.45=168.35\\,\\text{g/mol}. CsCl has Z=1 formula unit per unit cell.\n\nIons touch along the body diagonal:\n\\[\n\\sqrt3a=2(r_{\\rm Cs^+}+r_{\\rm Cl^-})\n\\]\n\\[\na=\\frac{2(1.65+1.81)}{\\sqrt3}\\approx4.00\\,\\text{Å}\n\\]\n\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\approx\\frac{168.35}{(6.022\\times10^{23})(4.00\\times10^{-8})^3}\n\\approx4.4\\,\\text{g/cm}^3\n\\]\nSince 1\\,\\text{g/cm}^3=10^3\\,\\text{kg/m}^3:\n\\[\n\\rho\\approx4.4\\times10^3\\,\\text{kg/m}^3\n\\]\n\n**Answer: (a) 4.4\\times10^3\\,\\text{kg/m}^3**",
+    "notes": "Given r_{\\rm Cs^+}=1.65\\,\\text{Å}, r_{\\rm Cl^-}=1.81\\,\\text{Å}, and molar mass M=132.9+35.45=168.35\\,\\text{g/mol}. CsCl has Z=1 formula unit per unit cell.\n\nIons touch along the body diagonal:\n\\[\n\\sqrt3a=2(r_{\\rm Cs^+}+r_{\\rm Cl^-})\n\\]\n\\[\na=\\frac{2(1.65+1.81)}{\\sqrt3}\\approx4.00\\,\\text{Å}\n\\]\n\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\approx\\frac{168.35}{(6.022\\times10^{23})(4.00\\times10^{-8})^3}\n\\approx4.4\\,\\text{g/cm}^3\n\\]\nSince 1\\,\\text{g/cm}^3=10^3\\,\\text{kg/m}^3:\n\\[\n\\rho\\approx4.4\\times10^3\\,\\text{kg/m}^3\n\\]\n\n**Answer: (a) 4.4\\times10^3\\,\\text{kg/m}^3**"
   },
   {
     "id": "w4q6",
@@ -282,10 +462,10 @@
       "Hexagonal closed packed structure"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) Body centred cubic structure",
+    "formula": "Given M=130\\,\\text{g/mol}, a=6\\,\\text{Å}=6\\times10^{-8}\\,\\text{cm}, \\rho=2\\,\\text{g/cm}^3.\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\nZ=\\frac{\\rho N_Aa^3}{M}\n\\]\n\\[\nZ=\\frac{2(6.022\\times10^{23})(6\\times10^{-8})^3}{130}\n\\]",
+    "explanation": "Given M=130\\,\\text{g/mol}, a=6\\,\\text{Å}=6\\times10^{-8}\\,\\text{cm}, \\rho=2\\,\\text{g/cm}^3.\n\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\quad\\Rightarrow\\quad\nZ=\\frac{\\rho N_Aa^3}{M}\n\\]\n\\[\nZ=\\frac{2(6.022\\times10^{23})(6\\times10^{-8})^3}{130}\n\\approx2\n\\]\nTwo atoms per cubic unit cell corresponds to BCC.\n\n**Answer: (c) Body-centred cubic (BCC)**",
+    "notes": "Given M=130\\,\\text{g/mol}, a=6\\,\\text{Å}=6\\times10^{-8}\\,\\text{cm}, \\rho=2\\,\\text{g/cm}^3.\n\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\quad\\Rightarrow\\quad\nZ=\\frac{\\rho N_Aa^3}{M}\n\\]\n\\[\nZ=\\frac{2(6.022\\times10^{23})(6\\times10^{-8})^3}{130}\n\\approx2\n\\]\nTwo atoms per cubic unit cell corresponds to BCC.\n\n**Answer: (c) Body-centred cubic (BCC)**"
   },
   {
     "id": "w4q7",
@@ -300,10 +480,10 @@
       "1.23 Å"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 0.76 Å",
+    "formula": "Given a=2.14\\,\\text{Å}. In FCC, atoms touch along a face diagonal:\n\\[\n4r=\\sqrt2a\nr=\\frac{2.14}{2\\sqrt2}\\approx0.76\\,\\text{Å}\n\\]",
+    "explanation": "Given a=2.14\\,\\text{Å}. In FCC, atoms touch along a face diagonal:\n\\[\n4r=\\sqrt2a\n\\quad\\Rightarrow\\quad\nr=\\frac{2.14}{2\\sqrt2}\\approx0.76\\,\\text{Å}\n\\]\n\n**Answer: (a) 0.76\\,\\text{Å}**",
+    "notes": "Given a=2.14\\,\\text{Å}. In FCC, atoms touch along a face diagonal:\n\\[\n4r=\\sqrt2a\n\\quad\\Rightarrow\\quad\nr=\\frac{2.14}{2\\sqrt2}\\approx0.76\\,\\text{Å}\n\\]\n\n**Answer: (a) 0.76\\,\\text{Å}**"
   },
   {
     "id": "w4q8",
@@ -318,17 +498,17 @@
       "6.57 Å"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 5.63 Å",
+    "formula": "Given \\rho=2.17\\,\\text{g/cm}^3, M_{\\rm NaCl}=23+35.45=58.45\\,\\text{g/mol}, and Z=4.\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\na^3=\\frac{4(58.45)}{(2.17)(6.022\\times10^{23})}\n\\]\n**Caution:** In NaCl, the nearest same-species separation is a/\\sqrt2\\approx3.98\\,\\text{Å}, because each species forms an FCC sublattice. That value is absent from the listed options. If the quiz intends the lattice parameter, the expected option is **(a) 5.63\\,\\text{Å}**.",
+    "explanation": "Given \\rho=2.17\\,\\text{g/cm}^3, M_{\\rm NaCl}=23+35.45=58.45\\,\\text{g/mol}, and Z=4.\n\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\quad\\Rightarrow\\quad\na^3=\\frac{4(58.45)}{(2.17)(6.022\\times10^{23})}\n\\]\nThis gives a\\approx5.63\\,\\text{Å}.\n\n**Caution:** In NaCl, the nearest same-species separation is a/\\sqrt2\\approx3.98\\,\\text{Å}, because each species forms an FCC sublattice. That value is absent from the listed options. If the quiz intends the lattice parameter, the expected option is **(a) 5.63\\,\\text{Å}**.",
+    "notes": "Given \\rho=2.17\\,\\text{g/cm}^3, M_{\\rm NaCl}=23+35.45=58.45\\,\\text{g/mol}, and Z=4.\n\n\\[\n\\rho=\\frac{ZM}{N_Aa^3}\n\\quad\\Rightarrow\\quad\na^3=\\frac{4(58.45)}{(2.17)(6.022\\times10^{23})}\n\\]\nThis gives a\\approx5.63\\,\\text{Å}.\n\n**Caution:** In NaCl, the nearest same-species separation is a/\\sqrt2\\approx3.98\\,\\text{Å}, because each species forms an FCC sublattice. That value is absent from the listed options. If the quiz intends the lattice parameter, the expected option is **(a) 5.63\\,\\text{Å}**."
   },
   {
     "id": "w4q9",
     "week": 4,
     "number": 9,
     "title": "Interplanar spacing in a tetragonal crystal",
-    "question": "In a tetragonal crystal, the lattice parameters \\(a=b=2.42\\) Å and \\(c=1.74\\) Å. Find out the interplanar spacing between consecutive (101) planes in the tetragonal crystal structure.",
+    "question": "In a tetragonal crystal, the lattice parameters a=b=2.42 Å and c=1.74 Å. Find out the interplanar spacing between consecutive (101) planes in the tetragonal crystal structure.",
     "options": [
       "1.41 Å",
       "1.52 Å",
@@ -336,10 +516,10 @@
       "1.93 Å"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 1.41 Å",
+    "formula": "Given a=b=2.42\\,\\text{Å}, c=1.74\\,\\text{Å}, and (101).\n\\[\n\\frac1{d_{hkl}^2}=\\frac{h^2+k^2}{a^2}+\\frac{l^2}{c^2}\n\\]\n\\[\n\\frac1{d^2}=\\frac1{2.42^2}+\\frac1{1.74^2}\n\\]\n\\[\nd=\\frac1{\\sqrt{0.1709+0.3302}}\\approx1.41\\,\\text{Å}\n\\]",
+    "explanation": "Given a=b=2.42\\,\\text{Å}, c=1.74\\,\\text{Å}, and (101).\n\nFor a tetragonal crystal:\n\\[\n\\frac1{d_{hkl}^2}=\\frac{h^2+k^2}{a^2}+\\frac{l^2}{c^2}\n\\]\n\\[\n\\frac1{d^2}=\\frac1{2.42^2}+\\frac1{1.74^2}\n\\]\n\\[\nd=\\frac1{\\sqrt{0.1709+0.3302}}\\approx1.41\\,\\text{Å}\n\\]\n\n**Answer: (a) 1.41\\,\\text{Å}**",
+    "notes": "Given a=b=2.42\\,\\text{Å}, c=1.74\\,\\text{Å}, and (101).\n\nFor a tetragonal crystal:\n\\[\n\\frac1{d_{hkl}^2}=\\frac{h^2+k^2}{a^2}+\\frac{l^2}{c^2}\n\\]\n\\[\n\\frac1{d^2}=\\frac1{2.42^2}+\\frac1{1.74^2}\n\\]\n\\[\nd=\\frac1{\\sqrt{0.1709+0.3302}}\\approx1.41\\,\\text{Å}\n\\]\n\n**Answer: (a) 1.41\\,\\text{Å}**"
   },
   {
     "id": "w4q10",
@@ -348,16 +528,16 @@
     "title": "Conduction-electron density in FCC",
     "question": "A solid with FCC-structure has a lattice constant 4 Å. Each atom in the solid has a mass of 4 × 10⁻²⁶ kg. Calculate the number of conduction electrons in 1 m³ volume of the solid, if each of the atoms of the solid contributes two electrons to its conduction band.",
     "options": [
-      "\\(1.57 \\times 10^{28}/\\mathrm{m^3}\\)",
-      "\\(1.25 \\times 10^{29}/\\mathrm{m^3}\\)",
-      "\\(2.21 \\times 10^{30}/\\mathrm{m^3}\\)",
-      "\\(4.45 \\times 10^{32}/\\mathrm{m^3}\\)"
+      "1.57 \\times 10^{28}/\\mathrm{m^3}",
+      "1.25 \\times 10^{29}/\\mathrm{m^3}",
+      "2.21 \\times 10^{30}/\\mathrm{m^3}",
+      "4.45 \\times 10^{32}/\\mathrm{m^3}"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b) 1.25 \\times 10^{29}/\\mathrm{m^3}",
+    "formula": "Given a=4\\,\\text{Å}=4\\times10^{-10}\\,\\text{m}, 4 atoms per FCC unit cell, and 2 conduction electrons per atom.\n\\[\nV_{\\rm cell}=a^3=(4\\times10^{-10})^3=6.4\\times10^{-29}\\,\\text{m}^3\n\\]\n\\[\nn_{\\rm atoms}=\\frac4{6.4\\times10^{-29}}\n=6.25\\times10^{28}\\,\\text{m}^{-3}\n\\]\n\\[\nn_e=2n_{\\rm atoms}=1.25\\times10^{29}\\,\\text{m}^{-3}\n\\]",
+    "explanation": "Given a=4\\,\\text{Å}=4\\times10^{-10}\\,\\text{m}, 4 atoms per FCC unit cell, and 2 conduction electrons per atom.\n\n\\[\nV_{\\rm cell}=a^3=(4\\times10^{-10})^3=6.4\\times10^{-29}\\,\\text{m}^3\n\\]\n\\[\nn_{\\rm atoms}=\\frac4{6.4\\times10^{-29}}\n=6.25\\times10^{28}\\,\\text{m}^{-3}\n\\]\n\\[\nn_e=2n_{\\rm atoms}=1.25\\times10^{29}\\,\\text{m}^{-3}\n\\]\n\n**Answer: (b) 1.25\\times10^{29}\\,\\text{m}^{-3}**",
+    "notes": "Given a=4\\,\\text{Å}=4\\times10^{-10}\\,\\text{m}, 4 atoms per FCC unit cell, and 2 conduction electrons per atom.\n\n\\[\nV_{\\rm cell}=a^3=(4\\times10^{-10})^3=6.4\\times10^{-29}\\,\\text{m}^3\n\\]\n\\[\nn_{\\rm atoms}=\\frac4{6.4\\times10^{-29}}\n=6.25\\times10^{28}\\,\\text{m}^{-3}\n\\]\n\\[\nn_e=2n_{\\rm atoms}=1.25\\times10^{29}\\,\\text{m}^{-3}\n\\]\n\n**Answer: (b) 1.25\\times10^{29}\\,\\text{m}^{-3}**"
   },
   {
     "id": "w5q1",
@@ -366,16 +546,16 @@
     "title": "Nearest-neighbour distance in BCC",
     "question": "The nearest neighbor distance in BCC structure is:",
     "options": [
-      "\\(\\frac{a\\sqrt{3}}{2}\\)",
-      "\\(\\frac{a\\sqrt{3}}{\\sqrt{2}}\\)",
-      "\\(\\frac{2a}{\\sqrt{3}}\\)",
-      "\\(\\frac{3a}{\\sqrt{2}}\\)"
+      "\\frac{a\\sqrt{3}}{2}",
+      "\\frac{a\\sqrt{3}}{\\sqrt{2}}",
+      "\\frac{2a}{\\sqrt{3}}",
+      "\\frac{3a}{\\sqrt{2}}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "- (a) \\frac{a\\sqrt{3}}{2}\n- (b) \\frac{a\\sqrt{3}}{\\sqrt{2}}\n- (c) \\frac{2a}{\\sqrt{3}}\n- (d) \\frac{3a}{\\sqrt{2}}\n**Formula(s):** BCC atoms touch along the body diagonal: \\sqrt3a=4r. Nearest-neighbour distance =2r.\n**Memory trick/Exam trap:** BCC nearest-neighbour distance is half the body diagonal; the radius is r=\\sqrt3a/4.",
+    "explanation": "**Question type:** Crystal geometry.",
+    "notes": "**Question type:** Crystal geometry."
   },
   {
     "id": "w5q2",
@@ -384,95 +564,95 @@
     "title": "Unoccupied volume fraction in BCC",
     "question": "The fraction of volume unoccupied in the unit cell of a BCC lattice is:",
     "options": [
-      "\\(\\frac{8-\\pi\\sqrt3}{8}\\)",
-      "\\(\\frac{\\pi\\sqrt3}{8}\\)",
-      "\\(\\frac{6-\\pi\\sqrt2}{6}\\)",
-      "\\(\\frac{\\pi}{3\\sqrt2}\\)"
+      "\\frac{8-\\pi\\sqrt3}{8}",
+      "\\frac{\\pi\\sqrt3}{8}",
+      "\\frac{6-\\pi\\sqrt2}{6}",
+      "\\frac{\\pi}{3\\sqrt2}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "- (a) \\frac{8-\\pi\\sqrt3}{8}\n- (b) \\frac{\\pi\\sqrt3}{8}\n- (c) \\frac{6-\\pi\\sqrt2}{6}\n- (d) \\frac{\\pi}{3\\sqrt2}\n**Formula(s):** BCC packing fraction =\\pi\\sqrt3/8; unoccupied fraction =1-\\text{packing fraction}.\n1-\\frac{\\pi\\sqrt3}{8}=\\boxed{\\frac{8-\\pi\\sqrt3}{8}}",
+    "explanation": "**Question type:** Packing fraction.",
+    "notes": "**Question type:** Packing fraction."
   },
   {
     "id": "w5q3",
     "week": 5,
     "number": 3,
     "title": "Lattice parameter of an FCC metal",
-    "question": "The mass of each atom of a metal is \\(w\\) and its density is \\(\\rho\\). If the metal is FCC, the side \\(a\\) of its conventional cubic cell is given by:",
+    "question": "The mass of each atom of a metal is w and its density is \\rho. If the metal is FCC, the side a of its conventional cubic cell is given by:",
     "options": [
-      "\\(\\left(\\frac{w}{\\rho}\\right)^{1/3}\\)",
-      "\\(\\left(\\frac{2w}{\\rho}\\right)^{1/3}\\)",
-      "\\(\\left(\\frac{4w}{\\rho}\\right)^{1/3}\\)",
-      "\\(\\left(\\frac{6w}{\\rho}\\right)^{1/3}\\)"
+      "\\left(\\frac{w}{\\rho}\\right)^{1/3}",
+      "\\left(\\frac{2w}{\\rho}\\right)^{1/3}",
+      "\\left(\\frac{4w}{\\rho}\\right)^{1/3}",
+      "\\left(\\frac{6w}{\\rho}\\right)^{1/3}"
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "The mass of each atom of a metal is w and its density is \\rho. If the metal is FCC, the side a of its conventional cubic cell is given by:\n- (a) \\left(\\frac{w}{\\rho}\\right)^{1/3}\n- (b) \\left(\\frac{2w}{\\rho}\\right)^{1/3}\n- (c) \\left(\\frac{4w}{\\rho}\\right)^{1/3}\n- (d) \\left(\\frac{6w}{\\rho}\\right)^{1/3}\n**Given:** Atomic mass w, density \\rho, FCC structure.\n\\rho=\\frac{\\text{unit-cell mass}}{\\text{unit-cell volume}}=\\frac{Zw}{a^3}\nFor FCC, Z=4.\n**Memory trick/Exam trap:** Atoms per conventional cell: SC =1, BCC =2, FCC =4. Keep units consistent.",
+    "explanation": "**Question type:** Density–unit-cell relation.",
+    "notes": "**Question type:** Density–unit-cell relation."
   },
   {
     "id": "w5q4",
     "week": 5,
     "number": 4,
     "title": "Miller indices of a plane through three lattice points",
-    "question": "Find the Miller indices of the plane containing the three lattice points with position vectors\n\\[\n\\vec r_1=\\vec a-\\vec b,\\quad \\vec r_2=2\\vec a+\\vec c,\\quad \\vec r_3=3\\vec b+\\vec c,\n\\]\nrespectively. Consider \\(\\vec a,\\vec b,\\vec c\\) as unit primitive vectors.",
+    "question": "Find the Miller indices of the plane containing the three lattice points with position vectors\n\\[\n\\vec r_1=\\vec a-\\vec b,\\quad \\vec r_2=2\\vec a+\\vec c,\\quad \\vec r_3=3\\vec b+\\vec c,\n\\]\nrespectively. Consider \\vec a,\\vec b,\\vec c as unit primitive vectors.\n\n**Options (as visible):**",
     "options": [
-      "\\((325)\\)",
-      "\\((32\\bar5)\\)",
-      "\\((121)\\)",
-      "\\((1\\bar21)\\)"
+      "325",
+      "32\\bar5",
+      "121",
+      "1\\bar21"
     ],
     "answer": 1,
     "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "\\vec r_1=\\vec a-\\vec b,\\quad \\vec r_2=2\\vec a+\\vec c,\\quad \\vec r_3=3\\vec b+\\vec c,\n**Given:** Coordinates P_1=(1,-1,0), P_2=(2,0,1), P_3=(0,3,1).\nP_2-P_1=(1,1,1),\\quad P_3-P_1=(-1,4,1)\n(1,1,1)\\times(-1,4,1)=(-3,-2,5)\n-3(x-1)-2(y+1)+5z=0\nor -3x-2y+5z+1=0. Intercepts are x=1/3,\\ y=1/2,\\ z=-1/5; reciprocals give (3,2,-5).",
+    "explanation": "**Question type:** Plane through position vectors → Miller indices.",
+    "notes": "**Question type:** Plane through position vectors → Miller indices."
   },
   {
     "id": "w5q5",
     "week": 5,
     "number": 5,
     "title": "FCC unit-cell volume from nearest-neighbour distance",
-    "question": "The nearest-neighbour distance in an FCC crystal is \\(0.2\\,\\text{nm}\\). Find the volume of the unit cube.",
+    "question": "The nearest-neighbour distance in an FCC crystal is 0.2\\,\\text{nm}. Find the volume of the unit cube.",
     "options": [
-      "\\(0.0226\\,\\text{nm}^3\\)",
-      "\\(0.0289\\,\\text{nm}^3\\)",
-      "\\(0.0312\\,\\text{nm}^3\\)",
-      "\\(0.0412\\,\\text{nm}^3\\)"
+      "0.0226\\,\\text{nm}^3",
+      "0.0289\\,\\text{nm}^3",
+      "0.0312\\,\\text{nm}^3",
+      "0.0412\\,\\text{nm}^3"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "**Given:** d_{\\rm nn}=0.2\\,\\text{nm}.\n**Formula(s):** FCC atoms touch along the face diagonal: a\\sqrt2=4r, and d_{\\rm nn}=2r. Hence d_{\\rm nn}=a/\\sqrt2.\n**Intuition/Approach:** Find a=\\sqrt2d_{\\rm nn}, then cube it to get the unit-cell volume.\na=\\sqrt2(0.2)=0.2828\\,\\text{nm},\\quad V=a^3\\approx0.0226\\,\\text{nm}^3",
+    "explanation": "**Question type:** FCC geometry.",
+    "notes": "**Question type:** FCC geometry."
   },
   {
     "id": "w5q6",
     "week": 5,
     "number": 6,
     "title": "Angle between [111] and [100]",
-    "question": "Find the angle between \\([111]\\) and \\([100]\\) directions in a cubic lattice.",
+    "question": "Find the angle between [111] and [100] directions in a cubic lattice.",
     "options": [
-      "\\(22.82^\\circ\\)",
-      "\\(43.47^\\circ\\)",
-      "\\(54.73^\\circ\\)",
-      "\\(82.12^\\circ\\)"
+      "22.82^\\circ",
+      "43.47^\\circ",
+      "54.73^\\circ",
+      "82.12^\\circ"
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "\\cos\\theta=\\frac{u_1u_2+v_1v_2+w_1w_2}{\\sqrt{u_1^2+v_1^2+w_1^2}\\sqrt{u_2^2+v_2^2+w_2^2}}\n\\cos\\theta=\\frac{1}{\\sqrt3},\\quad \\theta=\\cos^{-1}(1/\\sqrt3)=54.73^\\circ",
+    "explanation": "**Question type:** Angle between crystallographic directions.",
+    "notes": "**Question type:** Angle between crystallographic directions."
   },
   {
     "id": "w5q7",
     "week": 5,
     "number": 7,
     "title": "Identify copper's crystal structure from density",
-    "question": "Metallic copper forms cubic crystals with lattice parameter \\(0.36\\,\\text{nm}\\). If its specific gravity is \\(9.04\\) and atomic weight is \\(63.5\\), find its crystal structure.",
+    "question": "Metallic copper forms cubic crystals with lattice parameter 0.36\\,\\text{nm}. If its specific gravity is 9.04 and atomic weight is 63.5, find its crystal structure.",
     "options": [
       "Simple cubic",
       "Body-centred cubic",
@@ -481,63 +661,63 @@
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "**Given:** a=3.6\\times10^{-10}\\,\\text{m}, specific gravity =9.04, M=0.0635\\,\\text{kg/mol}, N_A=6.022\\times10^{23}\\,\\text{mol}^{-1}.\nSG=\\frac{\\rho}{\\rho_{\\rm water}}\\Rightarrow \\rho=9.04\\,\\text{g/cm}^3=9040\\,\\text{kg/m}^3\n\\rho=\\frac{ZM}{N_Aa^3}\\Rightarrow Z=\\frac{\\rho N_Aa^3}{M}\nZ=\\frac{(9040)(6.022\\times10^{23})(3.6\\times10^{-10})^3}{0.0635}\\approx4\n**Memory trick/Exam trap:** Specific gravity is dimensionless. Convert it to density using water's density. SC/BCC/FCC have Z=1/2/4, respectively.",
+    "explanation": "**Question type:** Density and atoms per unit cell.",
+    "notes": "**Question type:** Density and atoms per unit cell."
   },
   {
     "id": "w5q8",
     "week": 5,
     "number": 8,
     "title": "Intercepts for an orthorhombic crystal plane",
-    "question": "An orthorhombic crystal has \\(a=1.21\\,\\text{Å}\\), \\(b=1.84\\,\\text{Å}\\), \\(c=1.97\\,\\text{Å}\\). A plane with Miller indices \\((23\\bar1)\\) cuts an intercept of \\(1.21\\,\\text{Å}\\) along the x-axis. Find the intercepts along y and z.",
+    "question": "An orthorhombic crystal has a=1.21\\,\\text{Å}, b=1.84\\,\\text{Å}, c=1.97\\,\\text{Å}. A plane with Miller indices (23\\bar1) cuts an intercept of 1.21\\,\\text{Å} along the x-axis. Find the intercepts along y and z.",
     "options": [
-      "\\(1.23\\,\\text{Å},\\ -3.94\\,\\text{Å}\\)",
-      "\\(1.43\\,\\text{Å},\\ -4.26\\,\\text{Å}\\)",
-      "\\(1.57\\,\\text{Å},\\ -5.26\\,\\text{Å}\\)",
-      "\\(1.76\\,\\text{Å},\\ -6.12\\,\\text{Å}\\)"
+      "1.23\\,\\text{Å},\\ -3.94\\,\\text{Å}",
+      "1.43\\,\\text{Å},\\ -4.26\\,\\text{Å}",
+      "1.57\\,\\text{Å},\\ -5.26\\,\\text{Å}",
+      "1.76\\,\\text{Å},\\ -6.12\\,\\text{Å}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "An orthorhombic crystal has a=1.21\\,\\text{Å}, b=1.84\\,\\text{Å}, c=1.97\\,\\text{Å}. A plane with Miller indices (23\\bar1) cuts an intercept of 1.21\\,\\text{Å} along the x-axis. Find the intercepts along y and z.\n**Given:** a=1.21\\,\\text{Å}, b=1.84\\,\\text{Å}, c=1.97\\,\\text{Å}; indices (2,3,-1); x-intercept =1.21\\,\\text{Å}.\n**Intuition/Approach:** The proportional x-intercept is a/2. To make it equal to the given a=1.21\\,\\text{Å}, multiply all three intercepts by 2.\ny=2(1.84/3)=1.23\\,\\text{Å},\\quad z=2(1.97/-1)=-3.94\\,\\text{Å}",
+    "explanation": "**Question type:** Miller indices → axis intercepts.",
+    "notes": "**Question type:** Miller indices → axis intercepts."
   },
   {
     "id": "w5q9",
     "week": 5,
     "number": 9,
     "title": "X-ray wavelength from Bragg reflection",
-    "question": "The spacing between successive \\((100)\\) planes in NaCl is \\(2.82\\,\\text{Å}\\). X-rays give first-order Bragg reflection at glancing angle \\(8.8^\\circ\\). Calculate the wavelength.",
+    "question": "The spacing between successive (100) planes in NaCl is 2.82\\,\\text{Å}. X-rays give first-order Bragg reflection at glancing angle 8.8^\\circ. Calculate the wavelength.",
     "options": [
-      "\\(0.863\\,\\text{Å}\\)",
-      "\\(1.12\\,\\text{Å}\\)",
-      "\\(1.32\\,\\text{Å}\\)",
-      "\\(1.54\\,\\text{Å}\\)"
+      "0.863\\,\\text{Å}",
+      "1.12\\,\\text{Å}",
+      "1.32\\,\\text{Å}",
+      "1.54\\,\\text{Å}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "**Given:** d=2.82\\,\\text{Å}, \\theta=8.8^\\circ, n=1.\n**Formula(s):** n\\lambda=2d\\sin\\theta.\n**Intuition/Approach:** First order means n=1. Substitute the spacing and glancing angle.\n\\lambda=2(2.82)\\sin(8.8^\\circ)\\approx0.863\\,\\text{Å}",
+    "explanation": "**Question type:** Bragg's law.",
+    "notes": "**Question type:** Bragg's law."
   },
   {
     "id": "w5q10",
     "week": 5,
     "number": 10,
     "title": "Smallest Bragg angle in NaCl",
-    "question": "For NaCl, the cell-edge \\(a=0.563\\,\\text{nm}\\). The smallest angle at which Bragg reflection can occur corresponds to planes of indices:",
+    "question": "For NaCl, the cell-edge a=0.563\\,\\text{nm}. The smallest angle at which Bragg reflection can occur corresponds to planes of indices:",
     "options": [
-      "\\((100)\\)",
-      "\\((110)\\)",
-      "\\((111)\\)",
-      "\\((200)\\)"
+      "100",
+      "110",
+      "111",
+      "200"
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "For NaCl, the cell-edge a=0.563\\,\\text{nm}. The smallest angle at which Bragg reflection can occur corresponds to planes of indices:\nd_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}},\\quad n\\lambda=2d\\sin\\theta\nd_{111}=a/\\sqrt3,\\quad d_{200}=a/2,\\quad a/\\sqrt3>a/2\n| Q1 | (a) | a\\sqrt3/2 |\n| Q2 | (a) | (8-\\pi\\sqrt3)/8 |\n| Q3 | (c) | (4w/\\rho)^{1/3} |",
+    "explanation": "**Question type:** Interplanar spacing and allowed FCC reflections.",
+    "notes": "**Question type:** Interplanar spacing and allowed FCC reflections."
   },
   {
     "id": "w6q1",
@@ -552,10 +732,10 @@
       "4.27 Å"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b) 2.87 Å",
+    "formula": "**Given:** (\\lambda=0.5,\\text{Å}),\n(\\theta=5\\^\\circ), order (n=1).\n\\[ n\\lambda=2d\\sin\\theta\nd=\\frac{n\\lambda}{2\\sin\\theta} \\]\nd=\\frac{0.5}{2\\sin5^\\circ}\\approx2.87,\\text{Å}",
+    "explanation": "**Question type:** Bragg's law; calculate interplanar spacing.\n\n**Given:** (\\lambda=0.5,\\text{Å}),\n(\\theta=5\\^\\circ), order (n=1).\n\n\\[ n\\lambda=2d\\sin\\theta\n\\quad\\Rightarrow\\quad\nd=\\frac{n\\lambda}{2\\sin\\theta} \\]\n\n\\[\nd=\\frac{0.5}{2\\sin5^\\circ}\\approx2.87,\\text{Å}\n\\]",
+    "notes": "**Question type:** Bragg's law; calculate interplanar spacing.\n\n**Given:** (\\lambda=0.5,\\text{Å}),\n(\\theta=5\\^\\circ), order (n=1).\n\n\\[ n\\lambda=2d\\sin\\theta\n\\quad\\Rightarrow\\quad\nd=\\frac{n\\lambda}{2\\sin\\theta} \\]\n\n\\[\nd=\\frac{0.5}{2\\sin5^\\circ}\\approx2.87,\\text{Å}\n\\]"
   },
   {
     "id": "w6q2",
@@ -570,10 +750,10 @@
       "4.23 Å"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 1.44 Å",
+    "formula": "**Given:** (\\theta=18\\^\\circ),\n(\\lambda=1.54,\\text{Å}), first order, simple cubic.\nFor (100), (d\\_{100}=a):\na=\\frac{\\lambda}{2\\sin18^\\circ}\\approx2.49,\\text{Å}\n\\[ d\\_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}} \\]\nd\\_{111}=\\frac{2.49}{\\sqrt3}\\approx1.44,\\text{Å}",
+    "explanation": "**Question type:** Bragg's law plus cubic interplanar spacing.\n\n**Given:** (\\theta=18\\^\\circ),\n(\\lambda=1.54,\\text{Å}), first order, simple cubic.\n\nFor (100), (d\\_{100}=a):\n\n\\[\na=\\frac{\\lambda}{2\\sin18^\\circ}\\approx2.49,\\text{Å}\n\\]\n\nFor cubic crystals:\n\n\\[ d\\_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}} \\]\n\n\\[\nd\\_{111}=\\frac{2.49}{\\sqrt3}\\approx1.44,\\text{Å}\n\\]",
+    "notes": "**Question type:** Bragg's law plus cubic interplanar spacing.\n\n**Given:** (\\theta=18\\^\\circ),\n(\\lambda=1.54,\\text{Å}), first order, simple cubic.\n\nFor (100), (d\\_{100}=a):\n\n\\[\na=\\frac{\\lambda}{2\\sin18^\\circ}\\approx2.49,\\text{Å}\n\\]\n\nFor cubic crystals:\n\n\\[ d\\_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}} \\]\n\n\\[\nd\\_{111}=\\frac{2.49}{\\sqrt3}\\approx1.44,\\text{Å}\n\\]"
   },
   {
     "id": "w6q3",
@@ -588,10 +768,10 @@
       "14"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) 10",
+    "formula": "**Given:** (\\lambda=0.563,\\text{Å}),\n(d=a=3.03,\\text{Å}).\nn\\lambda=2d\\sin\\theta,\\qquad \\sin\\theta\\leq1\nn\\_{\\max}=\\left\\lfloor\\frac{2d}{\\lambda}\\right\\rfloor\n=\\left\\lfloor\\frac{2(3.03)}{0.563}\\right\\rfloor\n=\\lfloor10.76\\rfloor=10 \\]\n(2d/\\lambda); do not round up.",
+    "explanation": "**Question type:** Maximum possible diffraction order.\n\n**Given:** (\\lambda=0.563,\\text{Å}),\n(d=a=3.03,\\text{Å}).\n\n\\[\nn\\lambda=2d\\sin\\theta,\\qquad \\sin\\theta\\leq1\n\\]\n\n\\[\nn\\_{\\max}=\\left\\lfloor\\frac{2d}{\\lambda}\\right\\rfloor\n=\\left\\lfloor\\frac{2(3.03)}{0.563}\\right\\rfloor\n=\\lfloor10.76\\rfloor=10 \\]",
+    "notes": "**Question type:** Maximum possible diffraction order.\n\n**Given:** (\\lambda=0.563,\\text{Å}),\n(d=a=3.03,\\text{Å}).\n\n\\[\nn\\lambda=2d\\sin\\theta,\\qquad \\sin\\theta\\leq1\n\\]\n\n\\[\nn\\_{\\max}=\\left\\lfloor\\frac{2d}{\\lambda}\\right\\rfloor\n=\\left\\lfloor\\frac{2(3.03)}{0.563}\\right\\rfloor\n=\\lfloor10.76\\rfloor=10 \\]"
   },
   {
     "id": "w6q4",
@@ -600,34 +780,34 @@
     "title": "Miller Indices from Powder Diffraction Angles",
     "question": "In a powder diffraction experiment with x-rays of wavelength\n(\\lambda=1.54) Å, the first order Bragg reflection occur from a\nmonatomic cubic crystal for (\\theta) values: 17.4°, 20.3°,\n29.3°, 35.1° and 36.9°. Determine the ratio of Miller indices of\ndiffraction planes.",
     "options": [
-      "(111), (200), (220), (311), (222)",
-      "(100), (210), (221), (322), (232)",
-      "(110), (111), (211), (223), (332)",
-      "(121), (112), (252), (313), (333)"
+      "111), (200), (220), (311), (222",
+      "100), (210),\n(221), (322), (232",
+      "110), (111), (211), (223), (332",
+      "121),\n(112), (252), (313), (333"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) (111), (200), (220), (311), (222)",
+    "formula": "(\\lambda=2d\\sin\\theta). Since\n(d=a/\\sqrt{h^2+k^2+l^2}),",
+    "explanation": "**Question type:** Index diffraction peaks for a cubic crystal.\n\nFor first-order diffraction,\n(\\lambda=2d\\sin\\theta). Since\n(d=a/\\sqrt{h^2+k^2+l^2}),\n\n\\[ \\sin^2\\theta\\propto h^2+k^2+l^2 \\]\n\nThe measured angles produce ratios approximately (3:4:8:11:12),\ncorresponding to the sums of squared Miller indices in option (a).",
+    "notes": "**Question type:** Index diffraction peaks for a cubic crystal.\n\nFor first-order diffraction,\n(\\lambda=2d\\sin\\theta). Since\n(d=a/\\sqrt{h^2+k^2+l^2}),\n\n\\[ \\sin^2\\theta\\propto h^2+k^2+l^2 \\]\n\nThe measured angles produce ratios approximately (3:4:8:11:12),\ncorresponding to the sums of squared Miller indices in option (a)."
   },
   {
     "id": "w6q5",
     "week": 6,
     "number": 5,
     "title": "Glancing Angle for Third-Order Diffraction from KCl",
-    "question": "\"... formula unit of KCl. Find the glancing angle at which an x-ray of\nwavelength (\\lambda=1.787) Å is reflected from (100) planes in\nthe third order. Given: density of KCl = 1990 kg/m³ and its molecular\nweight is 74.6 gm/mol.\"",
+    "question": "Original question (opening cut off in screenshot)**\n\n\"... formula unit of KCl. Find the glancing angle at which an x-ray of\nwavelength (\\lambda=1.787) Å is reflected from (100) planes in\nthe third order. Given: density of KCl = 1990 kg/m³ and its molecular\nweight is 74.6 gm/mol.\"",
     "options": [
       "22.6°",
       "42.6°",
       "64.5°",
-      "74.8°"
+      "74.8°\n\n**Calculation check**\n\nRock-salt KCl has (Z_f=4) formula units per conventional cubic unit\ncell. With (M=0.0746,\\text{kg/mol}),\n\n\\[ a=\\left(\\frac{Z_fM}{\\rho N_A}\\right)\\^{1/3}\n\\]\n\nUsing (\\rho=1990,\\text{kg/m}\\^3) and\n(N_A=6.022\\times10^{23},\\text{mol}^{-1}) gives\n(a\\approx6.29,\\text{Å}). Since (d\\_{100}=a),\n\n\\[ \\sin\\theta=\\frac{3(1.787)}{2(6.29)}\n\\quad\\Rightarrow\\quad \\theta\\approx25.2\\^\\circ\n\\]\n\n**Discrepancy:** (25.2\\^\\circ) is not listed. Option"
     ],
     "answer": null,
-    "answerText": "_No correct option was explicitly recorded in the source file._",
-    "formula": "",
-    "explanation": "Rock-salt KCl has (Z_f=4) formula units per conventional cubic unit\ncell. With (M=0.0746,\\text{kg/mol}),\n\n\\[ a=\\left(\\frac{Z_fM}{\\rho N_A}\\right)^{1/3}\n\\]\n\nUsing (\\rho=1990,\\text{kg/m}^3) and\n(N_A=6.022\\times10^{23},\\text{mol}^{-1}) gives\n(a\\approx6.29,\\text{Å}). Since (d_{100}=a),\n\n\\[ \\sin\\theta=\\frac{3(1.787)}{2(6.29)}\n\\quad\\Rightarrow\\quad \\theta\\approx25.2^\\circ\n\\]",
-    "notes": "Rock-salt KCl has (Z_f=4) formula units per conventional cubic unit\ncell. With (M=0.0746,\\text{kg/mol}),\n\n\\[ a=\\left(\\frac{Z_fM}{\\rho N_A}\\right)^{1/3}\n\\]\n\nUsing (\\rho=1990,\\text{kg/m}^3) and\n(N_A=6.022\\times10^{23},\\text{mol}^{-1}) gives\n(a\\approx6.29,\\text{Å}). Since (d_{100}=a),\n\n\\[ \\sin\\theta=\\frac{3(1.787)}{2(6.29)}\n\\quad\\Rightarrow\\quad \\theta\\approx25.2^\\circ\n\\]"
+    "answerText": "_Not explicitly stated in source._",
+    "formula": "unit cell; do not assume (Z_f=1) for rock-salt KCl.",
+    "explanation": "**Memory trick / exam trap:** Use the actual number of formula units per\nunit cell; do not assume (Z_f=1) for rock-salt KCl.",
+    "notes": "**Memory trick / exam trap:** Use the actual number of formula units per\nunit cell; do not assume (Z_f=1) for rock-salt KCl."
   },
   {
     "id": "w6q6",
@@ -642,10 +822,10 @@
       "64.28 mm, 74.78 mm"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 34.68 mm, 40.08 mm",
+    "formula": "\\[ S=4R\\theta \\]\n\\[ d\\_{111}=\\frac{4.08}{\\sqrt3}=2.355,\\text{Å} \\]\n\\theta\\_1=\\sin\\^{-1}\\left(\\frac{0.71}{2d_{111}}\\right)\nS_1=4(57.3)(8.67\\pi/180)\\approx34.68,\\text{mm}\nFor (200), (d\\_{200}=4.08/2=2.04,\\text{Å}):\n\\theta\\_2=\\sin\\^{-1}\\left(\\frac{0.71}{2(2.04)}\\right)\nS_2=4(57.3)(10.02\\pi/180)\\approx40.08,\\text{mm}\n**Memory trick / exam trap:** Use (S=4R\\theta) and convert",
+    "explanation": "**Question type:** Powder camera geometry plus FCC reflection sequence.\n\n\\[ S=4R\\theta \\]\n\nHere (\\theta) is in radians. For FCC, the first allowed\nreflections are (111) and (200).\n\nFor (111):\n\n\\[ d\\_{111}=\\frac{4.08}{\\sqrt3}=2.355,\\text{Å} \\]\n\n\\[\n\\theta\\_1=\\sin\\^{-1}\\left(\\frac{0.71}{2d_{111}}\\right)\n\\approx8.67\\^\\circ \\]\n\n\\[\nS_1=4(57.3)(8.67\\pi/180)\\approx34.68,\\text{mm}\n\\]\n\nFor (200), (d\\_{200}=4.08/2=2.04,\\text{Å}):\n\n\\[\n\\theta\\_2=\\sin\\^{-1}\\left(\\frac{0.71}{2(2.04)}\\right)\n\\approx10.02\\^\\circ \\]\n\n\\[\nS_2=4(57.3)(10.02\\pi/180)\\approx40.08,\\text{mm}\n\\]",
+    "notes": "**Question type:** Powder camera geometry plus FCC reflection sequence.\n\n\\[ S=4R\\theta \\]\n\nHere (\\theta) is in radians. For FCC, the first allowed\nreflections are (111) and (200).\n\nFor (111):\n\n\\[ d\\_{111}=\\frac{4.08}{\\sqrt3}=2.355,\\text{Å} \\]\n\n\\[\n\\theta\\_1=\\sin\\^{-1}\\left(\\frac{0.71}{2d_{111}}\\right)\n\\approx8.67\\^\\circ \\]\n\n\\[\nS_1=4(57.3)(8.67\\pi/180)\\approx34.68,\\text{mm}\n\\]\n\nFor (200), (d\\_{200}=4.08/2=2.04,\\text{Å}):\n\n\\[\n\\theta\\_2=\\sin\\^{-1}\\left(\\frac{0.71}{2(2.04)}\\right)\n\\approx10.02\\^\\circ \\]\n\n\\[\nS_2=4(57.3)(10.02\\pi/180)\\approx40.08,\\text{mm}\n\\]"
   },
   {
     "id": "w6q7",
@@ -660,10 +840,10 @@
       "3.85 Å"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 2.51 Å",
+    "formula": "S=4R\\theta,\\quad \\lambda=2d\\sin\\theta,\\quad\nd\\_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}} \\]\n\\[ \\theta\\_1=\\frac{56.8}{4(57.30)}\n=0.2478,\\text{rad}\\approx14.20\\^\\circ \\]\nd\\_{111}=\\frac{0.71}{2\\sin14.20^\\circ}\\approx1.45,\\text{Å}\n\\[ a=d\\_{111}\\sqrt3\\approx2.51,\\text{Å} \\]",
+    "explanation": "**Question type:** Find lattice parameter from powder camera data.\n\n\\[\nS=4R\\theta,\\quad \\lambda=2d\\sin\\theta,\\quad\nd\\_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}} \\]\n\nFor the first line:\n\n\\[ \\theta\\_1=\\frac{56.8}{4(57.30)}\n=0.2478,\\text{rad}\\approx14.20\\^\\circ \\]\n\nThe first line is consistent with (111):\n\n\\[\nd\\_{111}=\\frac{0.71}{2\\sin14.20^\\circ}\\approx1.45,\\text{Å}\n\\]\n\n\\[ a=d\\_{111}\\sqrt3\\approx2.51,\\text{Å} \\]",
+    "notes": "**Question type:** Find lattice parameter from powder camera data.\n\n\\[\nS=4R\\theta,\\quad \\lambda=2d\\sin\\theta,\\quad\nd\\_{hkl}=\\frac{a}{\\sqrt{h^2+k^2+l^2}} \\]\n\nFor the first line:\n\n\\[ \\theta\\_1=\\frac{56.8}{4(57.30)}\n=0.2478,\\text{rad}\\approx14.20\\^\\circ \\]\n\nThe first line is consistent with (111):\n\n\\[\nd\\_{111}=\\frac{0.71}{2\\sin14.20^\\circ}\\approx1.45,\\text{Å}\n\\]\n\n\\[ a=d\\_{111}\\sqrt3\\approx2.51,\\text{Å} \\]"
   },
   {
     "id": "w6q8",
@@ -672,16 +852,16 @@
     "title": "Reciprocal Lattice Vectors in 2D",
     "question": "The primitive translation vectors of a two dimensional lattice are\n(\\vec a=2\\hat i+\\hat j),\n(\\vec b=2\\hat j). Determine the primitive translational\nvectors of its reciprocal lattice.",
     "options": [
-      "\\vec a^*=\\pi\\hat i,\\quad \\vec b^*=\\frac{\\pi}{2}(2\\hat j-\\hat i)",
-      "\\vec a^*=2\\pi\\hat i,\\quad \\vec b^*=\\pi(2\\hat j-\\hat i)",
-      "\\vec a^*=3\\pi\\hat i,\\quad \\vec b^*=\\frac{\\pi}{2}(2\\hat j+\\hat i)",
-      "\\vec a^*=4\\pi\\hat i,\\quad \\vec b^*=\\pi(\\hat i-2\\hat j)"
+      "\\vec a\\^*=\\pi\\hat i, \\vec b^*=\\frac{\\pi}{2}(2\\hat j-\\hat i))\\ -\\",
+      "\\ (\\vec a\\^*=2\\pi\\hat i, \\vec b^*=\\pi(2\\hat j-\\hat i)",
+      "\\vec a\\^*=3\\pi\\hat i, \\vec b^*=\\frac{\\pi}{2}(2\\hat j+\\hat i))\\ -\\",
+      "\\ (\\vec a\\^*=4\\pi\\hat i, \\vec b^*=\\pi(\\hat i-2\\hat j))\n\n**Calculation check**\n\nReciprocal conditions:\n\n\\[\n\\vec a\\^*\\cdot\\vec a=2\\pi,\\quad \\vec a\\^*\\cdot\\vec b=0\n\\]\n\n\\[\n\\vec b\\^*\\cdot\\vec b=2\\pi,\\quad \\vec b\\^*\\cdot\\vec a=0\n\\]\n\nThey give:\n\n\\[ \\vec a\\^*=\\pi\\hat i,\\qquad\n\\vec b\\^*=\\pi(\\hat j-2\\hat i) \\]\n\n**Discrepancy:** None of the listed options matches both vectors. Option"
     ],
     "answer": null,
-    "answerText": "_No correct option was explicitly recorded in the source file._",
-    "formula": "",
-    "explanation": "Reciprocal conditions:\n\n\\[\n\\vec a^*\\cdot\\vec a=2\\pi,\\quad \\vec a^*\\cdot\\vec b=0\n\\]\n\n\\[\n\\vec b^*\\cdot\\vec b=2\\pi,\\quad \\vec b^*\\cdot\\vec a=0\n\\]\n\nThey give:\n\n\\[ \\vec a^*=\\pi\\hat i,\\qquad\n\\vec b^*=\\pi(\\hat j-2\\hat i) \\]",
-    "notes": "Reciprocal conditions:\n\n\\[\n\\vec a^*\\cdot\\vec a=2\\pi,\\quad \\vec a^*\\cdot\\vec b=0\n\\]\n\n\\[\n\\vec b^*\\cdot\\vec b=2\\pi,\\quad \\vec b^*\\cdot\\vec a=0\n\\]\n\nThey give:\n\n\\[ \\vec a^*=\\pi\\hat i,\\qquad\n\\vec b^*=\\pi(\\hat j-2\\hat i) \\]"
+    "answerText": "_Not explicitly stated in source._",
+    "formula": "_Relevant equation is shown in the worked explanation below._",
+    "explanation": "**Memory trick / exam trap:** Verify every reciprocal-vector dot-product\ncondition instead of selecting an option based on one vector alone.",
+    "notes": "**Memory trick / exam trap:** Verify every reciprocal-vector dot-product\ncondition instead of selecting an option based on one vector alone."
   },
   {
     "id": "w6q9",
@@ -690,16 +870,16 @@
     "title": "Reciprocal Lattice Vectors in 3D",
     "question": "The primitive basis vectors of a three dimensional lattice are\n(\\vec a=\\hat i+2\\hat j);\n(\\vec b=4\\hat j) and (\\vec c=\\hat k).\nFind out the primitive translational vectors of its reciprocal lattice.",
     "options": [
-      "(\\vec a^*=2\\pi\\hat i, \\vec b^*=\\frac{\\pi}{2}(\\hat j-2\\hat i), \\vec c^*=2\\pi\\hat k)",
-      "(\\vec a^*=\\pi\\hat i, \\vec b^*=\\pi(\\hat j-2\\hat i), \\vec c^*=\\pi\\hat k)",
-      "(\\vec a^*=3\\pi\\hat i, \\vec b^*=\\frac{\\pi}{3}(\\hat j-2\\hat i), \\vec c^*=3\\pi\\hat k)",
-      "(\\vec a^*=4\\pi\\hat i, \\vec b^*=\\frac{\\pi}{4}(\\hat j-2\\hat i), \\vec c^*=4\\pi\\hat k)"
+      "\\vec a^*=2\\pi\\hat i, \\vec b\\^*=\\frac{\\pi}{2}(\\hat j-2\\hat i), \\vec c^*=2\\pi\\hat k",
+      "\\vec a^*=\\pi\\hat i, \\vec b\\^*=\\pi(\\hat j-2\\hat i), \\vec c^*=\\pi\\hat k",
+      "\\vec a^*=3\\pi\\hat i, \\vec b\\^*=\\frac{\\pi}{3}(\\hat j-2\\hat i), \\vec c^*=3\\pi\\hat k",
+      "\\vec a^*=4\\pi\\hat i, \\vec b\\^*=\\frac{\\pi}{4}(\\hat j-2\\hat i), \\vec c^*=4\\pi\\hat k"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "V=\\vec a\\cdot(\\vec b\\times\\vec c)=4\n\\vec a\\^*=2\\pi\\frac{\\vec b\\times\\vec c}{V},\\quad\n\\vec b\\^*=2\\pi\\frac{\\vec c\\times\\vec a}{V},\\quad\n\\vec c\\^\\*=2\\pi\\frac{\\vec a\\times\\vec b}{V} \\]\n\\[ \\vec a\\^*=2\\pi\\hat i,\\quad\n\\vec b\\^*=\\frac{\\pi}{2}(\\hat j-2\\hat i),\\quad\n\\vec c\\^\\*=2\\pi\\hat k \\]",
+    "explanation": "Unit-cell volume:\n\n\\[\nV=\\vec a\\cdot(\\vec b\\times\\vec c)=4\n\\]\n\nReciprocal vectors:\n\n\\[\n\\vec a\\^*=2\\pi\\frac{\\vec b\\times\\vec c}{V},\\quad\n\\vec b\\^*=2\\pi\\frac{\\vec c\\times\\vec a}{V},\\quad\n\\vec c\\^\\*=2\\pi\\frac{\\vec a\\times\\vec b}{V} \\]\n\nThus,\n\n\\[ \\vec a\\^*=2\\pi\\hat i,\\quad\n\\vec b\\^*=\\frac{\\pi}{2}(\\hat j-2\\hat i),\\quad\n\\vec c\\^\\*=2\\pi\\hat k \\]",
+    "notes": "Unit-cell volume:\n\n\\[\nV=\\vec a\\cdot(\\vec b\\times\\vec c)=4\n\\]\n\nReciprocal vectors:\n\n\\[\n\\vec a\\^*=2\\pi\\frac{\\vec b\\times\\vec c}{V},\\quad\n\\vec b\\^*=2\\pi\\frac{\\vec c\\times\\vec a}{V},\\quad\n\\vec c\\^\\*=2\\pi\\frac{\\vec a\\times\\vec b}{V} \\]\n\nThus,\n\n\\[ \\vec a\\^*=2\\pi\\hat i,\\quad\n\\vec b\\^*=\\frac{\\pi}{2}(\\hat j-2\\hat i),\\quad\n\\vec c\\^\\*=2\\pi\\hat k \\]"
   },
   {
     "id": "w6q10",
@@ -708,16 +888,16 @@
     "title": "Drift Velocity in a Copper Wire",
     "question": "A copper wire of 1 mm diameter carries a current of 5 mA. Calculate the\naverage drift velocity of the free electrons. Copper is monovalent and\ncrystallizes in FCC structure with a lattice parameter of 3.61 Å.",
     "options": [
-      "(2.38\\times10^{-7},\\text{m/s})",
-      "(4.68\\times10^{-7},\\text{m/s})",
-      "(6.28\\times10^{-7},\\text{m/s})",
-      "(8.39\\times10^{-7},\\text{m/s})"
+      "2.38\\times10\\^{-7},\\text{m/s}",
+      "4.68\\times10\\^{-7},\\text{m/s}",
+      "6.28\\times10\\^{-7},\\text{m/s}",
+      "8.39\\times10\\^{-7},\\text{m/s}"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b) (4.68\\times10\\^{-7},\\text{m/s})",
+    "formula": "\\[ n=\\frac{4}{a^3} =\\frac{4}{(3.61\\times10^{-10})^3}\n\\[ A=\\frac{\\pi d^2}{4} =\\frac{\\pi(10^{-3})^2}{4}\n=7.854\\times10^{-7},\\text{m}^2 \\]\n\\[ v_d=\\frac{I}{neA}\n(n=Z_eN\\_{\\text{atoms per cell}}/a\\^3). For FCC monovalent\ncopper, (Z_e=1) and there are 4 atoms per cell.\n (\\vec a\\^*=\\pi\\hat i, \\vec b\\^*=\\pi(\\hat j-2\\hat i))\n- **Bragg's law:** (n\\lambda=2d\\sin\\theta)\n (d\\_{hkl}=a/\\sqrt{h^2+k^2+l^2})\n (n\\_{\\max}=\\lfloor2d/\\lambda\\rfloor)\n- **Powder camera arc separation:** (S=4R\\theta), with\n- **Mass density:** (\\rho=Z_fM/(N_Aa\\^3)), where (Z_f) is\n (\\vec a\\^*=2\\pi(\\vec b\\times\\vec c)/V),\n (\\vec b\\^*=2\\pi(\\vec c\\times\\vec a)/V),\n (\\vec c\\^\\*=2\\pi(\\vec a\\times\\vec b)/V),\n (V=\\vec a\\cdot(\\vec b\\times\\vec c)).\n- **Drift velocity:** (v_d=I/(neA)).\n (n=Z_eN\\_{\\text{atoms per cell}}/a\\^3).",
+    "explanation": "**Question type:** Drift velocity from current, area, and FCC electron\ndensity.\n\nFCC has four atoms per unit cell; monovalent copper contributes one free\nelectron per atom:\n\n\\[ n=\\frac{4}{a^3} =\\frac{4}{(3.61\\times10^{-10})^3}\n\\approx8.50\\times10^{28},\\text{m}^{-3} \\]\n\n\\[ A=\\frac{\\pi d^2}{4} =\\frac{\\pi(10^{-3})^2}{4}\n=7.854\\times10^{-7},\\text{m}^2 \\]\n\n\\[ v_d=\\frac{I}{neA}\n\\approx4.68\\times10\\^{-7},\\text{m/s} \\]",
+    "notes": "**Question type:** Drift velocity from current, area, and FCC electron\ndensity.\n\nFCC has four atoms per unit cell; monovalent copper contributes one free\nelectron per atom:\n\n\\[ n=\\frac{4}{a^3} =\\frac{4}{(3.61\\times10^{-10})^3}\n\\approx8.50\\times10^{28},\\text{m}^{-3} \\]\n\n\\[ A=\\frac{\\pi d^2}{4} =\\frac{\\pi(10^{-3})^2}{4}\n=7.854\\times10^{-7},\\text{m}^2 \\]\n\n\\[ v_d=\\frac{I}{neA}\n\\approx4.68\\times10\\^{-7},\\text{m/s} \\]"
   },
   {
     "id": "w7q1",
@@ -726,77 +906,77 @@
     "title": "Drift Velocity in a Copper Wire",
     "question": "A copper wire of 1 mm diameter carries a current of (5 mA). Calculate\nthe average drift velocity of the free electrons. Copper is monovalent\nand crystallizes in FCC structure with a lattice parameter of 3.61 Å.",
     "options": [
-      "(3.42 \\times 10^{-6},\\text{m/s})",
-      "(4.68 \\times 10^{-7},\\text{m/s})",
-      "(5.82 \\times 10^{-9},\\text{m/s})",
-      "(6.17 \\times 10^{-10},\\text{m/s})"
+      "3.42 \\times 10\\^{-6},\\text{m/s}",
+      "4.68 \\times 10\\^{-7},\\text{m/s}",
+      "5.82\n\\times 10\\^{-9},\\text{m/s}",
+      "6.17\n\\times 10\\^{-10},\\text{m/s}"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "\\[\nv_d=\\frac{I}{neA},\\quad A=\\frac{\\pi d^2}{4},\\quad n=\\frac{4}{a^3}\n\\]\n\nFCC has 4 atoms per unit cell.\n\n\\[\nn\\approx8.50\\times10^{28},\\text{m}^{-3},\\quad\nA=7.854\\times10^{-7},\\text{m}^2 \\]\n\n\\[\nv_d=\\frac{5\\times10^{-3}}{(8.50\\times10^{28})(1.602\\times10^{-19})(7.854\\times10^{-7})}\n\\approx4.68\\times10^{-7},\\text{m/s} \\]",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b) (4.68 \\times 10\\^{-7},\\text{m/s})",
+    "formula": "\\[\nv_d=\\frac{I}{neA},\\quad A=\\frac{\\pi d^2}{4},\\quad n=\\frac{4}{a^3}\n\\]\n\nFCC has 4 atoms per unit cell.\n\n\\[\nn\\approx8.50\\times10^{28},\\text{m}^{-3},\\quad\nA=7.854\\times10^{-7},\\text{m}^2 \\]\n\n\\[\nv_d=\\frac{5\\times10^{-3}}{(8.50\\times10^{28})(1.602\\times10^{-19})(7.854\\times10^{-7})}\n\\approx4.68\\times10\\^{-7},\\text{m/s} \\]",
+    "explanation": "\\times 10\\^{-7},\\text{m/s})**",
+    "notes": "\\times 10\\^{-7},\\text{m/s})**"
   },
   {
     "id": "w7q2",
     "week": 7,
     "number": 2,
     "title": "Relaxation Time from Conductivity",
-    "question": "In copper the number free electrons per unit volume is (8.5\n\\times 10^{28}/m^3) and its conductivity ((\\sigma = 6\n\\times 10^7,\\Omega^{-1}m^{-1})). Calculate the\nrelaxation time of electron when electronic mass and charge are (9.1\n\\times 10^{-31},kg) and (1.6 \\times 10^{-19},C)\nrespectively.",
+    "question": "In copper the number free electrons per unit volume is (8.5\n\\times 10^{28}/m^3) and its conductivity ((\\sigma = 6\n\\times 10^7,\\Omega^{-1}m\\^{-1})). Calculate the\nrelaxation time of electron when electronic mass and charge are (9.1\n\\times 10\\^{-31},kg) and (1.6 \\times 10\\^{-19},C)\nrespectively.",
     "options": [
-      "(1.17 \\times 10^{-12},\\text{s})",
-      "(2.39 \\times 10^{-13},\\text{s})",
-      "(2.50 \\times 10^{-14},\\text{s})",
-      "(4.93 \\times 10^{-15},\\text{s})"
+      "1.17 \\times 10\\^{-12},\\text{s}",
+      "2.39 \\times 10\\^{-13},\\text{s}",
+      "2.50\n\\times 10\\^{-14},\\text{s}",
+      "4.93\n\\times 10\\^{-15},\\text{s}"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) (2.50 \\times 10\\^{-14},\\text{s})",
+    "formula": "**Given:** (n=8.5\\times10^{28},\\text{m}^{-3}),\n(\\sigma=6\\times10^7,\\Omega^{-1}\\text{m}\\^{-1}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}),\n(e=1.6\\times10\\^{-19},\\text{C}).\n\\[ \\sigma=\\frac{ne^2\\tau}{m_e}\n\\quad\\Rightarrow\\quad \\tau=\\frac{\\sigma m_e}{ne^2}\n\\[ \\tau=\\frac{(6\\times10^7)(9.1\\times10^{-31})}",
+    "explanation": "**Question type:** Drude model; relaxation time from conductivity.\n\n**Given:** (n=8.5\\times10^{28},\\text{m}^{-3}),\n(\\sigma=6\\times10^7,\\Omega^{-1}\\text{m}\\^{-1}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}),\n(e=1.6\\times10\\^{-19},\\text{C}).\n\n\\[ \\sigma=\\frac{ne^2\\tau}{m_e}\n\\quad\\Rightarrow\\quad \\tau=\\frac{\\sigma m_e}{ne^2}\n\\]\n\n\\[ \\tau=\\frac{(6\\times10^7)(9.1\\times10^{-31})}\n{(8.5\\times10^{28})(1.6\\times10^{-19})\\^2}\n\\approx2.50\\times10\\^{-14},\\text{s} \\]",
+    "notes": "**Question type:** Drude model; relaxation time from conductivity.\n\n**Given:** (n=8.5\\times10^{28},\\text{m}^{-3}),\n(\\sigma=6\\times10^7,\\Omega^{-1}\\text{m}\\^{-1}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}),\n(e=1.6\\times10\\^{-19},\\text{C}).\n\n\\[ \\sigma=\\frac{ne^2\\tau}{m_e}\n\\quad\\Rightarrow\\quad \\tau=\\frac{\\sigma m_e}{ne^2}\n\\]\n\n\\[ \\tau=\\frac{(6\\times10^7)(9.1\\times10^{-31})}\n{(8.5\\times10^{28})(1.6\\times10^{-19})\\^2}\n\\approx2.50\\times10\\^{-14},\\text{s} \\]"
   },
   {
     "id": "w7q3",
     "week": 7,
     "number": 3,
     "title": "Drift Velocity from Mass Density",
-    "question": "Assuming that each atom of copper contributes one free electron,\ncalculate the drift velocity of free electrons in the copper conductor\nof cross-sectional area (10^{-4},m^2) and carrying a current of 200 A.\n(Given: Atomic weight of Cu is 63.5, density of copper is (8.94\n\\times 10^3,kg/m^3), electronic charge is (1.602\n\\times 10^{-19},C) and Avogadro's number (N_A = 6.02\n\\times 10^{23})).",
+    "question": "Assuming that each atom of copper contributes one free electron,\ncalculate the drift velocity of free electrons in the copper conductor\nof cross-sectional area (10^{-4},m^2) and carrying a current of 200 A.\n(Given: Atomic weight of Cu is 63.5, density of copper is (8.94\n\\times 10^3,kg/m^3), electronic charge is (1.602\n\\times 10\\^{-19},C) and Avogadro's number (N_A = 6.02\n\\times 10\\^{23})).",
     "options": [
-      "(1.47 \\times 10^{-4},\\text{m/s})",
-      "(2.21 \\times 10^{-6},\\text{m/s})",
-      "(3.38 \\times 10^{-8},\\text{m/s})",
-      "(4.24 \\times 10^{-10},\\text{m/s})"
+      "1.47 \\times 10\\^{-4},\\text{m/s}",
+      "2.21 \\times 10\\^{-6},\\text{m/s}",
+      "3.38\n\\times 10\\^{-8},\\text{m/s}",
+      "4.24\n\\times 10\\^{-10},\\text{m/s}"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) (1.47 \\times 10\\^{-4},\\text{m/s})",
+    "formula": "**Given:** (A=10^{-4},\\text{m}^2), (I=200,\\text{A}),\n(M=0.0635,\\text{kg/mol}),\n(\\rho\\_m=8.94\\times10^3,\\text{kg/m}^3), (Z=1),\n(N_A=6.02\\times10^{23},\\text{mol}^{-1}).\nn=\\frac{Z\\rho_mN_A}{M},\\qquad v_d=\\frac{I}{neA}\nv_d=\\frac{200}{(8.48\\times10^{28})(1.602\\times10^{-19})(10^{-4})}",
+    "explanation": "\\times 10\\^{-4},\\text{m/s})**",
+    "notes": "\\times 10\\^{-4},\\text{m/s})**"
   },
   {
     "id": "w7q4",
     "week": 7,
     "number": 4,
     "title": "Relaxation Time from Resistivity",
-    "question": "Estimate classically the relaxation time ((\\tau)) of electrons\nin the copper when its resistivity is (1.69\n\\times 10^{-8},\\Omega-m) and the concentration of free\nelectrons in copper ((n = 8.5 \\times 10^{28}/m^3)).",
+    "question": "Estimate classically the relaxation time ((\\tau)) of electrons\nin the copper when its resistivity is (1.69\n\\times 10\\^{-8},\\Omega-m) and the concentration of free\nelectrons in copper ((n = 8.5 \\times 10^{28}/m^3)).",
     "options": [
-      "(1.13 \\times 10^{-12},\\text{s})",
-      "(2.47 \\times 10^{-14},\\text{s})",
-      "(3.17 \\times 10^{-16},\\text{s})",
-      "(4.97 \\times 10^{-18},\\text{s})"
+      "1.13 \\times 10\\^{-12},\\text{s}",
+      "2.47 \\times 10\\^{-14},\\text{s}",
+      "3.17\n\\times 10\\^{-16},\\text{s}",
+      "4.97\n\\times 10\\^{-18},\\text{s}"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b) (2.47 \\times 10\\^{-14},\\text{s})",
+    "formula": "(\\rho=1.69\\times10\\^{-8},\\Omega\\cdot\\text{m}),\n(n=8.5\\times10^{28},\\text{m}^{-3}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}),\n(e=1.6\\times10\\^{-19},\\text{C}).\n\\sigma=\\frac1\\rho,\\quad \\sigma=\\frac{ne^2\\tau}{m_e}\n\\quad\\Rightarrow\\quad \\tau=\\frac{m_e}{ne^2\\rho}\n\\[ \\tau=\\frac{9.1\\times10^{-31}}\n(\\tau=m_e/(ne\\^2\\rho)).",
+    "explanation": "**Question type:** Drude model; relaxation time from resistivity.\n\n**Given:**\n(\\rho=1.69\\times10\\^{-8},\\Omega\\cdot\\text{m}),\n(n=8.5\\times10^{28},\\text{m}^{-3}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}),\n(e=1.6\\times10\\^{-19},\\text{C}).\n\n\\[\n\\sigma=\\frac1\\rho,\\quad \\sigma=\\frac{ne^2\\tau}{m_e}\n\\quad\\Rightarrow\\quad \\tau=\\frac{m_e}{ne^2\\rho}\n\\]\n\n\\[ \\tau=\\frac{9.1\\times10^{-31}}\n{(8.5\\times10^{28})(1.6\\times10^{-19})^2(1.69\\times10^{-8})}\n\\approx2.48\\times10\\^{-14},\\text{s} \\]\n\nThis matches option (b) within rounding.",
+    "notes": "**Question type:** Drude model; relaxation time from resistivity.\n\n**Given:**\n(\\rho=1.69\\times10\\^{-8},\\Omega\\cdot\\text{m}),\n(n=8.5\\times10^{28},\\text{m}^{-3}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}),\n(e=1.6\\times10\\^{-19},\\text{C}).\n\n\\[\n\\sigma=\\frac1\\rho,\\quad \\sigma=\\frac{ne^2\\tau}{m_e}\n\\quad\\Rightarrow\\quad \\tau=\\frac{m_e}{ne^2\\rho}\n\\]\n\n\\[ \\tau=\\frac{9.1\\times10^{-31}}\n{(8.5\\times10^{28})(1.6\\times10^{-19})^2(1.69\\times10^{-8})}\n\\approx2.48\\times10\\^{-14},\\text{s} \\]\n\nThis matches option (b) within rounding."
   },
   {
     "id": "w7q5",
     "week": 7,
     "number": 5,
     "title": "Mean Free Path of Electrons",
-    "question": "Estimate classically the mean free path ((\\lambda)) of electrons\nin copper at temperature 20°C. Relaxation time of electrons in copper is\n((2.5 \\times 10^{-14}s)). \\[Given: Boltzmann constant ((K_B =\n1.38 \\times 10^{-23},J/K))\\]",
+    "question": "Estimate classically the mean free path ((\\lambda)) of electrons\nin copper at temperature 20°C. Relaxation time of electrons in copper is\n((2.5 \\times 10\\^{-14}s)). \\[Given: Boltzmann constant ((K_B =\n1.38 \\times 10\\^{-23},J/K))\\]",
     "options": [
       "2.88 nm",
       "3.33 nm",
@@ -804,28 +984,28 @@
       "5.55 nm"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 2.88 nm",
+    "formula": "**Given:** (T=20\\^\\circ\\text{C}=293,\\text{K}),\n(\\tau=2.5\\times10\\^{-14},\\text{s}),\n(k_B=1.38\\times10\\^{-23},\\text{J/K}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}).\nv\\_{\\rm rms}=\\sqrt{\\frac{3k_BT}{m_e}},\\qquad \\lambda=v\\_{\\rm rms}\\tau\n\\[ \\lambda=(1.15\\times10^5)(2.5\\times10^{-14})\n\\approx2.88\\times10\\^{-9},\\text{m}=2.88,\\text{nm}\n**Memory trick / exam trap:** Mean free path = speed (\\times)",
+    "explanation": "**Question type:** Classical mean free path from thermal speed and\nrelaxation time.\n\n**Given:** (T=20\\^\\circ\\text{C}=293,\\text{K}),\n(\\tau=2.5\\times10\\^{-14},\\text{s}),\n(k_B=1.38\\times10\\^{-23},\\text{J/K}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}).\n\n\\[\nv\\_{\\rm rms}=\\sqrt{\\frac{3k_BT}{m_e}},\\qquad \\lambda=v\\_{\\rm rms}\\tau\n\\]\n\n\\[\nv\\_{\\rm rms}\\approx1.15\\times10\\^5,\\text{m/s}\n\\]\n\n\\[ \\lambda=(1.15\\times10^5)(2.5\\times10^{-14})\n\\approx2.88\\times10\\^{-9},\\text{m}=2.88,\\text{nm}\n\\]",
+    "notes": "**Question type:** Classical mean free path from thermal speed and\nrelaxation time.\n\n**Given:** (T=20\\^\\circ\\text{C}=293,\\text{K}),\n(\\tau=2.5\\times10\\^{-14},\\text{s}),\n(k_B=1.38\\times10\\^{-23},\\text{J/K}),\n(m_e=9.1\\times10\\^{-31},\\text{kg}).\n\n\\[\nv\\_{\\rm rms}=\\sqrt{\\frac{3k_BT}{m_e}},\\qquad \\lambda=v\\_{\\rm rms}\\tau\n\\]\n\n\\[\nv\\_{\\rm rms}\\approx1.15\\times10\\^5,\\text{m/s}\n\\]\n\n\\[ \\lambda=(1.15\\times10^5)(2.5\\times10^{-14})\n\\approx2.88\\times10\\^{-9},\\text{m}=2.88,\\text{nm}\n\\]"
   },
   {
     "id": "w7q6",
     "week": 7,
     "number": 6,
     "title": "Normalization of a Wave Function",
-    "question": "The wave function of electrons in a one-dimensional potential box of\ndimension 'a' is given by\n\n\\[\n\\Psi_n=A\\sin\\left(\\frac{n\\pi}{a}x\\right),\\quad n=1,2,3,\\ldots\n\\]\n\nEvaluate A by normalizing the wave function to unity.",
+    "question": "The wave function of electrons in a one-dimensional potential box of\ndimension 'a' is given by\n\n\\[\n\\Psi\\_n=A\\sin\\left(\\frac{n\\pi}{a}x\\right),\\quad n=1,2,3,\\ldots\n\\]\n\nEvaluate A by normalizing the wave function to unity.",
     "options": [
-      "(\\sqrt{4/a})",
-      "(\\sqrt{3/a})",
-      "(\\sqrt{2/a})",
-      "(\\sqrt{a/2})"
+      "\\sqrt{4/a}",
+      "\\sqrt{3/a}",
+      "\\sqrt{2/a}",
+      "\\sqrt{a/2}"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) (\\sqrt{2/a})",
+    "formula": "**Correct answer: (c) (\\sqrt{2/a})**\n**Formula:** (\\int\\_0\\^a\\|\\Psi\\_n(x)\\|\\^2dx=1).\nA\\^2\\int\\_0^a\\sin^2\\left(\\frac{n\\pi x}{a}\\right)dx=1\nFor integer (n), the integral is (a/2), so (A\\^2a/2=1):\n\\[ A=\\sqrt{\\frac2a} \\]\nfunction has prefactor (\\sqrt{2/a}). Integrate",
+    "explanation": "**Question type:** Quantum mechanics; normalize the 1D infinite-box wave\nfunction.",
+    "notes": "**Question type:** Quantum mechanics; normalize the 1D infinite-box wave\nfunction."
   },
   {
     "id": "w7q7",
@@ -834,16 +1014,16 @@
     "title": "Maximum Wavelength in a One-Dimensional Potential Box",
     "question": "In a one-dimensional potential box of length L, the maximum wavelength\nthat an electron can have is",
     "options": [
-      "(L/4)",
-      "(L/2)",
-      "(L)",
-      "(2L)"
+      "L/4",
+      "L/2",
+      "L",
+      "2L"
     ],
     "answer": 3,
-    "answerText": "(d)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(d) (2L)",
+    "formula": "\\[ L=\\frac{n\\lambda_n}{2}\n\\quad\\Rightarrow\\quad \\lambda\\_n=\\frac{2L}{n}\nThe smallest allowed quantum number is (n=1), hence\n(\\lambda\\_{\\max}=2L).",
+    "explanation": "**Question type:** Allowed standing wavelengths in a 1D infinite\npotential box.\n\n\\[ L=\\frac{n\\lambda_n}{2}\n\\quad\\Rightarrow\\quad \\lambda\\_n=\\frac{2L}{n}\n\\]\n\nThe smallest allowed quantum number is (n=1), hence\n(\\lambda\\_{\\max}=2L).",
+    "notes": "**Question type:** Allowed standing wavelengths in a 1D infinite\npotential box.\n\n\\[ L=\\frac{n\\lambda_n}{2}\n\\quad\\Rightarrow\\quad \\lambda\\_n=\\frac{2L}{n}\n\\]\n\nThe smallest allowed quantum number is (n=1), hence\n(\\lambda\\_{\\max}=2L)."
   },
   {
     "id": "w7q8",
@@ -852,59 +1032,59 @@
     "title": "Maximum Wavelength for Bragg Reflection",
     "question": "In a one-dimensional lattice of interatomic separation a, the maximum\nwavelength of the electron gets Bragg reflected is",
     "options": [
-      "(a/4)",
-      "(a/2)",
-      "(a)",
-      "(2a)"
+      "a/4",
+      "a/2",
+      "a",
+      "2a"
     ],
     "answer": 3,
-    "answerText": "(d)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(d) (2a)",
+    "formula": "Bragg's law is (2d\\sin\\theta=n\\lambda). For\nlattice spacing (d=a), first order (n=1), and\n\\[ \\lambda\\_{\\max}=2a \\]\n(2d); here (d=a).",
+    "explanation": "**Question type:** Bragg condition; maximum reflected wavelength.\n\nBragg's law is (2d\\sin\\theta=n\\lambda). For\nlattice spacing (d=a), first order (n=1), and\n(\\sin\\theta\\le1):\n\n\\[ \\lambda\\_{\\max}=2a \\]",
+    "notes": "**Question type:** Bragg condition; maximum reflected wavelength.\n\nBragg's law is (2d\\sin\\theta=n\\lambda). For\nlattice spacing (d=a), first order (n=1), and\n(\\sin\\theta\\le1):\n\n\\[ \\lambda\\_{\\max}=2a \\]"
   },
   {
     "id": "w7q9",
     "week": 7,
     "number": 9,
     "title": "Energy Gap in a Three-Dimensional Potential Box",
-    "question": "Calculate the energy difference between the ground state energy and the\nfirst excited state energy for free electrons in a three dimensional\npotential box of dimension (1 \\times 1 \\times 1,cm^3).\n\\[Given: Planck constant ((h = 6.6 \\times 10^{-34},J-s))\\]",
+    "question": "Calculate the energy difference between the ground state energy and the\nfirst excited state energy for free electrons in a three dimensional\npotential box of dimension (1 \\times 1 \\times 1,cm\\^3).\n\\[Given: Planck constant ((h = 6.6 \\times 10\\^{-34},J-s))\\]",
     "options": [
-      "(1.795 \\times 10^{-33},\\text{J})",
-      "(4.953 \\times 10^{-35},\\text{J})",
-      "(6.123 \\times 10^{-39},\\text{J})",
-      "(7.128 \\times 10^{-45},\\text{J})"
+      "1.795 \\times 10\\^{-33},\\text{J}",
+      "4.953 \\times 10\\^{-35},\\text{J}",
+      "6.123\n\\times 10\\^{-39},\\text{J}",
+      "7.128\n\\times 10\\^{-45},\\text{J}"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) (1.795 \\times 10\\^{-33},\\text{J})",
+    "formula": "**Given:** (L=1,\\text{cm}=10\\^{-2},\\text{m}),\n(h=6.6\\times10\\^{-34},\\text{J·s}),\n(m_e=9.11\\times10\\^{-31},\\text{kg}).\n\\[ E\\_{n_x,n_y,n_z}=\\frac{h^2}{8m_eL^2}(n_x^2+n_y^2+n_z\\^2) \\]\n\\[ \\Delta E=\\frac{3h^2}{8m_eL^2}",
+    "explanation": "\\times 10\\^{-33},\\text{J})**",
+    "notes": "\\times 10\\^{-33},\\text{J})**"
   },
   {
     "id": "w7q10",
     "week": 7,
     "number": 10,
     "title": "Minimum Momentum for Bragg Reflection",
-    "question": "In a one-dimensional solid of interatomic separation 2Å, find the\ncritical or minimum momentum values for which Bragg reflections take\nplace. \\[Given: Planck constant ((h = 6.64\n\\times 10^{-34},J-s))\\]",
+    "question": "In a one-dimensional solid of interatomic separation 2Å, find the\ncritical or minimum momentum values for which Bragg reflections take\nplace. \\[Given: Planck constant ((h = 6.64\n\\times 10\\^{-34},J-s))\\]",
     "options": [
-      "(2.17 \\times 10^{-12},\\text{kg·m/s})",
-      "(3.22 \\times 10^{-16},\\text{kg·m/s})",
-      "(5.12 \\times 10^{-20},\\text{kg·m/s})",
-      "(1.66 \\times 10^{-24},\\text{kg·m/s})"
+      "2.17\n\\times 10\\^{-12},\\text{kg·m/s}",
+      "3.22\n\\times 10\\^{-16},\\text{kg·m/s}",
+      "5.12\n\\times 10\\^{-20},\\text{kg·m/s}",
+      "1.66\n\\times 10\\^{-24},\\text{kg·m/s}"
     ],
     "answer": 3,
-    "answerText": "(d)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(d) (1.66 \\times 10\\^{-24},\\text{kg·m/s})",
+    "formula": "(a=2,\\text{Å}=2\\times10\\^{-10},\\text{m}),\n(h=6.64\\times10\\^{-34},\\text{J·s}).\n\\lambda*{\\max}=2a,\\qquad p=\\frac h\\lambda\n\\quad\\Rightarrow\\quad p*{\\min}=\\frac{h}{2a}\np\\_{\\min}=\\frac{6.64\\times10^{-34}}{2(2\\times10^{-10})}\n=1.66\\times10\\^{-24},\\text{kg·m/s} \\]\n Q6 c (\\sqrt{2/a})\n**Drift velocity:** (v_d=I/(neA))\n(n=Z\\times(\\text{atoms per unit cell})/a\\^3)\n**Electron density from mass density:** (n=Z\\rho\\_mN_A/M)\n**Drude model:** (\\sigma=ne\\^2\\tau/m_e), and\n(\\tau=m_e/(ne\\^2\\rho)), where (\\rho) here is\n(\\lambda=v\\_{\\rm rms}\\tau), with\n(v\\_{\\rm rms}=\\sqrt{3k_BT/m_e}).\n**1D box normalization:** (A=\\sqrt{2/L}).\n**1D box wavelengths:** (\\lambda\\_n=2L/n).\n**First-order Bragg reflection:** (\\lambda*{\\max}=2a),\n(p*{\\min}=h/(2a)).\n(E\\_{n_x,n_y,n_z}=\\frac{h^2}{8m_eL^2}(n_x^2+n_y^2+n_z\\^2)).",
+    "explanation": "\\times 10\\^{-24},\\text{kg·m/s})**",
+    "notes": "\\times 10\\^{-24},\\text{kg·m/s})**"
   },
   {
     "id": "w8q1",
     "week": 8,
     "number": 1,
     "title": "Energy Level from Fermi--Dirac Occupation Probability",
-    "question": "Find the energy level in sodium for which the probability of occupation\nat 300 K is 0.75. The Fermi energy of sodium is 3.13 eV. (Boltzmann\nconstant (K_B = 1.38 \\times 10^{-23},\\text{J/K}))",
+    "question": "Find the energy level in sodium for which the probability of occupation\nat 300 K is 0.75. The Fermi energy of sodium is 3.13 eV. (Boltzmann\nconstant (K_B = 1.38 \\times 10\\^{-23},\\text{J/K}))",
     "options": [
       "3.10 eV",
       "2.28 eV",
@@ -912,17 +1092,17 @@
       "1.12 eV"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "\\[ f(E)=\\frac{1}{e^{(E-E_F)/(k_BT)}+1} \\]\n\nRearranging:\n\n\\[\nE-E_F=k_BT\\ln\\left(\\frac{1}{f}-1\\right)\n\\]\n\nUsing (k_B=8.617\\times10^{-5},\\text{eV/K}):\n\n\\[ E=3.13+(8.617\\times10^{-5})(300)\\ln(1/0.75-1)\n\\approx 3.10,\\text{eV} \\]",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 3.10 eV",
+    "formula": "\\[ f(E)=\\frac{1}{e^{(E-E_F)/(k_BT)}+1} \\]\n\nRearranging:\n\n\\[\nE-E_F=k_BT\\ln\\left(\\frac{1}{f}-1\\right)\n\\]\n\nUsing (k_B=8.617\\times10\\^{-5},\\text{eV/K}):\n\n\\[ E=3.13+(8.617\\times10\\^{-5})(300)\\ln(1/0.75-1)\n\\approx 3.10,\\text{eV} \\]",
+    "explanation": "**Question type:** Fermi--Dirac distribution; find energy from\noccupation probability.\n\n**Given:** (f(E)=0.75), (T=300,\\text{K}),\n(E_F=3.13,\\text{eV}).\n\n**Intuition / exam trap:** If (f\\>0.5), the energy is below the Fermi\nenergy. Here (f=0.75), so (E\\<E_F).",
+    "notes": "**Question type:** Fermi--Dirac distribution; find energy from\noccupation probability.\n\n**Given:** (f(E)=0.75), (T=300,\\text{K}),\n(E_F=3.13,\\text{eV}).\n\n**Intuition / exam trap:** If (f\\>0.5), the energy is below the Fermi\nenergy. Here (f=0.75), so (E\\<E_F)."
   },
   {
     "id": "w8q2",
     "week": 8,
     "number": 2,
     "title": "Temperature from Occupation Probability",
-    "question": "Find the temperature at which there is a 1% probability that an electron\nin a solid will have energy 0.5 eV above the Fermi energy. (Boltzmann\nconstant (K_B = 1.38 \\times 10^{-23},\\text{J/K}))",
+    "question": "Find the temperature at which there is a 1% probability that an electron\nin a solid will have energy 0.5 eV above the Fermi energy. (Boltzmann\nconstant (K_B = 1.38 \\times 10\\^{-23},\\text{J/K}))",
     "options": [
       "1261.6 K",
       "1322.7 K",
@@ -930,17 +1110,17 @@
       "1547.6 K"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "\\[ f=\\frac{1}{e^{(E-E_F)/(k_BT)}+1} \\]\n\n\\[ T=\\frac{E-E_F}{k_B\\ln(1/f-1)} \\]\n\nUse (k_B=8.617\\times10^{-5},\\text{eV/K}):\n\n\\[ T=\\frac{0.5}{(8.617\\times10^{-5})\\ln(99)}\n\\approx1261.6,\\text{K} \\]",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 1261.6 K",
+    "formula": "\\[ f=\\frac{1}{e^{(E-E_F)/(k_BT)}+1} \\]\n\n\\[ T=\\frac{E-E_F}{k_B\\ln(1/f-1)} \\]\n\nUse (k_B=8.617\\times10\\^{-5},\\text{eV/K}):\n\n\\[ T=\\frac{0.5}{(8.617\\times10^{-5})\\ln(99)}\n\\approx1261.6,\\text{K} \\]",
+    "explanation": "**Question type:** Fermi--Dirac distribution; solve for temperature.\n\n**Given:** (f=0.01), (E-E_F=0.5,\\text{eV}).\n\n**Intuition / exam trap:** A 1% occupation probability is (f=0.01), not\n(1). Since the energy is above (E_F), the occupation probability is less\nthan 0.5.",
+    "notes": "**Question type:** Fermi--Dirac distribution; solve for temperature.\n\n**Given:** (f=0.01), (E-E_F=0.5,\\text{eV}).\n\n**Intuition / exam trap:** A 1% occupation probability is (f=0.01), not\n(1). Since the energy is above (E_F), the occupation probability is less\nthan 0.5."
   },
   {
     "id": "w8q3",
     "week": 8,
     "number": 3,
     "title": "Fermi Energy from Electron Concentration",
-    "question": "The concentration of free electrons in sodium is ((2.5\n\\times 10^{28}/m^3)). Calculate the Fermi energy at 0 K. (Given:\nPlanck constant ((h = 6.64\n\\times 10^{-34},\\text{J·s})))",
+    "question": "The concentration of free electrons in sodium is ((2.5\n\\times 10^{28}/m^3)). Calculate the Fermi energy at 0 K. (Given:\nPlanck constant ((h = 6.64\n\\times 10\\^{-34},\\text{J·s})))",
     "options": [
       "1.23 eV",
       "2.17 eV",
@@ -948,35 +1128,35 @@
       "3.73 eV"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) 3.13 eV",
+    "formula": "**Given:** (n=2.5\\times10^{28},\\text{m}^{-3}),\n(h=6.64\\times10\\^{-34},\\text{J·s}).\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)\\^{2/3}\nwhere (m_e=9.11\\times10\\^{-31},\\text{kg}).\n(\\hbar)-formula distinct. The equivalent reduced-Planck-constant\nform is (E_F=\\frac{\\hbar^2}{2m_e}(3\\pi^2n)^{2/3}).",
+    "explanation": "**Question type:** 3D free-electron model; Fermi energy from electron\nnumber density.\n\n**Given:** (n=2.5\\times10^{28},\\text{m}^{-3}),\n(h=6.64\\times10\\^{-34},\\text{J·s}).",
+    "notes": "**Question type:** 3D free-electron model; Fermi energy from electron\nnumber density.\n\n**Given:** (n=2.5\\times10^{28},\\text{m}^{-3}),\n(h=6.64\\times10\\^{-34},\\text{J·s})."
   },
   {
     "id": "w8q4",
     "week": 8,
     "number": 4,
     "title": "Fermi Velocity from Electron Concentration",
-    "question": "Concentration of free electron density in sodium is ((2.5\n\\times 10^{28}/m^3)). Calculate the Fermi velocity. \\[Given:\nPlanck constant ((h = 6.64\n\\times 10^{-34},\\text{J·s}))\\]",
+    "question": "Concentration of free electron density in sodium is ((2.5\n\\times 10^{28}/m^3)). Calculate the Fermi velocity. \\[Given:\nPlanck constant ((h = 6.64\n\\times 10\\^{-34},\\text{J·s}))\\]",
     "options": [
-      "(1.12 \\times 10^5,\\text{m/s})",
-      "(1.05 \\times 10^6,\\text{m/s})",
-      "(2.17 \\times 10^7,\\text{m/s})",
-      "(1.97 \\times 10^9,\\text{m/s})"
+      "1.12 \\times 10\\^5,\\text{m/s}",
+      "1.05 \\times 10\\^6,\\text{m/s}",
+      "2.17 \\times 10\\^7,\\text{m/s}",
+      "1.97 \\times 10\\^9,\\text{m/s}"
     ],
     "answer": 1,
-    "answerText": "(b)",
-    "formula": "\\[ k_F=(3\\pi^2n)^{1/3},\\qquad\nv_F=\\frac{\\hbar k_F}{m_e}\n=\\frac{h}{2\\pi m_e}(3\\pi^2n)^{1/3} \\]\n\nFirst, (k_F\\approx9.04\\times10^9,\\text{m}^{-1}).\nTherefore,\n\n\\[ v_F\\approx1.05\\times10^6,\\text{m/s} \\]",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(b) (1.05 \\times 10\\^6,\\text{m/s})",
+    "formula": "\\[ k_F=(3\\pi^2n)^{1/3},\\qquad\nv_F=\\frac{\\hbar k_F}{m_e}\n=\\frac{h}{2\\pi m_e}(3\\pi^2n)^{1/3} \\]\n\nFirst, (k_F\\approx9.04\\times10^9,\\text{m}^{-1}).\nTherefore,\n\n\\[ v_F\\approx1.05\\times10\\^6,\\text{m/s} \\]",
+    "explanation": "**Question type:** Fermi velocity from 3D free-electron density.\n\n**Given:** (n=2.5\\times10^{28},\\text{m}^{-3}),\n(h=6.64\\times10\\^{-34},\\text{J·s}).\n\n**Intuition / exam trap:** When using (h), include (2\\pi) in the\ndenominator. When using (\\hbar), do not add another\n(2\\pi).",
+    "notes": "**Question type:** Fermi velocity from 3D free-electron density.\n\n**Given:** (n=2.5\\times10^{28},\\text{m}^{-3}),\n(h=6.64\\times10\\^{-34},\\text{J·s}).\n\n**Intuition / exam trap:** When using (h), include (2\\pi) in the\ndenominator. When using (\\hbar), do not add another\n(2\\pi)."
   },
   {
     "id": "w8q5",
     "week": 8,
     "number": 5,
     "title": "Fermi Energy in a One-Dimensional Crystal",
-    "question": "The number of electrons per unit length of crystal is 0.5 electrons per\nangstrom. The total number of electrons, those are to be accommodate on\na line of a one-dimensional crystal, is even number. Determine the Fermi\nenergy of the system. \\[Given: Planck constant ((h = 6.62\n\\times 10^{-34},\\text{J·s}))\\]",
+    "question": "The number of electrons per unit length of crystal is 0.5 electrons per\nangstrom. The total number of electrons, those are to be accommodate on\na line of a one-dimensional crystal, is even number. Determine the Fermi\nenergy of the system. \\[Given: Planck constant ((h = 6.62\n\\times 10\\^{-34},\\text{J·s}))\\]",
     "options": [
       "2.35 eV",
       "2.75 eV",
@@ -984,17 +1164,17 @@
       "3.75 eV"
     ],
     "answer": 0,
-    "answerText": "(a)",
+    "answerText": "(a) 2.35 eV",
     "formula": "For a 1D electron gas with two spin states:\n\n\\[ k_F=\\frac{\\pi n_{1D}}{2},\\qquad\nE_F=\\frac{\\hbar^2 k_F^2}{2m_e}\n=\\frac{h^2 n_{1D}^2}{32m_e} \\]\n\nSubstitution gives approximately (E_F=2.34,\\text{eV}), matching\noption (a) after rounding.",
-    "explanation": "",
-    "notes": ""
+    "explanation": "**Question type:** 1D free-electron model; Fermi energy from linear\nelectron density.\n\n**Given:** (n\\_{1D}=0.5) electrons/Å\n(=5\\times10^9,\\text{m}^{-1}).\n\n**Intuition / exam trap:** Convert electrons/Å to electrons/m before\nsubstituting. For a 1D gas, remember (k_F=\\pi n\\_{1D}/2) when\nboth spin states are counted.",
+    "notes": "**Question type:** 1D free-electron model; Fermi energy from linear\nelectron density.\n\n**Given:** (n\\_{1D}=0.5) electrons/Å\n(=5\\times10^9,\\text{m}^{-1}).\n\n**Intuition / exam trap:** Convert electrons/Å to electrons/m before\nsubstituting. For a 1D gas, remember (k_F=\\pi n\\_{1D}/2) when\nboth spin states are counted."
   },
   {
     "id": "w8q6",
     "week": 8,
     "number": 6,
     "title": "Fermi Energy of Silver from Density and Atomic Weight",
-    "question": "Consider silver in the metallic with one free electron per atom.\nCalculate the Fermi energy at 0K. \\[Given: Atomic weight of Silver is\n108, density of silver is 10.5 gm/cc, Planck constant ((h = 6.62\n\\times 10^{-34},\\text{J·s}))\\]",
+    "question": "Consider silver in the metallic with one free electron per atom.\nCalculate the Fermi energy at 0K. \\[Given: Atomic weight of Silver is\n108, density of silver is 10.5 gm/cc, Planck constant ((h = 6.62\n\\times 10\\^{-34},\\text{J·s}))\\]",
     "options": [
       "5.5 eV",
       "4.5 eV",
@@ -1002,17 +1182,17 @@
       "2.5 eV"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "\\[ n=\\frac{Z\\rho N_A}{M},\\qquad\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)^{2/3}\n\\]\n\nUse consistent SI units, (Z=1), and\n(N_A=6.022\\times10^{23},\\text{mol}^{-1}). This gives\n(n\\approx5.85\\times10^{28},\\text{m}^{-3}) and\n(E_F\\approx5.5,\\text{eV}).",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 5.5 eV",
+    "formula": "\\[ n=\\frac{Z\\rho N_A}{M},\\qquad\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)\\^{2/3}\n\\]\n\nUse consistent SI units, (Z=1), and\n(N_A=6.022\\times10^{23},\\text{mol}^{-1}). This gives\n(n\\approx5.85\\times10^{28},\\text{m}^{-3}) and\n(E_F\\approx5.5,\\text{eV}).",
+    "explanation": "**Question type:** Calculate electron density from mass density, then\ncalculate Fermi energy.\n\n**Given:** Atomic weight (M=108,\\text{g/mol}), density\n(\\rho=10.5,\\text{g/cm}\\^3), one free electron per atom.\n\n**Intuition / exam trap:** First calculate atoms per unit volume, then\nmultiply by the number of free electrons per atom. Do not substitute\nmass density directly as electron density.",
+    "notes": "**Question type:** Calculate electron density from mass density, then\ncalculate Fermi energy.\n\n**Given:** Atomic weight (M=108,\\text{g/mol}), density\n(\\rho=10.5,\\text{g/cm}\\^3), one free electron per atom.\n\n**Intuition / exam trap:** First calculate atoms per unit volume, then\nmultiply by the number of free electrons per atom. Do not substitute\nmass density directly as electron density."
   },
   {
     "id": "w8q7",
     "week": 8,
     "number": 7,
     "title": "Fermi Energy of Sodium Using BCC Structure",
-    "question": "The atomic radius of sodium (BCC) is 1.86 Å. Calculate the Fermi energy\nof sodium at the temperature of 0K. Consider each sodium atom contribute\none free electron. \\[Planck constant ((h = 6.62\n\\times 10^{-34},\\text{J·s}))\\]",
+    "question": "The atomic radius of sodium (BCC) is 1.86 Å. Calculate the Fermi energy\nof sodium at the temperature of 0K. Consider each sodium atom contribute\none free electron. \\[Planck constant ((h = 6.62\n\\times 10\\^{-34},\\text{J·s}))\\]",
     "options": [
       "3.12 eV",
       "4.42 eV",
@@ -1020,10 +1200,10 @@
       "5.57 eV"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "BCC atoms touch along the body diagonal:\n\n\\[ \\sqrt3a=4r,\\qquad a=\\frac{4r}{\\sqrt3} \\]\n\nBCC has 2 atoms per unit cell:\n\n\\[ n=\\frac{2Z}{a^3} \\]\n\nThen use:\n\n\\[\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)^{2/3}\n\\]\n\nThe result is approximately (3.12,\\text{eV}).",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) 3.12 eV",
+    "formula": "BCC atoms touch along the body diagonal:\n\n\\[ \\sqrt3a=4r,\\qquad a=\\frac{4r}{\\sqrt3} \\]\n\nBCC has 2 atoms per unit cell:\n\n\\[ n=\\frac{2Z}{a^3} \\]\n\nThen use:\n\n\\[\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)\\^{2/3}\n\\]\n\nThe result is approximately (3.12,\\text{eV}).",
+    "explanation": "**Question type:** Fermi energy from atomic radius and BCC crystal\ngeometry.\n\n**Given:** (r=1.86,\\text{Å}), BCC, (Z=1).\n\n**Intuition / exam trap:** BCC has 2 atoms per unit cell and\n(4r=\\sqrt3a). Do not use the FCC geometry relation.",
+    "notes": "**Question type:** Fermi energy from atomic radius and BCC crystal\ngeometry.\n\n**Given:** (r=1.86,\\text{Å}), BCC, (Z=1).\n\n**Intuition / exam trap:** BCC has 2 atoms per unit cell and\n(4r=\\sqrt3a). Do not use the FCC geometry relation."
   },
   {
     "id": "w8q8",
@@ -1032,23 +1212,23 @@
     "title": "de Broglie Wavelength at Fermi Energy",
     "question": "Calculate the de-Broglie wavelength associated by an electron, in a\nhypothetical metal, having energy equal to the Fermi energy at 0 K.\nConsider numbers of free electrons per unit volume in the metal is n.",
     "options": [
-      "(2\\left(\\frac{\\pi}{3n}\\right)^{1/3})",
-      "(2\\left(\\frac{3n}{\\pi}\\right)^{1/3})",
-      "((3\\pi^2n)^{2/3})",
-      "(\\left(\\frac{3n}{\\pi}\\right)^{3/2})"
+      "2\\left(\\frac{\\pi}{3n}\\right)\\^{1/3}",
+      "2\\left(\\frac{3n}{\\pi}\\right)\\^{1/3}",
+      "(3\\pi^2n)^{2/3}",
+      "\\left(\\frac{3n}{\\pi}\\right)\\^{3/2}"
     ],
     "answer": 0,
-    "answerText": "(a)",
-    "formula": "\\[ k_F=(3\\pi^2n)^{1/3},\\qquad\n\\lambda_F=\\frac{2\\pi}{k_F} \\]\n\nTherefore,\n\n\\[ \\lambda_F=\\frac{2\\pi}{(3\\pi^2n)^{1/3}}\n=2\\left(\\frac{\\pi}{3n}\\right)^{1/3} \\]",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(a) (2\\left(\\frac{\\pi}{3n}\\right)\\^{1/3})",
+    "formula": "\\[ k_F=(3\\pi^2n)^{1/3},\\qquad\n\\lambda\\_F=\\frac{2\\pi}{k_F} \\]\n\nTherefore,\n\n\\[ \\lambda\\_F=\\frac{2\\pi}{(3\\pi^2n)^{1/3}}\n=2\\left(\\frac{\\pi}{3n}\\right)\\^{1/3} \\]",
+    "explanation": "(2\\left(\\frac{\\pi}{3n}\\right)\\^{1/3})**",
+    "notes": "(2\\left(\\frac{\\pi}{3n}\\right)\\^{1/3})**"
   },
   {
     "id": "w8q9",
     "week": 8,
     "number": 9,
     "title": "Fermi Energy of Silver Using FCC Structure",
-    "question": "Silver is a monovalent metal having FCC crystal structure. If the atomic\nradius (r=1.44) Å, calculate the Fermi energy at 0 K. Planck constant\n((h = 6.62 \\times 10^{-34},\\text{J·s})).",
+    "question": "Silver is a monovalent metal having FCC crystal structure. If the atomic\nradius (r=1.44) Å, calculate the Fermi energy at 0 K. Planck constant\n((h = 6.62 \\times 10\\^{-34},\\text{J·s})).",
     "options": [
       "2.17 eV",
       "3.73 eV",
@@ -1056,10 +1236,10 @@
       "5.53 eV"
     ],
     "answer": 3,
-    "answerText": "(d)",
-    "formula": "FCC atoms touch along the face diagonal:\n\n\\[ \\sqrt2a=4r,\\qquad a=\\frac{4r}{\\sqrt2} \\]\n\nFCC has 4 atoms per unit cell:\n\n\\[ n=\\frac{4Z}{a^3} \\]\n\nThen:\n\n\\[\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)^{2/3}\n\\]\n\nThis gives (E_F\\approx5.53,\\text{eV}).",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(d) 5.53 eV",
+    "formula": "FCC atoms touch along the face diagonal:\n\n\\[ \\sqrt2a=4r,\\qquad a=\\frac{4r}{\\sqrt2} \\]\n\nFCC has 4 atoms per unit cell:\n\n\\[ n=\\frac{4Z}{a^3} \\]\n\nThen:\n\n\\[\nE_F=\\frac{h^2}{2m_e}\\left(\\frac{3n}{8\\pi}\\right)\\^{2/3}\n\\]\n\nThis gives (E_F\\approx5.53,\\text{eV}).",
+    "explanation": "**Question type:** Fermi energy from FCC geometry and atomic radius.\n\n**Given:** (r=1.44,\\text{Å}), FCC, monovalent so (Z=1).\n\n**Intuition / exam trap:** FCC has 4 atoms per unit cell and\n(4r=\\sqrt2a). Compare with BCC: 2 atoms per cell and\n(4r=\\sqrt3a).",
+    "notes": "**Question type:** Fermi energy from FCC geometry and atomic radius.\n\n**Given:** (r=1.44,\\text{Å}), FCC, monovalent so (Z=1).\n\n**Intuition / exam trap:** FCC has 4 atoms per unit cell and\n(4r=\\sqrt2a). Compare with BCC: 2 atoms per cell and\n(4r=\\sqrt3a)."
   },
   {
     "id": "w8q10",
@@ -1068,16 +1248,16 @@
     "title": "Density of States in a Two-Dimensional Solid",
     "question": "The density of free electron states in a two-dimensional solid having\ndimension ((a \\times a)) varies with energy E as",
     "options": [
-      "(E^{1/2})",
-      "(E^{-1/2})",
-      "(E^0)",
-      "(E^{3/2})"
+      "E\\^{1/2}",
+      "E\\^{-1/2}",
+      "E\\^0",
+      "E\\^{3/2}"
     ],
     "answer": 2,
-    "answerText": "(c)",
-    "formula": "For a free-electron system in (d) dimensions:\n\n\\[ g(E)\\propto E^{d/2-1} \\]\n\nFor (d=2):\n\n\\[ g(E)\\propto E^{2/2-1}=E^0=\\text{constant} \\]",
-    "explanation": "",
-    "notes": ""
+    "answerText": "(c) (E\\^0)",
+    "formula": "For a free-electron system in (d) dimensions:\n\n\\[ g(E)\\propto E\\^{d/2-1} \\]\n\nFor (d=2):\n\n\\[ g(E)\\propto E^{2/2-1}=E^0=\\text{constant} \\]",
+    "explanation": "**Question type:** Theory --- energy dependence of the density of states\n(DOS) in 2D.\n\n**Given:** Two-dimensional solid.\n\n**Intuition / exam trap:** In 2D, the free-electron density of states is\nconstant with energy. Remember the pattern: 1D\n(\\propto E\\^{-1/2}), 2D (\\propto E\\^0), 3D\n(\\propto E\\^{1/2}).\n\n# Quick Answer Key\n\n Question Correct option Answer\n ---------- ---------------- ----------------------------------------------\n Q1 a 3.10 eV\n Q2 a 1261.6 K\n Q3 c 3.13 eV\n Q4 b (1.05\\times10\\^6,\\text{m/s})\n Q5 a 2.35 eV\n Q6 a 5.5 eV\n Q7 a 3.12 eV\n Q8 a (2(\\pi/3n)\\^{1/3})\n Q9 d 5.53 eV\n Q10 c (E\\^0)",
+    "notes": "**Question type:** Theory --- energy dependence of the density of states\n(DOS) in 2D.\n\n**Given:** Two-dimensional solid.\n\n**Intuition / exam trap:** In 2D, the free-electron density of states is\nconstant with energy. Remember the pattern: 1D\n(\\propto E\\^{-1/2}), 2D (\\propto E\\^0), 3D\n(\\propto E\\^{1/2}).\n\n# Quick Answer Key\n\n Question Correct option Answer\n ---------- ---------------- ----------------------------------------------\n Q1 a 3.10 eV\n Q2 a 1261.6 K\n Q3 c 3.13 eV\n Q4 b (1.05\\times10\\^6,\\text{m/s})\n Q5 a 2.35 eV\n Q6 a 5.5 eV\n Q7 a 3.12 eV\n Q8 a (2(\\pi/3n)\\^{1/3})\n Q9 d 5.53 eV\n Q10 c (E\\^0)"
   },
   {
     "id": "w9q1",
@@ -1086,34 +1266,34 @@
     "title": "Density of states in a 1-D solid",
     "question": "Find an expression for density of states of free electrons (D(E)) in a\none-dimensional solid having dimension (a).",
     "options": [
-      "(\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E^{-1/2})",
-      "(\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E^{1/2})",
-      "(\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E^{3/2})",
-      "(\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E^{5/2})"
+      "\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E\\^{-1/2}",
+      "\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E\\^{1/2}",
+      "\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E\\^{3/2}",
+      "\\displaystyle \\frac{a}{2\\pi}\\sqrt{\\frac{2m}{\\hbar^2}},E\\^{5/2}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "D(E)\\propto E^{-1/2} \\quad\\text{(1-D free-electron DOS)}",
+    "explanation": "In 1-D, the number of allowed states grows with wave-vector range, while E = ℏ²k²/(2m). Converting the k-state count to energy gives D(E) proportional to E^(-1/2). Hence option (a).",
+    "notes": "In 1-D, the number of allowed states grows with wave-vector range, while E = ℏ²k²/(2m). Converting the k-state count to energy gives D(E) proportional to E^(-1/2). Hence option (a)."
   },
   {
     "id": "w9q2",
     "week": 9,
     "number": 2,
     "title": "Momentum of an electron using effective mass",
-    "question": "Given that the effective mass of the electron is 0.2 times its rest\nmass, calculate its momentum when its energy 0.02 eV. Consider the\nelectron at the bottom of the conduction band and the rest mass of the\nelectron ((m_0 = 9.1 \\times 10^{-31} kg)). Planck constant is\n((h = 6.62 \\times 10^{-34} J-s)).",
+    "question": "Given that the effective mass of the electron is 0.2 times its rest\nmass, calculate its momentum when its energy 0.02 eV. Consider the\nelectron at the bottom of the conduction band and the rest mass of the\nelectron ((m_0 = 9.1 \\times 10\\^{-31} kg)). Planck constant is\n((h = 6.62 \\times 10\\^{-34} J-s)).",
     "options": [
-      "(1.74 \\times 10^{-23} kg.m/s)",
-      "(3.41 \\times 10^{-26} kg.m/s)",
-      "(5.32 \\times 10^{-29} kg.m/s)",
-      "(7.23 \\times 10^{-32} kg.m/s)"
+      "1.74 \\times 10\\^{-23} kg.m/s",
+      "3.41 \\times 10\\^{-26} kg.m/s",
+      "5.32 \\times 10\\^{-29} kg.m/s",
+      "7.23 \\times 10\\^{-32} kg.m/s"
     ],
     "answer": 1,
     "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "p=\\sqrt{2m^*E},\\qquad m^*=0.2m_0,\\qquad E(\\mathrm J)=E(\\mathrm{eV})\\times1.602\\times10^{-19}",
+    "explanation": "Near the conduction-band minimum, use the parabolic-band relation E = p²/(2m*). Substitute m* = 0.2(9.1×10⁻³¹) kg and E = 0.02 eV after converting eV to joules. The matching listed value is option (b), 3.41×10⁻²⁶ kg·m/s.",
+    "notes": "Near the conduction-band minimum, use the parabolic-band relation E = p²/(2m*). Substitute m* = 0.2(9.1×10⁻³¹) kg and E = 0.02 eV after converting eV to joules. The matching listed value is option (b), 3.41×10⁻²⁶ kg·m/s."
   },
   {
     "id": "w9q3",
@@ -1122,16 +1302,16 @@
     "title": "Group velocity in a 1-D crystal",
     "question": "The energy wave vector dispersion relation for a one dimensional crystal\nof lattice constant 'a' is given by (E(k) = E_0 - \\alpha -\n2\\beta \\cos(ka)) where (E_0), (\\alpha) and\n(\\beta) are all constant. Find the value of (k) at which the\nvelocity (group velocity) of electron is a maximum, and also find out\nthe maximum velocity.",
     "options": [
-      "(\\displaystyle k=\\frac{n\\pi}{2a},\\quad v_{\\max}=\\frac{2\\beta a}{\\hbar})",
-      "(\\displaystyle k=\\frac{n\\pi}{a},\\quad v_{\\max}=\\frac{2\\beta}{\\hbar})",
-      "(\\displaystyle k=\\frac{(2n+1)\\pi}{a},\\quad v_{\\max}=\\frac{2a}{\\hbar})",
-      "(k=\\pi,\\quad v_{\\max}=\\hbar a)"
+      "\\displaystyle k=\\frac{n\\pi}{2a},\\quad v\\_{\\max}=\\frac{2\\beta a}{\\hbar}",
+      "\\displaystyle k=\\frac{n\\pi}{a},\\quad v\\_{\\max}=\\frac{2\\beta}{\\hbar}",
+      "\\displaystyle k=\\frac{(2n+1)\\pi}{a},\\quad v\\_{\\max}=\\frac{2a}{\\hbar}",
+      "k=\\pi,\\quad v\\_{\\max}=\\hbar a"
     ],
     "answer": null,
-    "answerText": "None of the options matches the given relation",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "answerText": "No exact matching option; likely typo",
+    "formula": "v_g=\\frac{1}{\\hbar}\\frac{dE}{dk},\\qquad E(k)=E_0-\\alpha-2\\beta\\cos(ka)",
+    "explanation": "Differentiate: v_g = (2βa/ℏ)sin(ka). Its maximum positive value occurs when sin(ka)=1, i.e. k=(π/2+2nπ)/a, giving vmax=2βa/ℏ for β>0. No option states this k condition exactly; the source flags a likely typo.",
+    "notes": "Differentiate: v_g = (2βa/ℏ)sin(ka). Its maximum positive value occurs when sin(ka)=1, i.e. k=(π/2+2nπ)/a, giving vmax=2βa/ℏ for β>0. No option states this k condition exactly; the source flags a likely typo."
   },
   {
     "id": "w9q4",
@@ -1140,52 +1320,52 @@
     "title": "Energy bandwidth of a 1-D crystal",
     "question": "The energy (E) and wave vector (k) dispersion relation for an electron\nin a one dimensional crystal of lattice constant 'a' is given by (E(k) =\nE_0 - \\alpha - 2\\beta \\cos(ka)) where (E_0),\n(\\alpha) and (\\beta) are all constant. Find the\ndifference in energy i.e., energy gap between the top and the bottom of\nthe energy band.",
     "options": [
-      "(\\beta)",
-      "(2\\beta)",
-      "(3\\beta)",
-      "(4\\beta)"
+      "\\beta",
+      "2\\beta",
+      "3\\beta",
+      "4\\beta"
     ],
     "answer": 3,
     "answerText": "(d)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "E(k)=E_0-\\alpha-2\\beta\\cos(ka),\\qquad \\Delta E=E_{\\max}-E_{\\min}=4|\\beta|",
+    "explanation": "Since cos(ka) ranges from −1 to +1, the energy varies across a total bandwidth of 4β when β is positive. Therefore option (d), 4β.",
+    "notes": "Since cos(ka) ranges from −1 to +1, the energy varies across a total bandwidth of 4β when β is positive. Therefore option (d), 4β."
   },
   {
     "id": "w9q5",
     "week": 9,
     "number": 5,
     "title": "Effective mass at the bottom and top of an energy band",
-    "question": "The energy (E) and wave vector (k) dispersion relation for an electron\nin a one dimensional crystal of lattice constant 'a' is given by (E(k) =\nE_0 - \\alpha - 2\\beta \\cos(ka)) where (E_0),\n(\\alpha) and (\\beta) are all constant. Find the\neffective mass (m^\\*) of the electron at the bottom and the top of the\nenergy gap.",
+    "question": "The energy (E) and wave vector (k) dispersion relation for an electron\nin a one dimensional crystal of lattice constant 'a' is given by (E(k) =\nE_0 - \\alpha - 2\\beta \\cos(ka)) where (E_0),\n(\\alpha) and (\\beta) are all constant. Find the\neffective mass (m\\^\\*) of the electron at the bottom and the top of the\nenergy gap.",
     "options": [
-      "(\\displaystyle \\frac{\\hbar^2}{2\\beta a^2},\\quad -\\frac{\\hbar^2}{2\\beta a^2})",
-      "(\\displaystyle \\frac{\\hbar^2}{2a^2},\\quad -\\frac{\\hbar^2}{2a^2})",
-      "(\\displaystyle \\frac{\\hbar^2}{\\beta},\\quad -\\frac{\\hbar^2}{\\beta})",
-      "(\\displaystyle \\frac{\\hbar^2}{2\\beta},\\quad -\\frac{\\hbar^2}{2\\beta})"
+      "\\displaystyle \\frac{\\hbar^2}{2\\beta a^2},\\quad -\\frac{\\hbar^2}{2\\beta a^2}",
+      "\\displaystyle \\frac{\\hbar^2}{2a^2},\\quad -\\frac{\\hbar^2}{2a^2}",
+      "\\displaystyle \\frac{\\hbar^2}{\\beta},\\quad -\\frac{\\hbar^2}{\\beta}",
+      "\\displaystyle \\frac{\\hbar^2}{2\\beta},\\quad -\\frac{\\hbar^2}{2\\beta}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "\\frac{1}{m^*}=\\frac{1}{\\hbar^2}\\frac{d^2E}{dk^2},\\qquad \\frac{d^2E}{dk^2}=2\\beta a^2\\cos(ka)",
+    "explanation": "At the band bottom, curvature is positive and m* = ℏ²/(2βa²). At the band top, curvature is negative and m* = −ℏ²/(2βa²). This matches option (a).",
+    "notes": "At the band bottom, curvature is positive and m* = ℏ²/(2βa²). At the band top, curvature is negative and m* = −ℏ²/(2βa²). This matches option (a)."
   },
   {
     "id": "w9q6",
     "week": 9,
     "number": 6,
     "title": "Effective mass and momentum of a hole",
-    "question": "The energy of the electron near the valence band edge of a crystal is\ngiven by((E = -Ak^2)), where ((A = 10^{-39} J-m^2)). An electron with\nwave vector (\\vec{k} = 10^{10}\\hat{i} m^{-1}) is removed\nfrom the completely filled valance band. Find the effective mass and\nmomentum of the hole. Planck constant is ((h = 6.62\n\\times 10^{-34} J-s)).",
+    "question": "The energy of the electron near the valence band edge of a crystal is\ngiven by((E = -Ak\\^2)), where ((A = 10^{-39} J-m^2)). An electron with\nwave vector (\\vec{k} = 10^{10}\\hat{i} m^{-1}) is removed\nfrom the completely filled valance band. Find the effective mass and\nmomentum of the hole. Planck constant is ((h = 6.62\n\\times 10\\^{-34} J-s)).",
     "options": [
-      "(m_h^\\* = 5.5         \\times 10^{-30} kg,\\quad \\vec{P}_h = 1.05 \\times 10^{-24}\\hat{i} (J.s/m))",
-      "(m_h^\\* = -5.5         \\times 10^{-30} kg,\\quad \\vec{P}_h =         1.05 \\times 10^{-24}\\hat{i} (J.s/m))",
-      "(m_h^\\* = 3.5         \\times 10^{-20} kg,\\quad \\vec{P}_h = 2.05 \\times 10^{-29}\\hat{i} (J.s/m))",
-      "(m_h^\\* = 4.5         \\times 10^{-35} kg,\\quad \\vec{P}_h = 3.09 \\times 10^{-35}\\hat{i} (J.s/m))"
+      "m_h\\^\\* = 5.5\n \\times 10\\^{-30} kg,\\quad \\vec{P}\\_h =\n -1.05 \\times 10\\^{-24}\\hat{i} (J.s/m)",
+      "m_h\\^\\* = -5.5\n \\times 10\\^{-30} kg,\\quad \\vec{P}\\_h =\n 1.05 \\times 10\\^{-24}\\hat{i} (J.s/m)",
+      "m_h\\^\\* = 3.5\n \\times 10\\^{-20} kg,\\quad \\vec{P}\\_h =\n -2.05 \\times 10\\^{-29}\\hat{i} (J.s/m)",
+      "m_h\\^\\* = 4.5\n \\times 10\\^{-35} kg,\\quad \\vec{P}\\_h =\n -3.09 \\times 10\\^{-35}\\hat{i} (J.s/m)"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "\\frac{1}{m_e^*}=\\frac{1}{\\hbar^2}\\frac{d^2E}{dk^2};\\ E=-Ak^2\\Rightarrow m_e^*=-\\frac{\\hbar^2}{2A},\\quad m_h^*=\\frac{\\hbar^2}{2A};\\quad \\vec p_h=-\\hbar\\vec k",
+    "explanation": "For E = −Ak², curvature is −2A, so the valence-band electron has negative effective mass and the hole has the opposite positive effective mass. A hole left by removing an electron has crystal momentum opposite to the removed electron's ℏk. Using the supplied values gives option (a) in the source.",
+    "notes": "For E = −Ak², curvature is −2A, so the valence-band electron has negative effective mass and the hole has the opposite positive effective mass. A hole left by removing an electron has crystal momentum opposite to the removed electron's ℏk. Using the supplied values gives option (a) in the source."
   },
   {
     "id": "w9q7",
@@ -1201,9 +1381,9 @@
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "E_k=\\frac{\\hbar^2}{2m}(k_x^2+k_y^2)",
+    "explanation": "For case (a), kx=ky=π/a, so E_a ∝ 2π²/a². For case (b), kx=0 and ky=π/a, so E_b ∝ π²/a². Thus E_a/E_b=2, option (a).",
+    "notes": "For case (a), kx=ky=π/a, so E_a ∝ 2π²/a². For case (b), kx=0 and ky=π/a, so E_b ∝ π²/a². Thus E_a/E_b=2, option (a)."
   },
   {
     "id": "w9q8",
@@ -1212,23 +1392,23 @@
     "title": "Kronig--Penney model",
     "question": "Using Kronig-Penny model\n(\\left[\\frac{P\\sin(\\alpha a)}{\\alpha a}+\\cos(\\alpha a)=\\cos(ka)\\right])\ncalculate the energy of the electron for the lowest energy band at (k =\n0). Consider (P \\ll 1). Where 'a' is the interatomic separation\nand (\\left(\\alpha =\n\\sqrt{\\frac{2mE}{\\hbar^2}}\\right)).",
     "options": [
-      "(\\displaystyle \\frac{Ph^2}{4\\pi^2ma^2})",
-      "(\\displaystyle \\frac{Ph^2}{\\pi^2ma^2})",
-      "(\\displaystyle \\frac{Ph^2}{2\\pi^2ma^2})",
-      "(\\displaystyle \\frac{Ph^2}{3\\pi^2ma^2})"
+      "\\displaystyle \\frac{Ph^2}{4\\pi^2ma^2}",
+      "\\displaystyle \\frac{Ph^2}{\\pi^2ma^2}",
+      "\\displaystyle \\frac{Ph^2}{2\\pi^2ma^2}",
+      "\\displaystyle \\frac{Ph^2}{3\\pi^2ma^2}"
     ],
     "answer": 0,
     "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "\\frac{P\\sin(\\alpha a)}{\\alpha a}+\\cos(\\alpha a)=\\cos(ka),\\qquad \\alpha=\\frac{\\sqrt{2mE}}{\\hbar}",
+    "explanation": "At k=0, the right side is 1. For P≪1, use the lowest-band small-parameter approximation around αa≈0 and expand sine/cosine to leading nonzero order; this yields the lowest-band energy proportional to Pℏ²/(ma²), equivalently the option-(a) expression Ph²/(4π²ma²).",
+    "notes": "At k=0, the right side is 1. For P≪1, use the lowest-band small-parameter approximation around αa≈0 and expand sine/cosine to leading nonzero order; this yields the lowest-band energy proportional to Pℏ²/(ma²), equivalently the option-(a) expression Ph²/(4π²ma²)."
   },
   {
     "id": "w9q9",
     "week": 9,
     "number": 9,
     "title": "Band gap from wavelength",
-    "question": "Estimate the band gap of an insulator if it absorbs electromagnetic\nradiation of the wavelengths below the 3000Å. Consider Planck constant\n((h = 6.62 \\times 10^{-34} J-s)).",
+    "question": "Estimate the band gap of an insulator if it absorbs electromagnetic\nradiation of the wavelengths below the 3000Å. Consider Planck constant\n((h = 6.62 \\times 10\\^{-34} J-s)).",
     "options": [
       "3.13 eV",
       "4.14 eV",
@@ -1237,9 +1417,9 @@
     ],
     "answer": 1,
     "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "E_g\\approx \\frac{hc}{\\lambda_{\\max}},\\qquad E(\\mathrm{eV})\\approx\\frac{12400}{\\lambda(\\text{Å})}",
+    "explanation": "The longest absorbed wavelength corresponds to the threshold band-gap photon. With λ=3000 Å, Eg≈12400/3000=4.13 eV, matching option (b), 4.14 eV.",
+    "notes": "The longest absorbed wavelength corresponds to the threshold band-gap photon. With λ=3000 Å, Eg≈12400/3000=4.13 eV, matching option (b), 4.14 eV."
   },
   {
     "id": "w9q10",
@@ -1255,188 +1435,8 @@
     ],
     "answer": 2,
     "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q1",
-    "week": 10,
-    "number": 1,
-    "title": "Average energy band gap of Ge",
-    "question": "The conductivity of the semiconductor follows the given equation\n\n\\[\n\\sigma = A e^{-E_g/(2k_B T)},\n\\]\n\nwhere \\(A\\) is a constant and independent of temperature and \\(k_B\\) is the Boltzmann constant. The conductivity of Ge is \\(0.7\\ \\Omega^{-1}m^{-1}\\) at \\(0^\\circ C\\) and \\(2\\ \\Omega^{-1}m^{-1}\\) at \\(20^\\circ C\\). What is the average band gap of Ge?\n\n(Boltzmann constant \\(k_B = 1.38 \\times 10^{-23}\\ J/K\\))",
-    "options": [
-      "\\(0.72\\ eV\\)",
-      "\\(0.65\\ eV\\)",
-      "\\(0.55\\ eV\\)",
-      "\\(0.43\\ eV\\)"
-    ],
-    "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q2",
-    "week": 10,
-    "number": 2,
-    "title": "Conductivity of pure silicon",
-    "question": "Find out the conductivity of pure silicon at room temperature (300 K). Given: mobility of electron \\(\\mu_n = 0.13\\ \\frac{m^2}{Vs}\\), mobility of hole \\(\\mu_h = 0.05\\ \\frac{m^2}{Vs}\\) and intrinsic charge carrier concentration \\((n_i = 1.5 \\times 10^{16}/m^3)\\).",
-    "options": [
-      "\\(3.12 \\times 10^{-3}\\ \\Omega^{-1}m^{-1}\\)",
-      "\\(4.32 \\times 10^{-4}\\ \\Omega^{-1}m^{-1}\\)",
-      "\\(5.12 \\times 10^{-5}\\ \\Omega^{-1}m^{-1}\\)",
-      "\\(6.64 \\times 10^{-6}\\ \\Omega^{-1}m^{-1}\\)"
-    ],
-    "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q3",
-    "week": 10,
-    "number": 3,
-    "title": "Resistance of a silicon bar",
-    "question": "Calculate the resistance of a bar of pure silicon of length 1 cm and cross-sectional area \\(1\\ mm^2\\) at 300 K. Given: mobility of electron \\(\\mu_n = 0.14\\ \\frac{m^2}{Vs}\\), mobility of hole \\(\\mu_h = 0.07\\ \\frac{m^2}{Vs}\\) and intrinsic charge carrier concentration \\((n_i = 2 \\times 10^{16}/m^3)\\).",
-    "options": [
-      "\\(12.34\\ M\\Omega\\)",
-      "\\(14.88\\ M\\Omega\\)",
-      "\\(23.15\\ M\\Omega\\)",
-      "\\(46.28\\ M\\Omega\\)"
-    ],
-    "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q4",
-    "week": 10,
-    "number": 4,
-    "title": "Conductivity of p-type germanium",
-    "question": "Find the conductivity of p-type germanium crystal which is doped with acceptor atoms of concentration \\(2 \\times 10^{23}\\ atoms/m^3\\) and all the acceptor atoms are active. Mobility of hole in the crystal is \\(\\mu_h = 0.19\\ \\frac{m^2}{Vs}\\).",
-    "options": [
-      "\\(6080\\ \\Omega^{-1}m^{-1}\\)",
-      "\\(4038\\ \\Omega^{-1}m^{-1}\\)",
-      "\\(3125\\ \\Omega^{-1}m^{-1}\\)",
-      "\\(2215\\ \\Omega^{-1}m^{-1}\\)"
-    ],
-    "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q5",
-    "week": 10,
-    "number": 5,
-    "title": "Acceptor concentration for p-type semiconductor",
-    "question": "Calculate the concentration of acceptor atoms that have to be added to an intrinsic semiconductor to produce a p-type semiconductor of conductivity \\((\\sigma_h = 0.05\\ \\Omega^{-1}m^{-1})\\). The mobility of holes in p-type semiconductor is \\((\\mu_h = 0.4\\ \\frac{m^2}{Vs})\\). Consider all the acceptor atoms are active.",
-    "options": [
-      "\\(2.5 \\times 10^{28}/m^3\\)",
-      "\\(1.7 \\times 10^{23}/m^3\\)",
-      "\\(7.8 \\times 10^{17}/m^3\\)",
-      "\\(4.6 \\times 10^{15}/m^3\\)"
-    ],
-    "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q6",
-    "week": 10,
-    "number": 6,
-    "title": "Compare intrinsic conductivity of Ge at two temperatures",
-    "question": "The energy gap in Ge is \\(0.75\\ eV\\). Compare the intrinsic conductivity of Ge at \\(27^\\circ C\\) and \\(57^\\circ C\\).\n\nAssuming the conductivity of intrinsic semiconductor follows the given equation\n\n\\[\n\\sigma = C T^{3/2} e^{-E_g/(2k_B T)},\n\\]\n\nwhere \\(C\\) is the constant and Boltzmann constant \\((k_B = 1.38 \\times 10^{-23}\\ J/K)\\).",
-    "options": [
-      "\\(0.23\\)",
-      "\\(0.48\\)",
-      "\\(0.62\\)",
-      "\\(0.78\\)"
-    ],
-    "answer": 2,
-    "answerText": "(c)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q7",
-    "week": 10,
-    "number": 7,
-    "title": "Fermi level of boron-doped silicon",
-    "question": "Silicon is doped with boron to a concentration of \\((4 \\times 10^{26}/m^3)\\). Assuming the intrinsic concentration of silicon is \\((n_i = 1.5 \\times 10^{16}/m^3)\\), find the position of Fermi level of doped semiconductor with respect to the intrinsic Fermi level at room temperature 300 K. Boltzmann constant \\((K_B = 1.38 \\times 10^{-23}\\ J/K)\\).",
-    "options": [
-      "0.62 eV below the intrinsic Fermi level",
-      "0.44 eV below the intrinsic Fermi level",
-      "0.32 eV below the intrinsic Fermi level",
-      "0.27 eV below the intrinsic Fermi level"
-    ],
-    "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q8",
-    "week": 10,
-    "number": 8,
-    "title": "Total conduction current density in doped Ge",
-    "question": "A sample of Ge is doped to the extent of \\((10^{20}\\ donor\\ atoms/m^3)\\) and \\((5 \\times 10^{19}\\ acceptor\\ atoms/m^3)\\). At 300 K, the resistivity of intrinsic Ge is \\((0.6\\ \\Omega-m)\\). If the applied electric field is \\(200\\ V/m\\), find the total conduction current density. Assume the ratio of hole mobility to electron mobility \\(\\frac{\\mu_h}{\\mu_n} = \\frac12\\) and intrinsic carrier density \\((n_i = 2.5 \\times 10^{19}/m^3)\\) at 300 K. Consider all the donor and acceptor atoms are active in Ge.",
-    "options": [
-      "\\(0.058\\ A/cm^2\\)",
-      "\\(0.078\\ A/cm^2\\)",
-      "\\(0.098\\ A/cm^2\\)",
-      "\\(1.048\\ A/cm^2\\)"
-    ],
-    "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q9",
-    "week": 10,
-    "number": 9,
-    "title": "Intrinsic carrier concentration",
-    "question": "In an intrinsic semiconductor, the effective mass of the electron is \\(0.09m_e\\) and that of the hole is \\((0.4m_e)\\), where \\((m_e)\\) is the electron rest mass. Calculate the intrinsic carrier concentration at 300 K, when the energy gap \\((E_g = 0.7\\ eV)\\). Consider Boltzmann constant \\((K_B = 1.38 \\times 10^{-23}\\ J/K)\\) and Planck constant is \\((h = 6.62 \\times 10^{-34}\\ J-s)\\).",
-    "options": [
-      "\\(2.7 \\times 10^{18}/m^3\\)",
-      "\\(3.2 \\times 10^{20}/m^3\\)",
-      "\\(4.5 \\times 10^{28}/m^3\\)",
-      "\\(6.2 \\times 10^{32}/m^3\\)"
-    ],
-    "answer": 0,
-    "answerText": "(a)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
-  },
-  {
-    "id": "w10q10",
-    "week": 10,
-    "number": 10,
-    "title": "Hole concentration in donor-doped semiconductor",
-    "question": "At a given temperature, a semiconductor with intrinsic carrier concentration \\((n_i = 10^{16}/m^3)\\) is doped with a donor dopant of concentration \\((n_D = 10^{26}/m^3)\\). If the temperature remains the same, calculate the concentration of hole in the doped semiconductor.",
-    "options": [
-      "\\(10^4/m^3\\)",
-      "\\(10^6/m^3\\)",
-      "\\(10^8/m^3\\)",
-      "\\(10^{10}/m^3\\)"
-    ],
-    "answer": 1,
-    "answerText": "(b)",
-    "formula": "",
-    "explanation": "",
-    "notes": ""
+    "formula": "k_F=(3\\pi^2n)^{1/3},\\qquad n=\\frac{4}{a^3}\\ \\text{(FCC, valency 1)},\\qquad k_m=\\frac{2\\pi}{a}\\frac{\\sqrt{3}}{2}",
+    "explanation": "FCC has four atoms per conventional cell and valency one, so n=4/a³. The nearest hexagonal Brillouin-zone face is at distance km=√3π/a. Substituting in kF/km gives approximately 0.906, so option (c), 0.902, is the closest listed value.",
+    "notes": "FCC has four atoms per conventional cell and valency one, so n=4/a³. The nearest hexagonal Brillouin-zone face is at distance km=√3π/a. Substituting in kF/km gives approximately 0.906, so option (c), 0.902, is the closest listed value."
   }
 ]
