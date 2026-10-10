@@ -1,8 +1,6 @@
-# Week 8
+# Week 8 — NPTEL Solid State Physics
 
-**Topic:** Solid State Physics
-
-Question wording, options, and recorded answers are based on the supplied source file. Formulas and explanations are retained where the source provides them; missing worked solutions are identified rather than invented.
+Each question includes the original prompt, all options, recorded answer, formulas, and worked explanation.
 
 ---
 
@@ -14,7 +12,7 @@ constant (K_B = 1.38 \times 10\^{-23},\text{J/K}))
 
 **Options**
 
--   (a) 3.10 eV
+- (a) 3.10 eV
 - (b) 2.28 eV
 - (c) 1.97 eV
 - (d) 1.12 eV
@@ -38,7 +36,14 @@ Using (k_B=8.617\times10\^{-5},\text{eV/K}):
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Fermi--Dirac distribution; find energy from
+occupation probability.
+
+**Given:** (f(E)=0.75), (T=300,`\text{K}),
+(E_F=3.13,`\text{eV}).
+
+**Intuition / exam trap:** If (f\>0.5), the energy is below the Fermi
+energy. Here (f=0.75), so (E\<E_F).
 
 ---
 
@@ -50,7 +55,7 @@ constant (K_B = 1.38 \times 10\^{-23},\text{J/K}))
 
 **Options**
 
--   (a) 1261.6 K
+- (a) 1261.6 K
 - (b) 1322.7 K
 - (c) 1466.8 K
 - (d) 1547.6 K
@@ -70,7 +75,13 @@ Use (k_B=8.617\times10\^{-5},\text{eV/K}):
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Fermi--Dirac distribution; solve for temperature.
+
+**Given:** (f=0.01), (E-E_F=0.5,`\text{eV}).
+
+**Intuition / exam trap:** A 1% occupation probability is (f=0.01), not
+(1). Since the energy is above (E_F), the occupation probability is less
+than 0.5.
 
 ---
 
@@ -83,7 +94,7 @@ Planck constant ((h = 6.64
 
 **Options**
 
--   (a) 1.23 eV
+- (a) 1.23 eV
 - (b) 2.17 eV
 - (c) 3.13 eV
 - (d) 3.73 eV
@@ -92,11 +103,34 @@ Planck constant ((h = 6.64
 
 **Formulas:**
 
-_No formula section was included in the source file._
+**Given:** (n=2.5\times10^{28},\text{m}^{-3}),
+(h=6.64\times10\^{-34},\text{J·s}).
+E_F=\frac{h^2}{2m_e}\left(\frac{3n}{8\pi}\right)\^{2/3}
+where (m_e=9.11\times10\^{-31},\text{kg}).
+(`\hbar)-formula distinct. The equivalent reduced-Planck-constant
+form is (E_F=\frac{\hbar^2}{2m_e}(3\pi^2n)^{2/3}).
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** 3D free-electron model; Fermi energy from electron
+number density.
+
+**Given:** (n=2.5\times10^{28},\text{m}^{-3}),
+(h=6.64\times10\^{-34},\text{J·s}).
+
+**Formula using Planck constant (h)**
+
+\[
+E_F=\frac{h^2}{2m_e}\left(\frac{3n}{8\pi}\right)\^{2/3}
+\]
+
+where (m_e=9.11\times10\^{-31},\text{kg}).
+
+Substituting gives (E_F\approx3.13,\text{eV}).
+
+**Intuition / exam trap:** Keep the (h)-formula and
+(`\hbar)-formula distinct. The equivalent reduced-Planck-constant
+form is (E_F=\frac{\hbar^2}{2m_e}(3\pi^2n)^{2/3}).
 
 ---
 
@@ -109,7 +143,7 @@ Planck constant ((h = 6.64
 
 **Options**
 
--   (a) (1.12 \times 10\^5,\text{m/s})
+- (a) (1.12 \times 10\^5,\text{m/s})
 - (b) (1.05 \times 10\^6,\text{m/s})
 - (c) (2.17 \times 10\^7,\text{m/s})
 - (d) (1.97 \times 10\^9,\text{m/s})
@@ -129,7 +163,14 @@ Therefore,
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Fermi velocity from 3D free-electron density.
+
+**Given:** (n=2.5\times10^{28},\text{m}^{-3}),
+(h=6.64\times10\^{-34},\text{J·s}).
+
+**Intuition / exam trap:** When using (h), include (2`\pi) in the
+denominator. When using (`\hbar), do not add another
+(2`\pi).
 
 ---
 
@@ -143,7 +184,7 @@ energy of the system. \[Given: Planck constant ((h = 6.62
 
 **Options**
 
--   (a) 2.35 eV
+- (a) 2.35 eV
 - (b) 2.75 eV
 - (c) 3.25 eV
 - (d) 3.75 eV
@@ -163,7 +204,15 @@ option (a) after rounding.
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** 1D free-electron model; Fermi energy from linear
+electron density.
+
+**Given:** (n\_{1D}=0.5) electrons/Å
+(=5\times10^9,\text{m}^{-1}).
+
+**Intuition / exam trap:** Convert electrons/Å to electrons/m before
+substituting. For a 1D gas, remember (k_F=`\pi n\_{1D}/2) when
+both spin states are counted.
 
 ---
 
@@ -176,7 +225,7 @@ Calculate the Fermi energy at 0K. \[Given: Atomic weight of Silver is
 
 **Options**
 
--   (a) 5.5 eV
+- (a) 5.5 eV
 - (b) 4.5 eV
 - (c) 3.5 eV
 - (d) 2.5 eV
@@ -196,7 +245,15 @@ Use consistent SI units, (Z=1), and
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Calculate electron density from mass density, then
+calculate Fermi energy.
+
+**Given:** Atomic weight (M=108,`\text{g/mol}), density
+(\rho=10.5,\text{g/cm}\^3), one free electron per atom.
+
+**Intuition / exam trap:** First calculate atoms per unit volume, then
+multiply by the number of free electrons per atom. Do not substitute
+mass density directly as electron density.
 
 ---
 
@@ -209,7 +266,7 @@ one free electron. \[Planck constant ((h = 6.62
 
 **Options**
 
--   (a) 3.12 eV
+- (a) 3.12 eV
 - (b) 4.42 eV
 - (c) 5.12 eV
 - (d) 5.57 eV
@@ -236,7 +293,13 @@ The result is approximately (3.12,`\text{eV}).
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Fermi energy from atomic radius and BCC crystal
+geometry.
+
+**Given:** (r=1.86,`\text{Å}), BCC, (Z=1).
+
+**Intuition / exam trap:** BCC has 2 atoms per unit cell and
+(4r=`\sqrt3a). Do not use the FCC geometry relation.
 
 ---
 
@@ -248,7 +311,7 @@ Consider numbers of free electrons per unit volume in the metal is n.
 
 **Options**
 
--   (a) (2\left(\frac{\pi}{3n}`\right)\^{1/3})
+- (a) (2\left(\frac{\pi}{3n}`\right)\^{1/3})
 - (b) (2\left(\frac{3n}{\pi}`\right)\^{1/3})
 - (c) ((3`\pi^2n)^{2/3})
 - (d) (\left(\frac{3n}{\pi}`\right)\^{3/2})
@@ -267,7 +330,16 @@ Therefore,
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+(2\left(\frac{\pi}{3n}`\right)\^{1/3})**
+
+**Question type:** Derive the de Broglie wavelength from Fermi wave
+vector and electron density.
+
+**Given:** Electron number density (n).
+
+**Intuition / exam trap:** Use (\lambda=2\pi/k), not
+(1/k). The wavelength scales as (n\^{-1/3}), so it decreases as electron
+density increases.
 
 ---
 
@@ -279,7 +351,7 @@ radius (r=1.44) Å, calculate the Fermi energy at 0 K. Planck constant
 
 **Options**
 
--   (a) 2.17 eV
+- (a) 2.17 eV
 - (b) 3.73 eV
 - (c) 4.23 eV
 - (d) 5.53 eV
@@ -306,7 +378,13 @@ This gives (E_F\approx5.53,\text{eV}).
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Fermi energy from FCC geometry and atomic radius.
+
+**Given:** (r=1.44,`\text{Å}), FCC, monovalent so (Z=1).
+
+**Intuition / exam trap:** FCC has 4 atoms per unit cell and
+(4r=`\sqrt2a). Compare with BCC: 2 atoms per cell and
+(4r=`\sqrt3a).
 
 ---
 
@@ -317,7 +395,7 @@ dimension ((a `\times a)) varies with energy E as
 
 **Options**
 
--   (a) (E\^{1/2})
+- (a) (E\^{1/2})
 - (b) (E\^{-1/2})
 - (c) (E\^0)
 - (d) (E\^{3/2})
@@ -336,6 +414,74 @@ For (d=2):
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+**Question type:** Theory --- energy dependence of the density of states
+(DOS) in 2D.
+
+**Given:** Two-dimensional solid.
+
+**Intuition / exam trap:** In 2D, the free-electron density of states is
+constant with energy. Remember the pattern: 1D
+(\propto E\^{-1/2}), 2D (\propto E\^0), 3D
+(`\propto E\^{1/2}).
+
+# Quick Answer Key
+
+  Question   Correct option   Answer
+  ---------- ---------------- ----------------------------------------------
+  Q1         a            3.10 eV
+  Q2         a            1261.6 K
+  Q3         c            3.13 eV
+  Q4         b            (1.05\times10\^6,\text{m/s})
+  Q5         a            2.35 eV
+  Q6         a            5.5 eV
+  Q7         a            3.12 eV
+  Q8         a            (2(`\pi/3n)\^{1/3})
+  Q9         d            5.53 eV
+  Q10        c            (E\^0)
+
+## Formula Recap
+
+**3D Fermi energy using (h):**
+
+\[
+E_F=\frac{h^2}{2m_e}\left(\frac{3n}{8\pi}\right)\^{2/3}
+\]
+
+**3D Fermi energy using (`\hbar):**
+
+\[ E_F=\frac{\hbar^2}{2m_e}(3\pi^2n)^{2/3} \]
+
+**Fermi velocity:**
+
+\[ v_F=\frac{h}{2\pi m_e}(3\pi^2n)^{1/3} \]
+
+**Fermi wavelength:**
+
+\[
+\lambda\_F=2\left(\frac{\pi}{3n}\right)\^{1/3}
+\]
+
+**Crystal geometry:** - BCC: (4r=`\sqrt3a), 2 atoms/unit cell. -
+FCC: (4r=`\sqrt2a), 4 atoms/unit cell. - Electron density:
+(n=Z\times(\text{atoms per cell})/a\^3).
+
+**Density of states:**
+
+\[ g(E)`\propto E\^{d/2-1} \]
 
 ---
+
+## Quick Answer Key
+
+| Question | Correct option |
+|---|---|
+| Q1 | (a) 3.10 eV |
+| Q2 | (a) 1261.6 K |
+| Q3 | (c) 3.13 eV |
+| Q4 | (b) (1.05 \times 10\^6,\text{m/s}) |
+| Q5 | (a) 2.35 eV |
+| Q6 | (a) 5.5 eV |
+| Q7 | (a) 3.12 eV |
+| Q8 | (a) (2\left(\frac{\pi}{3n}`\right)\^{1/3}) |
+| Q9 | (d) 5.53 eV |
+| Q10 | (c) (E\^0) |

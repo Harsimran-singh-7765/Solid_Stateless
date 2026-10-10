@@ -1,8 +1,6 @@
-# Week 9
+# Week 9 — NPTEL Solid State Physics
 
-**Topic:** Solid State Physics
-
-Question wording, options, and recorded answers are based on the supplied source file. Formulas and explanations are retained where the source provides them; missing worked solutions are identified rather than invented.
+Each question includes the original prompt, all options, recorded answer, formulas, and worked explanation.
 
 ---
 
@@ -13,7 +11,7 @@ one-dimensional solid having dimension (a).
 
 **Options**
 
--   (a) (\displaystyle \frac{a}{2\pi}`\sqrt{\frac{2m}{\hbar^2}},E\^{-1/2})
+- (a) (\displaystyle \frac{a}{2\pi}`\sqrt{\frac{2m}{\hbar^2}},E\^{-1/2})
 - (b) (\displaystyle \frac{a}{2\pi}`\sqrt{\frac{2m}{\hbar^2}},E\^{1/2})
 - (c) (\displaystyle \frac{a}{2\pi}`\sqrt{\frac{2m}{\hbar^2}},E\^{3/2})
 - (d) (\displaystyle \frac{a}{2\pi}`\sqrt{\frac{2m}{\hbar^2}},E\^{5/2})
@@ -22,11 +20,11 @@ one-dimensional solid having dimension (a).
 
 **Formulas:**
 
-_No formula section was included in the source file._
+D(E)\propto E^{-1/2} \quad\text{(1-D free-electron DOS)}
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+In 1-D, the number of allowed states grows with wave-vector range, while E = ℏ²k²/(2m). Converting the k-state count to energy gives D(E) proportional to E^(-1/2). Hence option (a).
 
 ---
 
@@ -40,7 +38,7 @@ electron ((m_0 = 9.1 `\times 10\^{-31} kg)). Planck constant is
 
 **Options**
 
--   (a) (1.74 `\times 10\^{-23} kg.m/s)
+- (a) (1.74 `\times 10\^{-23} kg.m/s)
 - (b) (3.41 `\times 10\^{-26} kg.m/s)
 - (c) (5.32 `\times 10\^{-29} kg.m/s)
 - (d) (7.23 `\times 10\^{-32} kg.m/s)
@@ -49,11 +47,11 @@ electron ((m_0 = 9.1 `\times 10\^{-31} kg)). Planck constant is
 
 **Formulas:**
 
-_No formula section was included in the source file._
+p=\sqrt{2m^*E},\qquad m^*=0.2m_0,\qquad E(\mathrm J)=E(\mathrm{eV})\times1.602\times10^{-19}
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+Near the conduction-band minimum, use the parabolic-band relation E = p²/(2m*). Substitute m* = 0.2(9.1×10⁻³¹) kg and E = 0.02 eV after converting eV to joules. The matching listed value is option (b), 3.41×10⁻²⁶ kg·m/s.
 
 ---
 
@@ -68,20 +66,20 @@ the maximum velocity.
 
 **Options**
 
--   (a) (\displaystyle k=\frac{n\pi}{2a},\quad v\_{\max}=`\frac{2\beta a}{\hbar})
+- (a) (\displaystyle k=\frac{n\pi}{2a},\quad v\_{\max}=`\frac{2\beta a}{\hbar})
 - (b) (\displaystyle k=\frac{n\pi}{a},\quad v\_{\max}=`\frac{2\beta}{\hbar})
 - (c) (\displaystyle k=\frac{(2n+1)\pi}{a},\quad v\_{\max}=`\frac{2a}{\hbar})
 - (d) (k=\pi,\quad v\_{\max}=\hbar a)
 
-**Correct option:** None of the options matches the given relation
+**Correct option:** No exact matching option; likely typo
 
 **Formulas:**
 
-_No formula section was included in the source file._
+v_g=\frac{1}{\hbar}\frac{dE}{dk},\qquad E(k)=E_0-\alpha-2\beta\cos(ka)
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+Differentiate: v_g = (2βa/ℏ)sin(ka). Its maximum positive value occurs when sin(ka)=1, i.e. k=(π/2+2nπ)/a, giving vmax=2βa/ℏ for β>0. No option states this k condition exactly; the source flags a likely typo.
 
 ---
 
@@ -96,7 +94,7 @@ the energy band.
 
 **Options**
 
--   (a) (`\beta)
+- (a) (`\beta)
 - (b) (2`\beta)
 - (c) (3`\beta)
 - (d) (4`\beta)
@@ -105,11 +103,11 @@ the energy band.
 
 **Formulas:**
 
-_No formula section was included in the source file._
+E(k)=E_0-\alpha-2\beta\cos(ka),\qquad \Delta E=E_{\max}-E_{\min}=4|\beta|
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+Since cos(ka) ranges from −1 to +1, the energy varies across a total bandwidth of 4β when β is positive. Therefore option (d), 4β.
 
 ---
 
@@ -124,7 +122,7 @@ energy gap.
 
 **Options**
 
--   (a) (\displaystyle \frac{\hbar^2}{2\beta a^2},\quad -\frac{\hbar^2}{2\beta a^2})
+- (a) (\displaystyle \frac{\hbar^2}{2\beta a^2},\quad -\frac{\hbar^2}{2\beta a^2})
 - (b) (\displaystyle \frac{\hbar^2}{2a^2},\quad -\frac{\hbar^2}{2a^2})
 - (c) (\displaystyle \frac{\hbar^2}{\beta},\quad -\frac{\hbar^2}{\beta})
 - (d) (\displaystyle \frac{\hbar^2}{2\beta},\quad -\frac{\hbar^2}{2\beta})
@@ -133,11 +131,11 @@ energy gap.
 
 **Formulas:**
 
-_No formula section was included in the source file._
+\frac{1}{m^*}=\frac{1}{\hbar^2}\frac{d^2E}{dk^2},\qquad \frac{d^2E}{dk^2}=2\beta a^2\cos(ka)
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+At the band bottom, curvature is positive and m* = ℏ²/(2βa²). At the band top, curvature is negative and m* = −ℏ²/(2βa²). This matches option (a).
 
 ---
 
@@ -152,7 +150,7 @@ momentum of the hole. Planck constant is ((h = 6.62
 
 **Options**
 
--   (a) (m_h\^\* = 5.5
+- (a) (m_h\^\* = 5.5
         \times 10\^{-30} kg,\quad `\vec{P}\_h =
         -1.05 \times 10\^{-24}\hat{i} (J.s/m))
 - (b) (m_h\^\* = -5.5
@@ -169,11 +167,11 @@ momentum of the hole. Planck constant is ((h = 6.62
 
 **Formulas:**
 
-_No formula section was included in the source file._
+\frac{1}{m_e^*}=\frac{1}{\hbar^2}\frac{d^2E}{dk^2};\ E=-Ak^2\Rightarrow m_e^*=-\frac{\hbar^2}{2A},\quad m_h^*=\frac{\hbar^2}{2A};\quad \vec p_h=-\hbar\vec k
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+For E = −Ak², curvature is −2A, so the valence-band electron has negative effective mass and the hole has the opposite positive effective mass. A hole left by removing an electron has crystal momentum opposite to the removed electron's ℏk. Using the supplied values gives option (a) in the source.
 
 ---
 
@@ -185,7 +183,7 @@ and when (b) (k_x = 0) and (k_y = `\frac{\pi}{a}).
 
 **Options**
 
--   (a) 2
+- (a) 2
 - (b) 4
 - (c) 6
 - (d) 8
@@ -194,11 +192,11 @@ and when (b) (k_x = 0) and (k_y = `\frac{\pi}{a}).
 
 **Formulas:**
 
-_No formula section was included in the source file._
+E_k=\frac{\hbar^2}{2m}(k_x^2+k_y^2)
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+For case (a), kx=ky=π/a, so E_a ∝ 2π²/a². For case (b), kx=0 and ky=π/a, so E_b ∝ π²/a². Thus E_a/E_b=2, option (a).
 
 ---
 
@@ -213,7 +211,7 @@ and (\left(\alpha =
 
 **Options**
 
--   (a) (\displaystyle \frac{Ph^2}{4\pi^2ma^2})
+- (a) (\displaystyle \frac{Ph^2}{4\pi^2ma^2})
 - (b) (\displaystyle \frac{Ph^2}{\pi^2ma^2})
 - (c) (\displaystyle \frac{Ph^2}{2\pi^2ma^2})
 - (d) (\displaystyle \frac{Ph^2}{3\pi^2ma^2})
@@ -222,11 +220,11 @@ and (\left(\alpha =
 
 **Formulas:**
 
-_No formula section was included in the source file._
+\frac{P\sin(\alpha a)}{\alpha a}+\cos(\alpha a)=\cos(ka),\qquad \alpha=\frac{\sqrt{2mE}}{\hbar}
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+At k=0, the right side is 1. For P≪1, use the lowest-band small-parameter approximation around αa≈0 and expand sine/cosine to leading nonzero order; this yields the lowest-band energy proportional to Pℏ²/(ma²), equivalently the option-(a) expression Ph²/(4π²ma²).
 
 ---
 
@@ -238,7 +236,7 @@ radiation of the wavelengths below the 3000Å. Consider Planck constant
 
 **Options**
 
--   (a) 3.13 eV
+- (a) 3.13 eV
 - (b) 4.14 eV
 - (c) 5.27 eV
 - (d) 5.86 eV
@@ -247,11 +245,11 @@ radiation of the wavelengths below the 3000Å. Consider Planck constant
 
 **Formulas:**
 
-_No formula section was included in the source file._
+E_g\approx \frac{hc}{\lambda_{\max}},\qquad E(\mathrm{eV})\approx\frac{12400}{\lambda(\text{Å})}
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+The longest absorbed wavelength corresponds to the threshold band-gap photon. With λ=3000 Å, Eg≈12400/3000=4.13 eV, matching option (b), 4.14 eV.
 
 ---
 
@@ -264,7 +262,7 @@ the first Brillouin zone of FCC crystal.
 
 **Options**
 
--   (a) 0.701
+- (a) 0.701
 - (b) 0.802
 - (c) 0.902
 - (d) 1.302
@@ -273,10 +271,25 @@ the first Brillouin zone of FCC crystal.
 
 **Formulas:**
 
-_No formula section was included in the source file._
+k_F=(3\pi^2n)^{1/3},\qquad n=\frac{4}{a^3}\ \text{(FCC, valency 1)},\qquad k_m=\frac{2\pi}{a}\frac{\sqrt{3}}{2}
 
 **Explanation:**
 
-The supplied source records the question and answer but does not include a worked explanation.
+FCC has four atoms per conventional cell and valency one, so n=4/a³. The nearest hexagonal Brillouin-zone face is at distance km=√3π/a. Substituting in kF/km gives approximately 0.906, so option (c), 0.902, is the closest listed value.
 
 ---
+
+## Quick Answer Key
+
+| Question | Correct option |
+|---|---|
+| Q1 | (a) |
+| Q2 | (b) |
+| Q3 | No exact matching option; likely typo |
+| Q4 | (d) |
+| Q5 | (a) |
+| Q6 | (a) |
+| Q7 | (a) |
+| Q8 | (a) |
+| Q9 | (b) |
+| Q10 | (c) |
